@@ -1,12 +1,34 @@
-# Quartz v5
+# Ask Your Data
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A knowledge vault on building trustworthy natural-language data interfaces — covering Databricks Genie Agents, the infrastructure beneath them, and the engineering practices required to keep GenAI systems reliable in production.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+**Live site: https://niklasniggemann-cc.github.io/ask-your-data/**
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+---
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## What's Inside
+
+| Area | Topics |
+|------|--------|
+| **Genie** | Genie Agents, Genie One, Genie Code, Knowledge Store |
+| **Databricks** | Unity Catalog, Agent Metadata, Medallion Architecture, Data Quality, Delta Lake |
+| **Semantic** | Semantic Layer, NL-to-SQL, Disambiguation, Data Governance, Data Lineage |
+| **AI Quality** | Data Flywheel, Evaluation, LLM-as-a-Judge, GenAI Technical Debt, Observability |
+| **Frameworks** | MLflow, LangGraph, DSPy, MCP |
+
+These notes capture *how things work and why they're designed that way* — not step-by-step tutorials or official documentation.
+
+## Structure
+
+Notes are written in the [Zettelkasten](https://zettelkasten.de/) style: one concept per note, linked to related concepts. The site is built with [Quartz](https://quartz.jzhao.xyz/) from an Obsidian vault.
+
+## Local Development
+
+```bash
+npm install
+npx quartz build --serve
+# → http://localhost:8080
+```
 
 ## Sponsors
 
