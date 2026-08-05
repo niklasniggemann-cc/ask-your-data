@@ -20,7 +20,7 @@ Unlike [[Agent Metadata]] (manually curated, space-level synonyms) or [[Knowledg
 
 Genie Ontology aggregates context from three sources:
 
-1. **Unity Catalog semantic features** — Business Glossary, Domains, and Metric Views feed the ontology automatically
+1. **Unity Catalog semantic features** — Business Glossary, Domains, and [[Metric Views]] feed the ontology automatically
 2. **External integrations** — 50+ connected applications (Slack, Jira, SharePoint, Confluence) surface terminology used across organizational silos
 3. **Continuous learning** — query patterns and approved agent responses are folded back into the ontology over time
 

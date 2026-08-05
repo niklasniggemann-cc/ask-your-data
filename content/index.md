@@ -6,23 +6,16 @@ tags:
 
 # Ask Your Data — Research Vault
 
-A knowledge base on building trustworthy natural-language data interfaces — covering Databricks Genie Agents, the infrastructure beneath them, and the engineering practices required to keep GenAI systems reliable in production.
+A knowledge base on building trustworthy natural-language data interfaces — covering [[Databricks]] [[Genie Agents]], the infrastructure beneath them, and the engineering practices required to keep GenAI systems reliable in production.
 
 ---
 
 ## How to Navigate
 
-**Graph view** (`Cmd+Shift+G`) is the best starting point. Each colour represents a cluster:
-
-| Colour | Cluster | What's in it |
-|--------|---------|-------------|
-| 🟠 Orange-red | Genie | The Databricks AI product family |
-| 🟡 Amber | Databricks | Platform, Unity Catalog, data quality |
-| 🔵 Blue | Semantic | Semantic layer, NL-to-SQL, disambiguation |
-| 🟣 Purple | AI Quality | Evaluation, the Data Flywheel, observability |
-| 🟢 Green | Frameworks | MLflow, LangGraph, DSPy, MCP |
-
-In the graph: **click any node** to highlight its direct connections. **Right-click → Open** to jump to the note.
+- **Graph** (right sidebar) — shows connections between the current note and its neighbours. Click any node to jump to that note.
+- **Backlinks** (right sidebar, below the graph) — lists every note that links to the current one.
+- **Explorer** (left sidebar) — browses notes by folder: Genie, Databricks, Semantic, AI Quality, Frameworks.
+- **Search** (top left) — full-text search across all notes.
 
 ---
 
@@ -43,7 +36,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Genie One]] — unified chat across all agents and external sources
 - [[Genie Code]] — AI coding assistant for developers inside the workspace
 - [[Genie Ontology]] — continuously-learned org-wide context layer (OntoRank)
-- [[Knowledge Store]] — the space-level semantic store that extends Unity Catalog
+- [[Knowledge Store]] — the space-level semantic store that extends [[Unity Catalog]]
 
 ### The Data Platform
 - [[Databricks]] — the platform everything runs on

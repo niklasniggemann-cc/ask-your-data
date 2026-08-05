@@ -38,7 +38,7 @@ MotherDuck solves a similar problem to [[Genie Agents]] (natural language access
 |--|-----------------|-------------|
 | Setup | Minimal | Requires curation |
 | Governance | Limited | Full [[Unity Catalog]] |
-| Semantic layer | None | [[Agent Metadata]], Metric Views |
+| Semantic layer | None | [[Agent Metadata]], [[Metric Views]] |
 | Scale | DuckDB-scale | Databricks SQL warehouse |
 
 ## Related
