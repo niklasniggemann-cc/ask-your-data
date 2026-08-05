@@ -18,6 +18,10 @@ A knowledge vault on building trustworthy natural-language data interfaces — c
 
 These notes capture *how things work and why they're designed that way* — not step-by-step tutorials or official documentation.
 
+## How It Stays Updated
+
+The Databricks section refreshes itself daily via a scheduled agent run — see [WORKFLOW.md](WORKFLOW.md) for how the research, dedup, and vault-writing pipeline works.
+
 ## Structure
 
 Notes are written in the [Zettelkasten](https://zettelkasten.de/) style: one concept per note, linked to related concepts. The site is built with [Quartz](https://quartz.jzhao.xyz/) from an Obsidian vault.
