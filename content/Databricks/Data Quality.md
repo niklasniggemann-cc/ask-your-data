@@ -26,7 +26,7 @@ Accuracy is the most critical dimension for AI tools — AI confidence can misle
 
 ## Platform-Level Quality (Databricks)
 
-- **Lakehouse Monitoring** — tracks all six dimensions; creates metric tables and auto-generated dashboards that visualize quality metrics over time
+- **[[Lakehouse Monitoring]]** — tracks all six dimensions; creates metric tables and auto-generated dashboards that visualize quality metrics over time
 - **Ingestion controls** — block invalid data via constraints, quarantine problematic records, or flag violations; schema enforcement via Auto Loader
 - **[[Medallion Architecture]]** — structured refinement through Bronze → Silver → Gold layers
 

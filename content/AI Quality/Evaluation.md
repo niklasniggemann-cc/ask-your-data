@@ -46,6 +46,7 @@ Evaluation is not a one-time activity. The [[Data Flywheel]] structures it as a 
 ## Related
 
 - [[Data Flywheel]] — the feedback loop evaluation powers
+- [[Hallucinations]] — the primary failure mode evaluation is designed to catch
 - [[LLM-as-a-Judge]] — key evaluation technique for subjective outputs
 - [[MLflow]] — experiment tracking for evaluation results
 - [[Genie Agents]] — domain where evaluation is applied concretely

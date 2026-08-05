@@ -30,4 +30,6 @@ The supervisor decides which worker to invoke and how to combine their outputs i
 ## Related
 
 - [[Genie Agents]] — one worker in a LangGraph multi-agent system
+- [[Agent Bricks]] — Databricks' governed agent platform; uses LangGraph as one of its supported frameworks
+- [[Omnigent]] — meta-harness that sits above LangGraph to govern cross-framework agent compositions
 - [[DSPy]] — alternative framework for LLM program composition

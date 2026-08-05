@@ -37,5 +37,7 @@ It sits in the same problem space as [[Semantic Layer]] and Genie Ontology (Data
 
 - [[Semantic Layer]] — the architectural problem OntoBricks addresses with a formal ontology approach
 - [[Unity Catalog]] — the governed metadata foundation OntoBricks maps onto
+- [[Lakebase]] — the Postgres graph engine that powers OntoBricks' materialized triple store
+- [[Delta Lake]] — the storage layer for OntoBricks' Delta-backed triple store
 - [[MCP]] — the protocol OntoBricks uses to expose the graph to agents
 - [[Natural Language to SQL]] — the query problem that benefits from grounded semantic/ontology context

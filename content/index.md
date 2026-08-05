@@ -54,6 +54,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[LakeFlow]] — data pipeline orchestration (ingestion, transformation, jobs)
 - [[Medallion Architecture]] — Bronze → Silver → Gold data quality layering
 - [[Data Quality]] — six dimensions, Databricks tools, Genie-specific practices
+- [[Lakehouse Monitoring]] — metric tables and dashboards for tracking data quality over time
 
 ### Shared Business Meaning
 - [[Semantic Layer]] — the architectural layer that makes NL interfaces trustworthy
@@ -76,6 +77,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[MCP]] — Model Context Protocol for AI tool connectivity
 - [[MotherDuck]] — serverless DuckDB analytics with MCP server
 - [[Omnigent]] — meta-harness for composing and governing agents across frameworks
+- [[Updates]] — running log of confirmed Databricks developments from the daily briefing
 
 ---
 

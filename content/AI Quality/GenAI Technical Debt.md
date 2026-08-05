@@ -68,6 +68,7 @@ Additional pressures unique to GenAI:
 
 ## Related
 
+- [[Hallucinations]] — the defining failure mode of GenAI; confident-sounding wrong answers accumulate as a debt category
 - [[Data Flywheel]] — structured solution to the missing feedback loop category
 - [[Observability]] — addresses opaque pipelines
 - [[LLM-as-a-Judge]] — evaluation technique used to measure quality

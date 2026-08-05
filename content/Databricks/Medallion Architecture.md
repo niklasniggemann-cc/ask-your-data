@@ -46,6 +46,8 @@ AI tools like [[Genie Agents]] query what they're given. Connecting to Bronze or
 ## Related
 
 - [[Data Quality]] — the quality practices the Medallion Architecture enables
+- [[Delta Lake]] — the table format all three layers are built on
+- [[LakeFlow]] — the pipeline orchestration tool that moves data between Bronze, Silver, and Gold
 - [[Genie Agents]] — should always connect to Gold layer tables
 - [[Unity Catalog]] — governance and metadata layer that spans all three layers
 - [[Databricks]] — platform where the architecture is implemented with Delta Lake

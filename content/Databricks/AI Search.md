@@ -29,6 +29,7 @@ Databricks now offers two distinct retrieval products:
 
 ## Related
 
+- [[RAG]] — the primary use case AI Search enables: retrieval-augmented generation over managed indexes
 - [[Databricks]] — parent platform
 - [[Lakebase Search]] — Postgres-native alternative for agent-first retrieval
 - [[Unity Catalog]] — governs access to AI Search indexes like any other data asset

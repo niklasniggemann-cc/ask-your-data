@@ -28,4 +28,6 @@ Delta Lake's ACID guarantees mean that [[Data Quality]] practices like deduplica
 
 - [[Databricks]] — primary maintainer and platform
 - [[Medallion Architecture]] — the layering pattern built on Delta Lake tables
+- [[LakeFlow]] — orchestrates pipelines that read and write Delta tables
+- [[Unity Catalog]] — governs Delta tables with access control, lineage, and metadata
 - [[Data Quality]] — quality practices that Delta Lake's guarantees enable

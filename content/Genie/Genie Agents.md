@@ -152,4 +152,7 @@ Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embedd
 - [[Genie One]] — unified chat that surfaces all Genie Agents
 - [[Genie Code]] — developer-focused counterpart
 - [[Genie Spaces]] — former name for this product
+- [[Genie Ontology]] — the org-wide context layer that reduces disambiguation failures and improves first-try accuracy
+- [[Knowledge Store]] — the space-level semantic store that extends what Genie knows about a domain
+- [[Agent Metadata]] — YAML-defined configuration that shapes how Genie interprets queries
 - [[Unity Catalog]] — governance layer enforcing permissions

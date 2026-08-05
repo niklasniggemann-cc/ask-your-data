@@ -48,5 +48,6 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 ## Related
 
 - [[Genie Agents]] — the curated domain-specific agents Genie One searches across
+- [[Genie Ontology]] — the org-wide context layer that feeds all Genie One responses with shared business meaning
 - [[Genie Code]] — developer-focused counterpart
 - [[Databricks]] — platform

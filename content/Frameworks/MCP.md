@@ -37,5 +37,7 @@ MCP (Model Context Protocol) is Anthropic's open standard for connecting AI assi
 ## Related
 
 - [[Genie One]] — supports custom MCP connections
+- [[Agent Bricks]] — Databricks' agent platform; integrates MCP for tool connectivity
+- [[Omnigent]] — meta-harness that governs MCP connections at the harness level
 - [[Unity Catalog]] — Unity AI Gateway manages MCP connections and costs
 - [[OntoBricks]] — exposes a Unity Catalog-derived knowledge graph to agents via an MCP server

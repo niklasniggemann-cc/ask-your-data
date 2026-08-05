@@ -28,6 +28,8 @@ Benchmark on LAION-100M (100M 768-dim vectors): 0.955 recall@10 at 30ms P99 late
 
 ## Related
 
+- [[Lakebase]] — the Postgres platform Lakebase Search runs on; the two extensions are built into Lakebase
 - [[AI Search]] — Databricks' fully managed retrieval product; the alternative to reach for when you don't want to run search directly on Postgres
+- [[RAG]] — the primary use case Lakebase Search enables: retrieval-augmented generation alongside operational data
 - [[Databricks]] — parent platform
 - [[MLflow]] — traces and agent observability that often sit alongside Lakebase-backed agent memory
