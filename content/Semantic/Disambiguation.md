@@ -30,7 +30,7 @@ Limitation: requires upfront curation; someone must define the mappings.
 
 ### Dynamic Disambiguation (Genie Ontology)
 
-Genie Ontology resolves disambiguation at runtime using a PageRank-like ranking over a graph of all organizational data assets. When multiple definitions exist for the same term, it ranks them by:
+[[Genie Ontology]] resolves disambiguation at runtime using a PageRank-like ranking (OntoRank) over a graph of all organizational data assets. When multiple definitions exist for the same term, it ranks them by:
 - Authority of the source (who defined it)
 - Frequency of reference (how often it's used)
 - Proximity to certified assets
@@ -42,6 +42,7 @@ Limitation: less transparent than explicit mappings; relies on usage patterns be
 ## Related
 
 - [[Agent Metadata]] — structural disambiguation via synonyms in Unity Catalog
+- [[Genie Ontology]] — dynamic disambiguation via OntoRank over organizational data assets
 - [[Semantic Layer]] — the architectural layer that makes disambiguation deterministic
 - [[Natural Language to SQL]] — where disambiguation failures manifest as wrong queries
 - [[Knowledge Store]] — space-level disambiguation layer for Genie Agents

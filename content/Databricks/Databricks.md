@@ -17,7 +17,7 @@ Databricks is a data intelligence platform combining data engineering, analytics
 - **[[Delta Lake]]** — open table format providing ACID transactions and versioning on data lakes
 - **[[Unity Catalog]]** — unified governance: metadata, access control, lineage, and data discovery
 - **Databricks SQL** — serverless SQL analytics with Pro and Serverless warehouse options
-- **Lakeflow** — data pipeline orchestration (formerly Workflows + Delta Live Tables)
+- **[[LakeFlow]]** — data pipeline orchestration (formerly Workflows + Delta Live Tables)
 - **Model Serving** — deploy and scale ML and AI models
 
 ## Natural Language AI Products
@@ -36,6 +36,9 @@ Databricks bundles its natural language data access capabilities under the AI/BI
 
 - [[Unity Catalog]] — governance foundation
 - [[Delta Lake]] — storage layer
+- [[LakeFlow]] — data pipeline orchestration
+- [[Lakebase]] — serverless Postgres for agent memory and operational workloads
+- [[Agent Bricks]] — governed agent platform
 - [[Genie Agents]] — AI data interface
 - [[Medallion Architecture]] — data quality layering pattern
 - [[Semantic Layer]] — business meaning layer that Databricks exposes via Unity Catalog

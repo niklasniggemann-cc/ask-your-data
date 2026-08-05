@@ -42,12 +42,16 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Genie Agents]] — curated NL chat over approved tables; setup, API, best practices, permissions
 - [[Genie One]] — unified chat across all agents and external sources
 - [[Genie Code]] — AI coding assistant for developers inside the workspace
+- [[Genie Ontology]] — continuously-learned org-wide context layer (OntoRank)
 - [[Knowledge Store]] — the space-level semantic store that extends Unity Catalog
 
 ### The Data Platform
 - [[Databricks]] — the platform everything runs on
 - [[Unity Catalog]] — unified governance: metadata, access control, lineage
 - [[Agent Metadata]] — YAML-defined business context (display names, synonyms, formats)
+- [[Agent Bricks]] — governed agent platform (Supervisor, Document Intelligence, managed memory)
+- [[Lakebase]] — serverless Postgres for agent memory and operational workloads
+- [[LakeFlow]] — data pipeline orchestration (ingestion, transformation, jobs)
 - [[Medallion Architecture]] — Bronze → Silver → Gold data quality layering
 - [[Data Quality]] — six dimensions, Databricks tools, Genie-specific practices
 
@@ -55,6 +59,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Semantic Layer]] — the architectural layer that makes NL interfaces trustworthy
 - [[Natural Language to SQL]] — how it works and where it fails without governance
 - [[Disambiguation]] — structural vs. dynamic approaches to resolving ambiguous queries
+- [[Hallucinations]] — the failure mode when AI gets it confidently wrong
 
 ### GenAI Engineering
 - [[GenAI Technical Debt]] — the four debt categories unique to GenAI systems
@@ -62,6 +67,15 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Evaluation]] — why it's the highest-leverage activity in GenAI
 - [[LLM-as-a-Judge]] — evaluating subjective outputs at scale
 - [[Observability]] — making pipeline internals visible enough to debug
+- [[RAG]] — retrieval-augmented generation for unstructured document queries
+
+### Frameworks & Tools
+- [[MLflow]] — experiment tracking and GenAI evaluation
+- [[LangGraph]] — graph-based stateful agent orchestration
+- [[DSPy]] — declarative LLM programming and prompt optimization
+- [[MCP]] — Model Context Protocol for AI tool connectivity
+- [[MotherDuck]] — serverless DuckDB analytics with MCP server
+- [[Omnigent]] — meta-harness for composing and governing agents across frameworks
 
 ---
 
