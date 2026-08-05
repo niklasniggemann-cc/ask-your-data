@@ -35,3 +35,4 @@ Unity AI Gateway (part of Unity Catalog) provides a single oversight location fo
 - [[Genie Agents]] — primary AI consumer of Unity Catalog metadata and permissions
 - [[Data Lineage]] — lineage tracking as a Unity Catalog capability
 - [[Data Governance]] — the broader practice Unity Catalog implements structurally
+- [[OntoBricks]] — open-source project that materializes Unity Catalog tables into a reasoned knowledge graph

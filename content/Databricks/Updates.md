@@ -9,6 +9,13 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-05 (second run)
+
+_Delta-only — checked against the same-day entry below. Official Databricks sources (platform release notes, AI/BI release notes) showed no new dated items since the first run today._
+
+**Ecosystem / Open Source**
+- **OntoBricks** (databrickslabs, actively maintained — 199 stars, 458+ commits) — transforms Unity Catalog tables into a materialized, reasoned knowledge graph (OWL ontology design, R2RML mapping, Delta-backed triple store + Lakebase Postgres graph engine, OWL 2 RL/SWRL/SHACL reasoning), queryable via auto-generated GraphQL and an MCP server. Community project, not an official Databricks product. New note created: [[OntoBricks]]. [Source](https://github.com/databrickslabs/ontobricks)
+
 ## 2026-08-05
 
 **Partnerships**
