@@ -18,6 +18,7 @@ AI Search is Databricks' fully managed retrieval product for agent and RAG pipel
 
 - **Managed indexing pipeline** — ingestion, embedding, and reranking handled automatically, with built-in retrieval quality evaluation for comparing search strategies
 - **Storage Optimized endpoints** — deployment option for billion-scale vector indexes that decouples storage (cloud object storage) from compute; builds billion-vector indexes in under 8 hours (~20x faster than Standard endpoints), at up to 7x lower serving cost, using an IVF + Product Quantization architecture with a Rust query engine. Trade-off: ~300–500ms query latency vs. 20–50ms on Standard endpoints
+- **Dedicated full-text search index** (Beta) — a Delta Sync Index created with no embedding columns at all, for keyword-only BM25 search; storage-optimized endpoints only, triggered sync mode. Distinct from the hybrid vector+keyword search already available on standard vector indexes — this option skips embeddings entirely for pure keyword/identifier lookups
 - **`ai_prep_search`** — SQL function (Beta) that transforms `ai_parse_document` output into search-ready chunks for RAG pipelines
 
 ## AI Search vs. Lakebase Search

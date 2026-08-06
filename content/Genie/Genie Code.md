@@ -29,6 +29,7 @@ Genie Code is [[Databricks]]' AI coding assistant for developers and data practi
 - Sample data exploration
 - Multi-step agentic tasks — handles complex requests autonomously
 - Creates [[Genie Agents]] from a natural-language description
+- Personalizable via [[Agent Skills]], instructions, and MCP servers (Full page Genie Code, GA August 2026)
 
 ## Unity Catalog Integration
 
@@ -39,4 +40,5 @@ Genie Code reads table and column metadata, descriptions, and lineage from [[Uni
 - [[Genie One]] — unified chat that Genie Code operates alongside
 - [[Genie Agents]] — agents that Genie Code can create and review
 - [[Unity Catalog]] — source of schema and lineage context
+- [[Agent Skills]] — the mechanism Genie Code uses for personalization
 - [[Databricks]] — platform

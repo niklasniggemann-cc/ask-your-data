@@ -70,6 +70,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[MCP]] — Model Context Protocol for AI tool connectivity
 - [[MotherDuck]] — serverless DuckDB analytics with MCP server
 - [[Omnigent]] — meta-harness for composing and governing agents across frameworks
+- [[Agent Skills]] — packaged instructions for AI coding assistants, official Databricks skill repo
 - [[Updates]] — running log of confirmed Databricks developments from the daily briefing
 
 ---

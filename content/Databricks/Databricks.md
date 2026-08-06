@@ -42,3 +42,4 @@ Databricks bundles its natural language data access capabilities under the AI/BI
 - [[Genie Agents]] — AI data interface
 - [[Medallion Architecture]] — data quality layering pattern
 - [[Semantic Layer]] — business meaning layer that Databricks exposes via Unity Catalog
+- [[Agent Skills]] — Databricks-maintained skill packages for AI coding assistants

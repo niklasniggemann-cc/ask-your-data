@@ -25,7 +25,7 @@ Unity Catalog is Databricks' unified governance layer that provides centralized 
 
 Every [[Genie Agents]] space is built on Unity Catalog-registered data — Genie uses the metadata attached to those objects. [[Agent Metadata]] is defined within Unity Catalog and automatically consumed by all downstream tools. Row filters and column masks defined in Unity Catalog are enforced per-user at query time inside Genie.
 
-Unity AI Gateway (part of Unity Catalog) provides a single oversight location for [[MCP]] connections, tool costs, and agent permissions.
+Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single oversight location for [[MCP]] connections, tool costs, and agent permissions. Its **Smart Routing** capability (Beta) dynamically routes each request to the model best suited to it — by quality, cost, performance, availability, and budget — reserving expensive frontier models for tasks that need them and routing simpler work to cheaper models automatically.
 
 ## Related
 

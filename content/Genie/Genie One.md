@@ -27,6 +27,7 @@ Genie One is the unified full-screen chat experience for [[Databricks]] business
 - **Slack and Microsoft Teams** — invoked via @mention in conversations, public channels, and threads; responses scoped to each user's individual authorisation
 - **iOS and Android** mobile client
 - **Genie MCP App** — allows organisations running their own AI agents to call Genie without a separate workflow
+- **Google Sheets and Microsoft Excel** (Aug 2026) — via the Databricks Connector for Google Sheets and the Databricks Excel Add-in; query governed data in natural language and import results as native rows and columns
 
 ## External Sources
 

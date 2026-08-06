@@ -9,6 +9,28 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-06
+
+**Ask Your Data / Genie / AI-BI**
+- **Genie One now available in Google Sheets and Microsoft Excel** (Aug 5) — via the Databricks Connector for Google Sheets and the Databricks Excel Add-in; query governed data in natural language and import results as native rows/columns. Updates [[Genie One]]. [Source](https://docs.databricks.com/aws/en/release-notes/product/2026/august)
+
+**Unity Catalog / Governance**
+- **Unity AI Gateway Smart Routing** (Beta) — additional detail on the Aug 4 GA announcement not previously captured: dynamically routes each request to the model best suited by quality, cost, performance, availability, and budget, reserving expensive frontier models for tasks that need them. Updates [[Unity Catalog]]. [Source](https://www.databricks.com/blog/unity-ai-gateway-generally-available)
+
+**[[LakeFlow]]** (backfilled — missed in prior runs)
+- **OpenAI connector** (Beta, last updated Jul 31) and **Anthropic connector** (Beta, last updated Jul 17) in Lakeflow Connect — ingest each AI vendor's own organization admin/compliance data (users, projects, API keys, usage, costs, audit logs for OpenAI; audit logs, directory data, Claude chat/message data for Anthropic) into the governed lakehouse. Extends LakeFlow's SaaS-governance pattern to AI vendor spend itself. Updates [[LakeFlow]]. [Source](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/saas-overview)
+
+**Vector Search / [[AI Search]]** (backfilled — missed in prior runs)
+- **Dedicated full-text search index** (Beta, docs last updated Jul 20) — a Delta Sync Index with no embedding columns, for pure keyword/BM25 search on storage-optimized endpoints. Distinct from the hybrid vector+keyword search already available on standard indexes. Updates [[AI Search]]. [Source](https://docs.databricks.com/aws/en/ai-search/create-ai-search)
+
+**Frameworks & Tools**
+- **Agent Skills** — Databricks published its officially maintained `databricks/databricks-agent-skills` GitHub repo and a `databricks aitools` CLI command group, packaging Databricks-specific development knowledge as Agent Skills (open standard) for Claude Code, GitHub Copilot, and Cursor. Ties directly into full-page Genie Code's new personalization-via-skills capability. New note created: [[Agent Skills]]. [Source](https://docs.databricks.com/aws/en/agent-skills/)
+
+**Semantic Layer / Metric Views** (minor)
+- **Metric Views window measures now support a numeric index column** (Aug 5) — unitless numeric `offset` and `trailing`/`leading` ranges on a consecutive integer `order` column, for comparing along non-calendar business periods (e.g. fiscal weeks, 4-4-5 accounting periods). Not added to [[Metric Views]] note — too narrow a technical detail to warrant a dedicated line there. [Source](https://docs.databricks.com/aws/en/release-notes/product/2026/august)
+
+_Note: today's "Agents at Work: Shipping Agentic Apps at Scale" joint Databricks/OpenAI webinar (Aug 4 AMER / Aug 5 EMEA / Aug 6 APAC) was checked but didn't surface capabilities beyond what's already logged (org-wide policies, unified skill/MCP registry, permissions, auditability) — skipped as recap rather than new information._
+
 ## 2026-08-05 (second run)
 
 _Delta-only — checked against the same-day entry below. Official Databricks sources (platform release notes, AI/BI release notes) showed no new dated items since the first run today._
