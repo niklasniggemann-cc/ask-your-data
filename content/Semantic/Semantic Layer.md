@@ -84,6 +84,14 @@ Beyond metric definitions, GenAI applications need:
 5. Semantics as code — versioned, reviewed, tested
 6. Start narrow: one high-stakes decision, one metric, then expand by usage
 
+## Recent Developments
+
+**2026-01-27** — Open Semantic Interchange (OSI) v1.0 released under Apache 2.0: a cross-vendor YAML spec for metrics, dimensions, and relationships, backed by Snowflake, dbt Labs, Cube, AtScale, Salesforce, Tableau, and 40+ others — aimed at one portable semantic definition instead of redefining business logic per BI tool. [Source](https://open-semantic-interchange.org/updates/)
+
+**2026-02-03** — Snowflake's Semantic View Autopilot reached GA, auto-maintaining metric definitions and propagating them across dbt, Looker, Sigma, and ThoughtSpot via OSI connections. [Source](https://www.constellationr.com/insights/news/snowflake-cortex-code-semantic-view-autopilot-ga)
+
+**2026-04-07** — dbt's rerun of its semantic-layer-vs-text-to-SQL benchmark on current-gen models: text-to-SQL accuracy nearly doubled since 2023 (32.7% → 64.5%), but the dbt Semantic Layer still hits ~98–100% on covered queries because it fails loudly (an error) rather than returning a plausible-but-wrong number. [Source](https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026)
+
 ## Related
 
 - [[Data Governance]] — structural governance as a core benefit
