@@ -9,6 +9,24 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-08
+
+**Ask Your Data / Genie / AI-BI** (backfilled — missed in prior runs)
+- **Genie One MCP server** (Beta, docs last updated Aug 3) — a new Databricks-managed MCP server (`/api/2.0/mcp/genie`) that exposes [[Genie One]] itself as a conversational tool over MCP: any external MCP client or agent (Cursor, Claude Desktop, a custom orchestrator) can send a natural-language data question and get an answer grounded in Genie Ontology with source citations, with Unity Catalog permissions enforced throughout. Clients supporting MCP Apps get an interactive inline View (charts, progress, citations) instead of plain text. Distinct from the existing per-agent Genie MCP server (`/api/2.0/mcp/genie/{genie_space_id}`) and from the Aug 6 entry below about existing managed connectors moving under Unity AI Gateway — this is Genie itself becoming callable by outside agents, not Genie calling out. Requires the Managed MCP Servers workspace preview. Updates [[Genie One]] and [[MCP]]. [Source](https://docs.databricks.com/aws/en/agents/mcp-tools/genie-mcp)
+
+_Note: checked official release notes (platform, AI/BI), Databricks blog, GitHub (databricks/databrickslabs), and community/Reddit chatter for the Aug 7–8 window — no other genuinely new items surfaced. A Gemini 3 Pro/Flash listing appeared in one aggregated search snippet but with internally inconsistent dates (a March 2026 retirement notice attached to it), suggesting stale/low-quality source content rather than a new addition since the last run — dropped per the confirmed-only filter._
+
+## 2026-08-07
+
+**Unity Catalog / Governance**
+- **Databricks-managed MCP connectors now integrated with Unity AI Gateway** (Beta, Aug 6) — all Databricks-managed MCP connectors for [[Genie One]] and [[Genie Code]] have migrated under Unity AI Gateway, bringing centralized governance, access controls, and visibility alongside other MCP servers and tools. Existing users must reauthenticate affected connectors. Updates [[Unity Catalog]]. [Source](https://docs.databricks.com/aws/en/release-notes/product/2026/august)
+
+**Ask Your Data / Genie / AI-BI**
+- **Genie Code web search** (Beta, Aug 6) — Genie Code can now search the public web to answer questions needing current information and cites its sources. Disabled by default; a workspace admin turns it on from the Previews page. Requires the Americas/Europe geo (or cross-geography processing enabled); under the compliance security profile, only HIPAA workspaces support it. Updates [[Genie Code]]. [Source](https://docs.databricks.com/aws/en/genie-code/use-genie-code#web-search)
+
+**[[MLflow]] / GenAI Observability** (minor, upcoming)
+- **MLflow 3 trace storage in Unity Catalog becomes the default** — for workspaces with the compliance security profile enabled, rolling out mid-August 2026 (previously a recommendation, not yet the default). Updates [[MLflow]]. [Source](https://docs.databricks.com/aws/en/release-notes/whats-coming)
+
 ## 2026-08-06
 
 **Ask Your Data / Genie / AI-BI**

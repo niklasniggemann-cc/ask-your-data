@@ -30,6 +30,7 @@ Genie Code is [[Databricks]]' AI coding assistant for developers and data practi
 - Multi-step agentic tasks — handles complex requests autonomously
 - Creates [[Genie Agents]] from a natural-language description
 - Personalizable via [[Agent Skills]], instructions, and MCP servers (Full page Genie Code, GA August 2026)
+- Searches the public web to answer questions needing current information, citing sources (Beta, August 2026 — disabled by default, workspace admin must enable via Previews)
 
 ## Unity Catalog Integration
 

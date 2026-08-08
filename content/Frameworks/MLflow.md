@@ -29,7 +29,7 @@ MLflow's experiment tracking is the natural store for [[Data Flywheel]] evaluati
 
 ## Integration with Databricks
 
-MLflow is built into [[Databricks]] — no separate installation required. Experiments are managed within the workspace and linked to Unity Catalog for governance.
+MLflow is built into [[Databricks]] — no separate installation required. Experiments are managed within the workspace and linked to Unity Catalog for governance. Storing MLflow 3 traces in Unity Catalog tables — already the recommendation for new/production workloads — is set to become the default for workspaces with the compliance security profile enabled, rolling out mid-August 2026.
 
 ## Related
 

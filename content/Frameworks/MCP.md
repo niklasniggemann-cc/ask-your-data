@@ -32,6 +32,8 @@ MCP (Model Context Protocol) is Anthropic's open standard for connecting AI assi
 
 [[Genie One]] supports custom MCP connections, managed through Unity AI Gateway inside [[Unity Catalog]]. This allows organizations running their own AI agents to call Genie without building a separate workflow.
 
+Databricks also runs the reverse direction: a **Genie One MCP server** (Beta, `/api/2.0/mcp/genie`) exposes Genie One itself as an MCP tool, so any external MCP client or agent can ask it natural-language data questions and get Ontology-grounded, permission-scoped answers — with an interactive inline View for MCP Apps-compatible clients. See [[Genie One]] for details.
+
 [[MotherDuck]] also exposes an MCP server, making its databases accessible to AI agents via the protocol — the basis of the "Talk to your Data" series.
 
 ## Related

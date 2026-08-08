@@ -46,6 +46,10 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 - Runs multiple SQL queries, learns from each, iterates
 - Returns comprehensive answers with citations, visualisations, and tables via SSE streaming
 
+## Recent Developments
+
+- **2026-08-03** — Databricks published the **Genie One MCP server** (Beta), a managed MCP server at `/api/2.0/mcp/genie` that exposes Genie One itself as a callable tool for any external MCP client or agent (Cursor, Claude Desktop, custom orchestrators). Tools include `genie_ask`, `genie_poll_response`, `genie_get_query_result`, `genie_cancel_response`, and `view_ask` for MCP Apps clients (interactive inline View with charts and citations). Answers are grounded in Genie Ontology with Unity Catalog permissions enforced. Requires the Managed MCP Servers workspace preview. [Source](https://docs.databricks.com/aws/en/agents/mcp-tools/genie-mcp)
+
 ## Related
 
 - [[Genie Agents]] — the curated domain-specific agents Genie One searches across
