@@ -28,6 +28,10 @@ Databricks now offers two distinct retrieval products:
 - **AI Search** — best fit for teams that want a fully managed retrieval service with ingestion/embedding/reranking handled for them
 - **[[Lakebase Search]]** — best fit for agent workloads that want search running as a native, transactional part of their Postgres-backed operational data (Lakebase), with tighter read/write latency for agent memory loops
 
+## Recent Developments
+
+- **2026-08-09** — Databricks published the `ai_search()` SQL function (Beta, released Aug 7). Given a natural-language query and up to 10 AI Search indexes as knowledge sources, it generates optimized search queries, retrieves/dedupes/reranks results, and by default synthesizes a grounded natural-language answer from the retrieved documents — usable directly in SQL for batch RAG pipelines or as a retrieval tool inside a compound AI system. Complements `ai_prep_search` (chunking): `ai_parse_document` → `ai_prep_search` → index → `ai_search` now covers the full pipeline. [Source](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_search)
+
 ## Related
 
 - [[RAG]] — the primary use case AI Search enables: retrieval-augmented generation over managed indexes

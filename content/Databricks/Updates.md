@@ -9,6 +9,16 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-09
+
+**Vector Search / [[AI Search]]**
+- **`ai_search` SQL function** (Beta, Aug 7) — a new SQL function that takes a natural-language query plus up to 10 AI Search indexes as knowledge sources, generates optimized search queries, retrieves/dedupes/reranks results across sources, and by default synthesizes a grounded natural-language answer over the retrieved documents — all in one function call. Complements the existing `ai_prep_search` (chunking) function: `ai_parse_document` → `ai_prep_search` → index → `ai_search` now covers the full batch RAG pipeline in SQL. Updates [[AI Search]]. [Source](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_search)
+
+**Model Serving / Foundation Model APIs**
+- **Kimi K3 (Moonshot AI) now available** (Aug 6) — a 2.8T-parameter open-weight model with a 1M-token context window and native multimodal support, hosted by Databricks via Foundation Model APIs with full Unity AI Gateway governance and zero data retention. Databricks benchmarks it at parity with leading proprietary models (Anthropic, OpenAI, Gemini) at 50–72% lower cost-per-task. US-hosted initially (native on AWS/GCP, ADI access on Azure). [Source](https://www.databricks.com/blog/kimi-k3-moonshot-ai-now-available-databricks-through-unity-ai-gateway)
+
+_Note: checked official release notes (platform, AI/BI), Databricks blog, MLflow/Agent Bricks/Lakebase coverage, GitHub (databricks/databrickslabs), and community/Reddit for the Aug 8–9 window. Both items above actually shipped Aug 6–7 but were missed by the Aug 8 run (which only covered the Genie One MCP server backfill) — logged now as a delta. No items dated Aug 8–9 itself cleared the confirmed-and-new bar; other August releases in this window (tag automations, materialized view change data feed, JAR tasks on serverless, REPLACE USING flows, Secrets in Unity Catalog) are generic platform/governance features without a GenAI/Ask Your Data angle and were left out per scope._
+
 ## 2026-08-08
 
 **Ask Your Data / Genie / AI-BI** (backfilled — missed in prior runs)
