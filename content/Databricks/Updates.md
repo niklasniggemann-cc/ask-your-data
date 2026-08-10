@@ -9,6 +9,10 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-10
+
+_No genuinely new items today. Checked the full August 2026 platform release notes page (docs.databricks.com/aws/en/release-notes/product/2026/august, all entries dated Aug 3–7) against the vault log — every dated item on it (`ai_search` function, MCP connectors under Unity AI Gateway, Kimi K3, Genie Code web search, Genie One in Google Sheets/Excel, Unity AI Gateway GA, Full page Genie Code GA, SharePoint/Google Drive/PagerDuty connectors, etc.) is already logged in prior entries below. Also checked the AI/BI release notes page, Databricks blog, and general Genie/Mosaic AI/LakeFlow searches — no items dated Aug 8–10 surfaced. The page's own "Last updated" stamp (Jul 31) suggests nothing has posted since the Aug 9 run's coverage of the Aug 6–7 backlog._
+
 ## 2026-08-09
 
 **Vector Search / [[AI Search]]**

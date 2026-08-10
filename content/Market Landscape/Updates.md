@@ -9,6 +9,16 @@ tags:
 
 Running log of confirmed developments across the broader natural-language-to-data market — every vendor and open-source project outside Databricks (which has its own log, see [[Databricks/Updates|Databricks Updates]]). Newest entries first.
 
+## 2026-08-10
+
+**ThoughtSpot**
+- **Cloud Release 26.7.0 — three new Early Access features** (as of this run) — **Spotter User-Level Personalisation**: Spotter now builds memory from an individual user's own conversations and adapts to their preferences, distinct from the org-wide Genie-Ontology-style context already covered elsewhere. **SpotterViz for Embedded Liveboards**: SpotterViz (the viz-generation agent) can now be embedded directly into smart dashboards so end users build/edit/explore decision-ready dashboards inline. **SpotterCode in Visual Embed Playground**: SpotterCode (ThoughtSpot's coding agent) is now available inside the Visual Embed Playground for building/testing/deploying embedded apps. None of these were previously logged; the prior Spotter Semantics/Spotter for Industries/Gartner Leader entries are unrelated capabilities. [Source](https://www.thoughtspot.com/new-features)
+
+**Metabase** (backfilled — first entry for this vendor in this log)
+- **Metabase 63** (Jul 2026) — added more LLM provider options for Metabot (OpenAI, AWS Bedrock, Microsoft Azure, alongside existing providers), plus treemaps, two-factor auth, PDF dashboard-subscription attachments, and one-step dashboard sharing. Flagged here mainly for the Metabot provider expansion, which is the NL-query-relevant piece. [Source](https://www.metabase.com/releases)
+
+_Note: this run also checked Snowflake CoWork/Cortex, Sigma, Hex, Omni, Cube, AtScale, WrenAI, Vanna AI, Google Cloud Conversational Analytics, Amazon Quick, Power BI/Fabric, and Tableau Next/Agentforce — all resurfaced only already-logged material (Snowflake's June Summit CoWork bundle, Hex's Jul 30 CLI/API release already covered, Google Cloud's Jul 29 GA already covered, etc.) or pre-dated this log's baseline with nothing new since. IBM watsonx.data Text2SQL surfaced but its launch traces to November 2025 — too old to count as a delta and not previously logged, so left out rather than backfilled given the age. Might be worth a dedicated ThoughtSpot concept note given how much is accumulating in this log for it — flagging rather than creating one, per this section's scope._
+
 ## 2026-08-09
 
 **ThoughtSpot**
