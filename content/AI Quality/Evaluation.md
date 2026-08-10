@@ -43,6 +43,10 @@ Evaluation is not a one-time activity. The [[Data Flywheel]] structures it as a 
 
 [[Genie Agents]] supports built-in benchmarks: up to 500 questions per space with ground-truth SQL or SQL function references. Benchmark runs produce side-by-side comparisons that are automatically tagged for quick problem identification. Agent Mode uses [[LLM-as-a-Judge]] instead of SQL comparison.
 
+## Recent Developments
+
+**2026-08-10** — Databricks introduced **OfficeQA Pro V2** (Aug 6), a follow-up benchmark to OfficeQA built from ~1,400 U.S. Treasury PDFs (~120K pages) via a synthetic data pipeline, testing whether grounded-reasoning gains generalize beyond the original corpus rather than reflecting overfitting to it. Out-of-the-box agents averaged only 26.0% accuracy; [[Genie One|Genie]] delivered a 92% relative improvement over matched baseline models, reaching up to 60% accuracy — evidence for Genie's grounded-reasoning approach, though Databricks itself notes significant headroom remains. [Source](https://www.databricks.com/blog/introducing-officeqa-pro-v2-new-benchmark-enterprise-grounded-reasoning)
+
 ## Related
 
 - [[Data Flywheel]] — the feedback loop evaluation powers

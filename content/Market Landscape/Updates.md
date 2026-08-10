@@ -9,6 +9,10 @@ tags:
 
 Running log of confirmed developments across the broader natural-language-to-data market — every vendor and open-source project outside Databricks (which has its own log, see [[Databricks/Updates|Databricks Updates]]). Newest entries first.
 
+## 2026-08-10 (second run)
+
+_No genuinely new items beyond the first run today. Rechecked ThoughtSpot (still Cloud Release 26.7.0, same three Early Access items already logged below), Snowflake CoWork/Cortex Analyst, Sigma, Microsoft Copilot for Power BI/Fabric, Amazon Quick, Hex/Omni/Cube/AtScale/WrenAI, dbt Semantic Layer/OSI, Salesforce Tableau Next/Agentforce, and Gartner conversational-analytics coverage — everything resurfaced either matches this log already or pre-dates it with nothing new since. Salesforce's "Tableau Einstein Alliance" partner program surfaced but is a channel/partner initiative, not a product update, so left out._
+
 ## 2026-08-10
 
 **ThoughtSpot**

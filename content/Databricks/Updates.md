@@ -9,6 +9,13 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-10 (second run)
+
+**GenAI Engineering / [[Evaluation]]**
+- **OfficeQA Pro V2 benchmark** (Aug 6) — a follow-up to Databricks' OfficeQA benchmark, built from ~1,400 U.S. Treasury PDFs (~120K pages) via a synthetic data pipeline, testing whether grounded-reasoning gains generalize beyond the original corpus. Out-of-the-box agents averaged only 26.0% accuracy; Genie delivered a 92% relative improvement over matched baseline models, reaching up to 60% accuracy. Updates [[Evaluation]]. [Source](https://www.databricks.com/blog/introducing-officeqa-pro-v2-new-benchmark-enterprise-grounded-reasoning)
+
+_Note: also checked the Genie Code "Import BI files" docs page (last updated Jul 30) describing Tableau/Power BI import into AI/BI dashboards with local metric views — judged to be elaboration on the already-logged Aug 4 entry ("AI/BI dashboards can now import Power BI and Tableau reports directly") rather than a distinct new capability, so not re-logged. Checked platform/AI-BI release notes, Databricks blog, LakeFlow/Unity Catalog/Vector Search/Genie Ontology coverage — Panther acquisition (Aug 3, completed) is a security-lakehouse story with no GenAI/Ask Your Data angle and was left out per scope. Nothing else new since the first run today._
+
 ## 2026-08-10
 
 _No genuinely new items today. Checked the full August 2026 platform release notes page (docs.databricks.com/aws/en/release-notes/product/2026/august, all entries dated Aug 3–7) against the vault log — every dated item on it (`ai_search` function, MCP connectors under Unity AI Gateway, Kimi K3, Genie Code web search, Genie One in Google Sheets/Excel, Unity AI Gateway GA, Full page Genie Code GA, SharePoint/Google Drive/PagerDuty connectors, etc.) is already logged in prior entries below. Also checked the AI/BI release notes page, Databricks blog, and general Genie/Mosaic AI/LakeFlow searches — no items dated Aug 8–10 surfaced. The page's own "Last updated" stamp (Jul 31) suggests nothing has posted since the Aug 9 run's coverage of the Aug 6–7 backlog._
