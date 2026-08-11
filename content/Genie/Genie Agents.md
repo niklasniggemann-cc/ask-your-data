@@ -147,6 +147,10 @@ Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embedd
 - Volume file analysis: Foundation Model Serving costs (pay-per-token) + standard Genie usage
 - Account admins set budgets; monitor via system billing tables (SKU: `GENIE_FREE_USAGE` during promo)
 
+## Recent Developments
+
+- **2026-08-06** — **Markdown tables in Agent mode APIs** (Beta): table visualizations in the Agent mode API response now return as markdown instead of table-visualization attachments, improving readability for API consumers. Also shipped the same day: longer agent descriptions shown by default, comments on Genie Agent answers from Genie One, and a conversation-mode field (Agent vs. Chat) in the list conversations API. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
+
 ## Related
 
 - [[Genie One]] — unified chat that surfaces all Genie Agents
@@ -156,3 +160,4 @@ Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embedd
 - [[Knowledge Store]] — the space-level semantic store that extends what Genie knows about a domain
 - [[Agent Metadata]] — YAML-defined configuration that shapes how Genie interprets queries
 - [[Unity Catalog]] — governance layer enforcing permissions
+- [[ThoughtSpot Spotter]] — closest cross-vendor equivalent: ThoughtSpot's conversational analytics agent

@@ -47,6 +47,7 @@ When multiple columns are plausible matches for a query term, pure NL-to-SQL has
 
 - [[Semantic Layer]] — the governance layer that makes NL-to-SQL trustworthy
 - [[Genie Agents]] — Databricks implementation of governed NL-to-SQL
+- [[ThoughtSpot Spotter]] — ThoughtSpot's conversational analytics agent, built on the semantic query engine SpotQL
 - [[Agent Metadata]] — provides synonyms that make term resolution deterministic
 - [[Disambiguation]] — the core challenge NL-to-SQL faces at scale
 - [[Hallucinations]] — the failure mode when NL-to-SQL gets it wrong confidently

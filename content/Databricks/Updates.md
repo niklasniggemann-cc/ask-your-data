@@ -9,6 +9,17 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-11
+
+_Delta-only. Checked the AI/BI and Genie One release notes page (docs.databricks.com/aws/en/ai-bi/release-notes/2026, "Last updated Aug 6, 2026" — unchanged since the last run, confirming nothing has posted since) against the vault log in full and found three genuinely new items from the Aug 6 dated section that prior runs missed. Also checked platform release notes, Databricks blog, and general Genie/Mosaic AI/LakeFlow searches for the Aug 10–11 window — nothing new posted since the second run on Aug 10._
+
+**Ask Your Data / Genie / AI-BI**
+- **Genie Ontology enabled by default** (Public Preview, Aug 6) — previously opt-in, the org-wide context layer now applies automatically to Genie One conversations without admin configuration. Updates [[Genie Ontology]]. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
+- **Upload PDF files to a Genie One conversation** (Beta, Aug 6) — PDFs can now be attached alongside CSV/Excel files; Genie One parses them asynchronously. Updates [[Genie One]]. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
+- **Markdown tables in Genie Agents Agent mode APIs** (Beta, Aug 6) — table visualizations in the Agent mode API response now return as markdown instead of table-visualization attachments, improving readability for API consumers. Updates [[Genie Agents]]. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
+
+_Note: other Aug 6 dashboard items (rich text in widget titles, hide pivot table column headers, schedule run history) are generic dashboard UI polish without a GenAI/Ask Your Data angle and were left out per scope, as were bug fixes. Checked GitHub (databricks/databrickslabs) and community/Reddit chatter — nothing new._
+
 ## 2026-08-10 (second run)
 
 **GenAI Engineering / [[Evaluation]]**

@@ -57,6 +57,11 @@ Both are described in [[Disambiguation]]. They are complementary: Ontology reduc
 
 - **Genie One: Ontology snippets** — Public Preview (as of Aug 2026)
 - Full ontology integration — GA with Genie, feeding Genie Agents and Genie One
+- **Enabled by default** (Public Preview, Aug 6 2026) — previously opt-in; the ontology now applies automatically to Genie One conversations without admin configuration
+
+## Recent Developments
+
+- **2026-08-06** — Genie Ontology is now **enabled by default** in Public Preview, removing the need for admins to turn it on manually before Genie One conversations get ontology-grounded context. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
 
 ## Related
 

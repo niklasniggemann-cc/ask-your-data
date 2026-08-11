@@ -48,6 +48,7 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 
 ## Recent Developments
 
+- **2026-08-06** — **Upload PDF files to a conversation** (Beta): PDFs can now be attached to a Genie One conversation alongside CSV and Excel files, parsed asynchronously. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
 - **2026-08-03** — Databricks published the **Genie One MCP server** (Beta), a managed MCP server at `/api/2.0/mcp/genie` that exposes Genie One itself as a callable tool for any external MCP client or agent (Cursor, Claude Desktop, custom orchestrators). Tools include `genie_ask`, `genie_poll_response`, `genie_get_query_result`, `genie_cancel_response`, and `view_ask` for MCP Apps clients (interactive inline View with charts and citations). Answers are grounded in Genie Ontology with Unity Catalog permissions enforced. Requires the Managed MCP Servers workspace preview. [Source](https://docs.databricks.com/aws/en/agents/mcp-tools/genie-mcp)
 
 ## Related
@@ -56,3 +57,4 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 - [[Genie Ontology]] — the org-wide context layer that feeds all Genie One responses with shared business meaning
 - [[Genie Code]] — developer-focused counterpart
 - [[Databricks]] — platform
+- [[ThoughtSpot Spotter]] — comparable unified conversational-analytics surface on ThoughtSpot

@@ -98,4 +98,5 @@ Beyond metric definitions, GenAI applications need:
 - [[Data Lineage]] — provenance tracking within the semantic layer
 - [[Natural Language to SQL]] — the alternative approach that lacks governance guarantees
 - [[Genie Agents]] — a downstream consumer of the semantic layer via Unity Catalog
+- [[ThoughtSpot Spotter]] — competing conversational-BI agent citing external semantic-layer connectivity as a differentiator
 - [[OntoBricks]] — an open-source, standards-based (OWL/RDF) take on the same problem, built on Unity Catalog
