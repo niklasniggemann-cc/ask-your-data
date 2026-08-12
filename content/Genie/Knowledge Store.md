@@ -46,3 +46,4 @@ Responses generated from parameterised example queries or Unity Catalog SQL func
 - [[Data Quality]] — quality practices that feed into what the Knowledge Store encodes
 - [[Semantic Layer]] — the broader architectural principle the Knowledge Store implements at the space level
 - [[Agent Metadata]] — the Unity Catalog-level complement (governed globally vs. space-locally)
+- [[Genie Ontology]] — the org-level complement; Genie Ontology operates across the organization while the Knowledge Store is scoped to a single space

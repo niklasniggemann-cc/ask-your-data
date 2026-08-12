@@ -84,3 +84,4 @@ See [[Genie Agents]] for full benchmark configuration details.
 - [[Genie Agents]] — the primary AI consumer of data quality practices
 - [[Unity Catalog]] — metadata and governance layer
 - [[Semantic Layer]] — the broader architecture that governs business meaning
+- [[Lakehouse Monitoring]] — tracks the six data quality dimensions over time via metric tables and dashboards

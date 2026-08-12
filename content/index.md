@@ -37,14 +37,19 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Genie Code]] — AI coding assistant for developers inside the workspace
 - [[Genie Ontology]] — continuously-learned org-wide context layer (OntoRank)
 - [[Knowledge Store]] — the space-level semantic store that extends [[Unity Catalog]]
+- [[Genie Spaces]] — former name for Genie Agents
 
 ### The Data Platform
 - [[Databricks]] — the platform everything runs on
 - [[Unity Catalog]] — unified governance: metadata, access control, lineage
 - [[Agent Metadata]] — YAML-defined business context (display names, synonyms, formats)
+- [[Metric Views]] — governed semantic objects in Unity Catalog that Agent Metadata attaches to
 - [[Agent Bricks]] — governed agent platform (Supervisor, Document Intelligence, managed memory)
 - [[Lakebase]] — serverless Postgres for agent memory and operational workloads
+- [[Lakebase Search]] — hybrid vector + full-text retrieval built into Lakebase Postgres
+- [[AI Search]] — Databricks' fully managed retrieval product for agent and RAG pipelines
 - [[LakeFlow]] — data pipeline orchestration (ingestion, transformation, jobs)
+- [[Delta Lake]] — open table format underlying the lakehouse
 - [[Medallion Architecture]] — Bronze → Silver → Gold data quality layering
 - [[Data Quality]] — six dimensions, Databricks tools, Genie-specific practices
 - [[Lakehouse Monitoring]] — metric tables and dashboards for tracking data quality over time
@@ -54,6 +59,9 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Natural Language to SQL]] — how it works and where it fails without governance
 - [[Disambiguation]] — structural vs. dynamic approaches to resolving ambiguous queries
 - [[Hallucinations]] — the failure mode when AI gets it confidently wrong
+- [[Data Governance]] — structural vs. procedural governance, and how it underpins trustworthy AI
+- [[Data Lineage]] — tracking data's origin, movement, and transformation
+- [[OntoBricks]] — open-source, standards-based (OWL/RDF) take on governed business semantics
 
 ### GenAI Engineering
 - [[GenAI Technical Debt]] — the four debt categories unique to GenAI systems

@@ -4,6 +4,7 @@ type:
   - "[[Technology]]"
   - "[[Product]]"
 vendor: "[[Databricks]]"
+category: Knowledge Graph / Ontology Tool
 tags:
   - semantic
   - databricks

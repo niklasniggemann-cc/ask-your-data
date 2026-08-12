@@ -57,3 +57,4 @@ The [[Semantic Layer]] is the primary structural defense: when the LLM queries g
 - [[LLM-as-a-Judge]] — evaluation technique for detecting hallucinated responses
 - [[Data Flywheel]] — the feedback loop that surfaces and corrects hallucinations over time
 - [[RAG]] — retrieval-based grounding that reduces hallucinations on document questions
+- [[Genie Ontology]] — reduces disambiguation failures, a major hallucination trigger, via organizational context

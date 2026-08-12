@@ -1,6 +1,7 @@
 ---
 title: Data Flywheel
 type: "[[Concept]]"
+context: GenAI, Product Engineering
 also-known-as: Learning Loop, Feedback Loop
 tags:
   - ai-quality

@@ -6,6 +6,7 @@ type:
   - "[[Technology]]"
   - "[[Standard]]"
 created-by: Anthropic
+category: Agent-Tool Connectivity Protocol
 tags:
   - framework
 ---

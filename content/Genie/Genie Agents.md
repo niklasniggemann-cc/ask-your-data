@@ -161,3 +161,5 @@ Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embedd
 - [[Agent Metadata]] — YAML-defined configuration that shapes how Genie interprets queries
 - [[Unity Catalog]] — governance layer enforcing permissions
 - [[ThoughtSpot Spotter]] — closest cross-vendor equivalent: ThoughtSpot's conversational analytics agent
+- [[Data Quality]] — Gold-layer connection, prompt matching, and benchmarking practices specific to Genie Agents
+- [[Evaluation]] — built-in benchmarks and LLM-as-a-Judge scoring used in Genie Agents evaluation

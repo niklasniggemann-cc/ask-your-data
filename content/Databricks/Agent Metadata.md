@@ -4,6 +4,7 @@ type:
   - "[[Concept]]"
   - "[[Technology]]"
 vendor: "[[Databricks]]"
+category: Semantic Metadata
 requires: Databricks Runtime 17.3, YAML version 1.1
 governed-in: "[[Unity Catalog]]"
 tags:
