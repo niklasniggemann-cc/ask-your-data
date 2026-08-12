@@ -9,6 +9,10 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-12 (second run)
+
+_Delta-only, checked against the same-day entry below. Re-checked the AI/BI release notes page (still "Last updated Aug 6, 2026" — confirmed unchanged), platform release notes (still no items past Aug 11's ABAC Grant expansion / READ METADATA GA, both left out per scope), and Databricks blog/general search for Genie Ontology, Agent Bricks, Unity Catalog, AI Search, and LakeFlow. Nothing new since the first run today — the Electric/PGlite item below already captured the one live thread._
+
 ## 2026-08-12
 
 _Delta-only. Checked the AI/BI release notes page, platform release notes (Aug 10–11 entries were ABAC Grant policy expansion and Unity Catalog READ METADATA GA — generic governance items with no AI-specific angle, left out per scope), and Databricks blog for the Aug 11–12 window. One genuine delta found._

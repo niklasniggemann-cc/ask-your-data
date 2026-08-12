@@ -9,6 +9,15 @@ tags:
 
 Running log of confirmed developments across the broader natural-language-to-data market (excluding Databricks, which has its own log — see [[Databricks/Updates|Databricks Updates]]). Newest entries first.
 
+## 2026-08-12 (second run)
+
+_Delta-only, checked against the same-day entry below. One backfilled item found — not dated today, but not previously logged in this vault._
+
+**Snowflake — CoWork (rebrand of Snowflake Intelligence)**
+- **Snowflake CoWork** (announced Jun 2, 2026 at Snowflake Summit 26; not previously logged here) — a full rebrand and expansion of Snowflake Intelligence into a "personal work agent": CoCo answers questions over governed Snowflake data (the existing Cortex Analyst-style layer), while CoWork sits above it and takes multi-step action — Deep Research reports, published dashboards ("Artifacts"), and actions across Gmail/Slack/Salesforce in natural language. Snowflake claims Cortex Sense (a context-enrichment layer) lifts accuracy on complex queries from 47% to 83%. Repositions Snowflake's ask-your-data surface as a general work assistant, moving it closer to Microsoft Copilot's scope than to narrower conversational-BI tools. New note created: [[Snowflake CoWork]]. [Source](https://www.snowflake.com/en/news/press-releases/snowflake-cowork-powers-the-agentic-enterprise-as-the-personal-agent-for-knowledge-workers-to-work-smarter/)
+
+_Note: also checked ThoughtSpot's release notes (Cloud 26.7.0, last updated Jul 28) — Spotter user-level personalization/memory and SpotterViz embedded-liveboards are both still Early Access, already directionally covered by the Aug 11 entry, not a distinct delta. Checked Sigma, Omni, Hex, Metabase, dbt Semantic Layer/Cube/AtScale, and OSS text-to-SQL projects — nothing new. An IBM watsonx.data "Text2SQL" result surfaced in search but its actual launch was November 2025, predating this vault's coverage window — not a delta, dropped._
+
 ## 2026-08-12
 
 _No genuinely new items today. Checked Microsoft Fabric/Power BI Copilot community blog, Snowflake Cortex Analyst/Intelligence/Cortex Code docs and release notes, ThoughtSpot Spotter docs, Sigma Computing's weekly release notes (Aug 7 post is UI polish — new "Drawers" component and a Snowflake-usage-monitoring template — not NL-BI relevant), Omni, Hex, Metabase, dbt Semantic Layer/Cube/AtScale, and OSS text-to-SQL projects (WrenAI, Vanna AI forks, DataChat) for the Aug 11–12 window. Nothing confirmed, dated, non-financial, and genuinely new against the baseline below surfaced — mostly recycled comparison/listicle content ("best BI tools 2026" roundups) rather than actual releases._
