@@ -9,6 +9,13 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-12
+
+_Delta-only. Checked the AI/BI release notes page, platform release notes (Aug 10–11 entries were ABAC Grant policy expansion and Unity Catalog READ METADATA GA — generic governance items with no AI-specific angle, left out per scope), and Databricks blog for the Aug 11–12 window. One genuine delta found._
+
+**Mosaic AI / Agent Framework / [[Lakebase]]**
+- **Electric (maker of PGlite) joins Databricks to bring WASM Postgres to AI agent sandboxes** (Aug 11) — Electric's PGlite, a WASM-compiled build of Postgres with 13M weekly downloads, gives each individual agent sandbox its own local, ultra-low-latency Postgres instance; Electric's real-time sync engine keeps that distributed per-agent state synchronized back to a central [[Lakebase]] instance, so teams of agents can share context without losing consistency. Extends Lakebase's reach from "one serverless Postgres endpoint" to "edge Postgres in every agent sandbox + centralized sync." Updates [[Lakebase]]. [Source](https://www.databricks.com/blog/electric-joins-databricks-bring-wasm-postgres-ai-agent-sandboxes)
+
 ## 2026-08-11
 
 _Delta-only. Checked the AI/BI and Genie One release notes page (docs.databricks.com/aws/en/ai-bi/release-notes/2026, "Last updated Aug 6, 2026" — unchanged since the last run, confirming nothing has posted since) against the vault log in full and found three genuinely new items from the Aug 6 dated section that prior runs missed. Also checked platform release notes, Databricks blog, and general Genie/Mosaic AI/LakeFlow searches for the Aug 10–11 window — nothing new posted since the second run on Aug 10._

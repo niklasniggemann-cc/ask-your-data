@@ -9,6 +9,10 @@ tags:
 
 Running log of confirmed developments across the broader natural-language-to-data market (excluding Databricks, which has its own log — see [[Databricks/Updates|Databricks Updates]]). Newest entries first.
 
+## 2026-08-12
+
+_No genuinely new items today. Checked Microsoft Fabric/Power BI Copilot community blog, Snowflake Cortex Analyst/Intelligence/Cortex Code docs and release notes, ThoughtSpot Spotter docs, Sigma Computing's weekly release notes (Aug 7 post is UI polish — new "Drawers" component and a Snowflake-usage-monitoring template — not NL-BI relevant), Omni, Hex, Metabase, dbt Semantic Layer/Cube/AtScale, and OSS text-to-SQL projects (WrenAI, Vanna AI forks, DataChat) for the Aug 11–12 window. Nothing confirmed, dated, non-financial, and genuinely new against the baseline below surfaced — mostly recycled comparison/listicle content ("best BI tools 2026" roundups) rather than actual releases._
+
 ## 2026-08-11
 
 _First run for this project — no prior baseline, so this entry is broader than a typical daily delta, similar to the Databricks log's first run. Expect future entries to be much shorter, delta-only updates. Financial framing (funding rounds, valuations) dropped per scope even where it was the vehicle for a real product announcement._
