@@ -37,7 +37,6 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Genie Code]] — AI coding assistant for developers inside the workspace
 - [[Genie Ontology]] — continuously-learned org-wide context layer (OntoRank)
 - [[Knowledge Store]] — the space-level semantic store that extends [[Unity Catalog]]
-- [[Genie Spaces]] — former name for Genie Agents
 
 ### The Data Platform
 - [[Databricks]] — the platform everything runs on
@@ -80,6 +79,10 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Omnigent]] — meta-harness for composing and governing agents across frameworks
 - [[Agent Skills]] — packaged instructions for AI coding assistants, official Databricks skill repo
 - [[Updates]] — running log of confirmed Databricks developments from the daily briefing
+
+### Market Landscape
+- [[Snowflake CoWork]] — Snowflake's personal AI work agent, rebrand/expansion of Snowflake Intelligence
+- [[ThoughtSpot Spotter]] — ThoughtSpot's conversational analytics agent, direct competitor to Genie Agents/Genie One
 
 ---
 

@@ -24,6 +24,16 @@ A Metric View defines:
 
 All expressed in YAML (version 1.1, requires Databricks Runtime 17.3).
 
+## Recent Expansion (Aug 2026)
+
+Metric Views (rebranded "Metrics" in some surfaces) gained several capabilities:
+
+- **Multi-fact relationships** (Public Preview, in Dashboards) — a single metric definition can span measures from more than one fact table, instead of requiring one fact table per view.
+- **Level-of-detail calculations** — aggregate at a grain different from the query's grouping, without a separate pre-aggregated table.
+- **Parameterized metrics** — metric definitions accept parameters (e.g., a lookback window) rather than requiring a fixed variant per use case.
+- **Query materialization** (Public Preview) — materializes metric query results for performance, rather than recomputing against source tables on every request.
+- **Import from Power BI/Tableau** (Beta) — existing BI-tool metric definitions can be imported directly into Metric Views instead of being redefined by hand.
+
 ## Role in the AI Stack
 
 When [[Agent Metadata]] is attached to a Metric View, the combination gives AI tools:

@@ -5,7 +5,7 @@ type:
   - "[[Product]]"
 vendor: "[[Databricks]]"
 category: Natural Language Data Interface
-formerly: "[[Genie Spaces]]"
+formerly: Genie Spaces
 tags:
   - genie
   - databricks
@@ -15,7 +15,7 @@ tags:
 
 Genie Agents are curated natural-language chat interfaces over approved [[Unity Catalog]] tables. Domain experts configure a set of tables, instructions, and example SQL queries; business users then ask questions in plain language and receive generated SQL results with auto-visualisations. Agents enforce per-user permissions and support conversational follow-ups.
 
-Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embeddable in external applications via the Conversation API.
+Previously called **Genie Spaces**. Surfaced inside [[Genie One]] and embeddable in external applications via the Conversation API.
 
 ## How It Works
 
@@ -143,7 +143,7 @@ Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embedd
 
 ## Pricing (as of Aug 2026)
 
-- **Free through July 31, 2026** → pay-as-you-go after
+- **Free through January 31, 2027** (extended from the original July 31, 2026 cutoff) → pay-as-you-go after. Service principal usage is still billed during the promo, and budget controls don't apply to it.
 - Volume file analysis: Foundation Model Serving costs (pay-per-token) + standard Genie usage
 - Account admins set budgets; monitor via system billing tables (SKU: `GENIE_FREE_USAGE` during promo)
 
@@ -155,7 +155,6 @@ Previously called **[[Genie Spaces]]**. Surfaced inside [[Genie One]] and embedd
 
 - [[Genie One]] — unified chat that surfaces all Genie Agents
 - [[Genie Code]] — developer-focused counterpart
-- [[Genie Spaces]] — former name for this product
 - [[Genie Ontology]] — the org-wide context layer that reduces disambiguation failures and improves first-try accuracy
 - [[Knowledge Store]] — the space-level semantic store that extends what Genie knows about a domain
 - [[Agent Metadata]] — YAML-defined configuration that shapes how Genie interprets queries

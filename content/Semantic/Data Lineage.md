@@ -25,6 +25,8 @@ In the context of the [[Semantic Layer]], lineage tracks which source tables fee
 
 [[Unity Catalog]] tracks lineage automatically across all workloads in the platform — SQL queries, notebooks, Lakeflow pipelines, and ML models. Column-level lineage shows exactly which source columns contribute to each output column, without requiring manual annotation.
 
+**External Lineage** is now GA (Aug 2026) — it extends Unity Catalog lineage beyond Databricks-native workloads to non-Databricks source and downstream systems, so impact analysis and audit trails no longer stop at the platform boundary. [[LakeFlow]] Connect pipelines auto-record source lineage as part of this.
+
 ## Related
 
 - [[Unity Catalog]] — primary lineage tracking system in Databricks
