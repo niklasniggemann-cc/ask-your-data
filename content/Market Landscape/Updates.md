@@ -9,6 +9,22 @@ tags:
 
 Running log of confirmed developments across the broader natural-language-to-data market (excluding Databricks, which has its own log — see [[Databricks/Updates|Databricks Updates]]). Newest entries first.
 
+## 2026-08-13
+
+_Checked Snowflake (Cortex Analyst/Intelligence/Code docs and release notes), ThoughtSpot Spotter docs, Microsoft Fabric/Power BI Copilot community blog, Sigma release notes (Aug 7 post already assessed as UI polish, not re-logged), Omni, Metabase, dbt Semantic Layer/Cube/AtScale, and OSS text-to-SQL projects (WrenAI, Vanna AI/DataChat) for the Aug 12–13 window — nothing new there. Two vendors this skill's scope covers but this vault had never actually researched turned up real, if not same-day, coverage gaps: Google Cloud (Looker/BigQuery Conversational Analytics) and Microsoft Fabric IQ. Both get first-coverage backfill entries below rather than same-day deltas. Also found one genuine same-day delta each for Hex and Looker._
+
+**Google Cloud — Looker / BigQuery Conversational Analytics** (backfilled — first coverage in this vault)
+- **Conversational Analytics API reached GA for BigQuery and Looker** (Jun 23, 2026), with agent-to-agent (A2A) protocol support in Preview and enterprise controls (CMEK, VPC Service Controls, data residency). Google's NL-query layer for Looker/BigQuery — comparable in role to [[Genie Agents]] — had never been tracked in this vault despite being explicitly in scope. New note created: [[Looker Conversational Analytics]]. [Source](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/release-notes)
+- **Delta since GA** (Aug 3–7, 2026, Looker 26.12 rollout) — Conversational Analytics data agents published to Gemini Enterprise now render charts/visualizations inline (previously text/table only); query timeout raised from 2 to 5 minutes; editors can toggle whether the agent shows its thinking/debug steps. Updates [[Looker Conversational Analytics]]. [Source](https://cloud.google.com/blog/products/business-intelligence/looker-updates-for-agentic-bi-at-next26)
+
+**Microsoft — Fabric IQ** (backfilled — first coverage in this vault)
+- **Fabric IQ reached GA** (Jun 2, 2026, Build 2026) — Microsoft's shared context/semantic layer for AI agents, built directly on existing Power BI semantic models. Functionally the closest Microsoft analogue to [[Genie Ontology]]. A **Fabric IQ plugin for Microsoft 365 Copilot Cowork** (Preview) lets a Cowork chat ground itself in a specific Power BI report by name, using the same permissions and semantic model the user already sees. Ontologies (a further layer above semantic models) are planned but not yet GA. New note created: [[Fabric IQ]]. [Source](https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-IQ-The-shared-context-layer-for-AI-agents-and-real-time/ba-p/5191678)
+
+**Hex**
+- **Notebook Agent tuning controls** (Aug 10) — "fast mode" pushes Opus models to 2.5x faster token output at increased usage cost; GPT-5.6 Sol/Terra/Luna added to the model picker (complex/balanced/fast-cheap tiers); new threads default to Endorsed Mode (governed data only) unless an admin disables the enforcement; Auto-picked model is now visible in Context Studio. Incremental agent-tuning/governance polish rather than a new capability class. [Source](https://learn.hex.tech/changelog/2026-08-10)
+
+_Note: also checked "The Future of Data Analytics" (Databricks blog, Aug 12) and general conversational-BI adoption-stat pieces circulating in search results — one Gartner "50%+ of analytics queries via NL by end of 2026" stat traces back to a 2024 survey/2025 report, not new, dropped. Salesforce Tableau Next/Einstein Agentic Analytics Platform activity found was all May 2026 (Tableau Conference) or earlier, already stale relative to any baseline; nothing dated Aug 2026 surfaced. ThoughtSpot's own community news page failed to render (client-side app); relied on the Jul 1 Gartner MQ entry and Jul 28 Cloud 26.7.0 release notes already logged as the current baseline — no indication of anything newer._
+
 ## 2026-08-12 (second run)
 
 _Delta-only, checked against the same-day entry below. One backfilled item found — not dated today, but not previously logged in this vault._

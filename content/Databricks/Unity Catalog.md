@@ -27,6 +27,11 @@ Every [[Genie Agents]] space is built on Unity Catalog-registered data — Genie
 
 Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single oversight location for [[MCP]] connections, tool costs, and agent permissions. Its **Smart Routing** capability (Beta) dynamically routes each request to the model best suited to it — by quality, cost, performance, availability, and budget — reserving expensive frontier models for tasks that need them and routing simpler work to cheaper models automatically. As of August 6, 2026, all Databricks-managed MCP connectors for [[Genie One]] and [[Genie Code]] have also migrated under Unity AI Gateway, bringing them into the same centralized governance, access control, and visibility as other MCP servers and tools (users must reauthenticate affected connectors).
 
+## Recent Developments
+
+- **2026-08-11** — **ABAC GRANT policies** extended beyond models to cover model services, model provider services, MCP services, agent services, and skills (Beta) — dynamic attribute-based access grants now reach the AI-agent surface itself, not just underlying data assets. [Source](https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/grant-policies)
+- **2026-08-07** — **Tag automations** (Beta) auto-assign or remove governed tags on matching tables/volumes; rules can be authored by describing them to [[Genie Agents|Genie]] in natural language instead of only via a form. [Source](https://docs.databricks.com/aws/en/admin/governed-tags/automate-tag-assignment)
+
 ## Related
 
 - [[Databricks]] — platform that owns Unity Catalog

@@ -49,6 +49,7 @@ Both are governed in Unity Catalog and can be queried together.
 
 ## Recent Developments
 
+- **Compliance security profile support** (Aug 5, 2026) — Lakebase is now available by default for workspaces with the compliance security profile enabled, including HIPAA, C5, or TISAX controls (or the profile with no standard selected) — removes a deployment blocker for agent-memory workloads in regulated environments. [Source](https://docs.databricks.com/aws/en/oltp/projects/data-protection)
 - **Electric (maker of PGlite) acquired to bring WASM Postgres to AI agent sandboxes** (Aug 11, 2026) — Electric's PGlite (a WASM build of Postgres, 13M weekly downloads) now gives each individual agent sandbox its own local Postgres instance for ultra-low-latency context, while Electric's real-time sync engine keeps that distributed state synchronized back to a central Lakebase. Extends Lakebase from a single serverless Postgres endpoint into a two-tier model: local WASM Postgres at the edge (in the sandbox where an agent runs) plus centralized Lakebase for shared/durable state. [Source](https://www.databricks.com/blog/electric-joins-databricks-bring-wasm-postgres-ai-agent-sandboxes)
 
 ## Related

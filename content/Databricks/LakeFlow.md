@@ -20,8 +20,8 @@ LakeFlow is Databricks' unified data engineering solution consolidating ingestio
 ### Lakeflow Connect
 
 Managed data ingestion connectors — high-throughput, low-latency pipelines from external systems into [[Delta Lake]]. Connectors as of Aug 2026:
-- **GA**: SharePoint, Google Drive
-- **Beta**: PagerDuty (incidents, on-call, services), Veeva Vault, MySQL CDC, OpenAI (org admin data: users, projects, API keys, usage, costs, audit logs), Anthropic (compliance audit logs, directory data, Claude chat/message data)
+- **GA**: SharePoint, Google Drive, NetSuite (ERP/financial data)
+- **Beta**: PagerDuty (incidents, on-call, services), Veeva Vault, MySQL CDC, OpenAI (org admin data: users, projects, API keys, usage, costs, audit logs), Anthropic (compliance audit logs, directory data, Claude chat/message data), Notion (pages, data sources, databases, blocks, comments, users), Google Search Console (search performance, site metadata, sitemaps), Gmail (messages, labels, drafts, filters via Gmail History API)
 - Row filtering GA for Google Analytics, Salesforce, ServiceNow, and query-based connectors
 - All Lakeflow Connect pipelines auto-record source lineage in [[Unity Catalog]]
 

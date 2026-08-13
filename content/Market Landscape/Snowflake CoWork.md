@@ -29,5 +29,7 @@ Positions Snowflake's "ask your data" surface as a general-purpose agentic work 
 
 - [[Genie One]] — Databricks' equivalent unified chat surface across agents and external sources; similar ambition to unify "ask" and "act"
 - [[ThoughtSpot Spotter]] — a narrower conversational-analytics agent by comparison, without CoWork's action-taking scope
+- [[Looker Conversational Analytics]] — Google Cloud's competing conversational layer, narrower in scope (Q&A/visualization vs. CoWork's action-taking)
+- [[Fabric IQ]] — Microsoft's competing context layer, feeding Copilot Cowork rather than a Snowflake-native chat surface
 - [[Natural Language to SQL]] — the underlying technique CoCo's data-answering layer builds on
 - [[Semantic Layer]] — the governed-meaning layer CoCo depends on for grounded answers

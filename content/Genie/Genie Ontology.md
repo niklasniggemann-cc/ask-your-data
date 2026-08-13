@@ -38,11 +38,12 @@ In Databricks testing, Genie with Genie Ontology answered **84.5% of questions c
 
 ## Unity Catalog Foundations
 
-Genie Ontology builds on two Unity Catalog features:
+Genie Ontology builds on three Unity Catalog features:
 - **Domains** (Public Preview) — business-aligned data organization
 - **Glossary** (coming soon) — shared, governed business terminology
+- **Pages** (Beta, Aug 2026) — governed, single-source definitions for business terms, acronyms, and KPIs; the human-modeled layer of the ontology that Genie One draws on directly to ground its answers
 
-Both feed the ontology automatically when configured.
+All three feed the ontology automatically when configured.
 
 ## Dynamic vs. Structural Disambiguation
 
@@ -61,6 +62,7 @@ Both are described in [[Disambiguation]]. They are complementary: Ontology reduc
 
 ## Recent Developments
 
+- **2026-08-12** — **Pages** (Beta) added as a third Unity Catalog semantics foundation alongside Domains and Glossary — lets teams give business terms, acronyms, and KPIs a single governed definition that feeds directly into the ontology's human-modeled layer. [Source](https://docs.databricks.com/aws/en/uc-semantics/pages)
 - **2026-08-06** — Genie Ontology is now **enabled by default** in Public Preview, removing the need for admins to turn it on manually before Genie One conversations get ontology-grounded context. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
 
 ## Related
@@ -72,3 +74,4 @@ Both are described in [[Disambiguation]]. They are complementary: Ontology reduc
 - [[Agent Metadata]] — structural complement: explicit synonym mappings at the space level
 - [[Knowledge Store]] — space-level semantic store; Genie Ontology operates at the org level
 - [[Hallucinations]] — the failure mode Genie Ontology reduces
+- [[Fabric IQ]] — Microsoft's closest analogue: a context layer that grounds AI agents in governed business meaning, though built semantic-model-first rather than as a continuously-learned graph

@@ -100,3 +100,5 @@ Beyond metric definitions, GenAI applications need:
 - [[Genie Agents]] — a downstream consumer of the semantic layer via Unity Catalog
 - [[ThoughtSpot Spotter]] — competing conversational-BI agent citing external semantic-layer connectivity as a differentiator
 - [[OntoBricks]] — an open-source, standards-based (OWL/RDF) take on the same problem, built on Unity Catalog
+- [[Looker Conversational Analytics]] — Google Cloud's conversational layer built on LookML, one of the original semantics-as-code implementations
+- [[Fabric IQ]] — Microsoft's AI-agent context layer, built directly on Power BI semantic models

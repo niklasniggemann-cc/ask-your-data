@@ -83,6 +83,8 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 ### Market Landscape
 - [[Snowflake CoWork]] — Snowflake's personal AI work agent, rebrand/expansion of Snowflake Intelligence
 - [[ThoughtSpot Spotter]] — ThoughtSpot's conversational analytics agent, direct competitor to Genie Agents/Genie One
+- [[Looker Conversational Analytics]] — Google Cloud's NL query layer for Looker/BigQuery, exposed via the Conversational Analytics API
+- [[Fabric IQ]] — Microsoft's AI-agent context layer built on Power BI semantic models, feeding Copilot Cowork
 
 ---
 

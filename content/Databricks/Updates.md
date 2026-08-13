@@ -9,6 +9,29 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-13
+
+_Checked the platform release notes page (now shows entries through Aug 13, vs. "Last updated Jul 31" on prior runs — the page itself had gone stale until now), AI/BI release notes (still no items past Aug 6), Databricks blog, and general Genie/Mosaic AI/LakeFlow/Agent Bricks searches. Several genuine deltas found in the Aug 10–13 backlog the platform release notes page had been silently sitting on._
+
+**Ask Your Data / Genie / AI-BI**
+- **Define business concepts with Pages** (Beta, Aug 12) — a new Unity Catalog semantics construct for giving business terms, acronyms, and KPIs a single governed definition. Pages form the human-modeled layer of [[Genie Ontology]] alongside Glossary and Domains — Genie One draws on them directly to ground its answers. Updates [[Genie Ontology]]. [Source](https://docs.databricks.com/aws/en/uc-semantics/pages)
+- **Alert system tables** (Public Preview, Aug 10) — `system.alert.alerts` and `system.alert.alert_evaluation_history` let admins audit alert configuration and evaluation history at scale for AI/BI dashboard alerts. Minor, noted here rather than on a concept note. [Source](https://docs.databricks.com/aws/en/admin/system-tables/alerts)
+
+**Unity Catalog / Governance**
+- **ABAC GRANT policies extended to MCP services, agent services, and skills** (Beta, Aug 11) — previously scoped to models only, dynamic attribute-based GRANT policies now also cover model services, model provider services, MCP services, agent services, and skills — closing a real gap for governing the AI-agent surface specifically, not just data assets. Updates [[Unity Catalog]]. [Source](https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/grant-policies)
+- **Tag automations** (Beta, Aug 7, backfilled — missed in prior runs) — rules that auto-assign or remove governed tags on Unity Catalog tables/volumes matching defined conditions (certify trusted data, deprecate stale data, roll up sensitivity tiers). Notably, automations can be authored **by describing the rule to Genie in natural language**, not just via a form — a small but real extension of NL interfaces into the governance layer itself. Updates [[Unity Catalog]]. [Source](https://docs.databricks.com/aws/en/admin/governed-tags/automate-tag-assignment)
+
+**[[LakeFlow]]**
+- **Gmail connector** (Beta, Aug 13), **Google Search Console connector** (Beta, Aug 12), **Notion connector** (Beta, Aug 10), and **NetSuite connector** (GA, Aug 4, backfilled — missed in prior runs) all added to Lakeflow Connect. Continues the pattern of governed ingestion from productivity/SaaS tools that then become queryable via Genie. Updates [[LakeFlow]]. [Sources: Gmail](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/gmail) · [Google Search Console](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/google-search-console) · [Notion](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/notion) · [NetSuite](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/netsuite)
+
+**Model Serving / Foundation Model APIs**
+- **DeepSeek V4 Flash (0731)** now available as a Databricks-hosted model (Aug 10, `us-west-2`) — 284B-parameter MoE model (13B active), optimized for fast/cheap reasoning, coding, and agentic tool use, via Foundation Model APIs. [Source](https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#deepseek-v4-flash-0731)
+
+**Mosaic AI / Agent Framework / [[Lakebase]]**
+- **Lakebase now supports the compliance security profile** (HIPAA, C5, or TISAX controls, or compliance profile with no standard selected) by default (Aug 5, backfilled — missed in prior runs) — removes a real deployment blocker for using Lakebase-backed agent memory in regulated environments. Updates [[Lakebase]]. [Source](https://docs.databricks.com/aws/en/oltp/projects/data-protection)
+
+_Note: checked "Databricks Elevates AI Agent Performance with Advanced Evaluation Tools" (Agent-as-a-Judge / Tunable Judges / Judge Builder) circulating in current search results — verified this actually shipped November 2025, predating this vault's coverage window; not a delta, dropped. Also checked the Aug 12 Databricks blog post "The Future of Data Analytics: Why AI is rewriting the Analyst's Job Description" — an opinion/positioning piece referencing already-logged capabilities (AI/BI Dashboards, Genie One, Genie Code), no new product substance, skipped as commentary rather than news. Checked GitHub (databricks-solutions, databrickslabs) — genie-code-skills-demo and databricks-genie-workbench repos show recent activity but no new capability beyond what's already logged. Databricks joining the "Open Secure AI Alliance" and the Panther acquisition completion were both judged out of scope (security/PR moves with no GenAI/Ask Your Data product angle), consistent with prior runs' treatment of similar items._
+
 ## 2026-08-12 (second run)
 
 _Delta-only, checked against the same-day entry below. Re-checked the AI/BI release notes page (still "Last updated Aug 6, 2026" — confirmed unchanged), platform release notes (still no items past Aug 11's ABAC Grant expansion / READ METADATA GA, both left out per scope), and Databricks blog/general search for Genie Ontology, Agent Bricks, Unity Catalog, AI Search, and LakeFlow. Nothing new since the first run today — the Electric/PGlite item below already captured the one live thread._
