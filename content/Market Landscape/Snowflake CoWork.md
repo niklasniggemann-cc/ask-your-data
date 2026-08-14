@@ -25,11 +25,20 @@ Snowflake CoWork is Snowflake's personal AI work agent for knowledge workers —
 
 Positions Snowflake's "ask your data" surface as a general-purpose agentic work assistant rather than a narrower BI chat feature, putting it in more direct competition with Microsoft Copilot (which spans Power BI and the rest of M365) than with narrower conversational-BI tools like [[ThoughtSpot Spotter]]. The rebrand had already happened by June 2026 but had not been captured in this vault's dedicated Snowflake coverage until this entry.
 
+## Recent Developments
+
+**2026-07-07** — Deep Research in Snowflake CoWork reached GA, moving CoWork's multi-step research reports out of preview. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-07-07-snowflake-cowork-deep-research-ga)
+
+**2026-08-06** — Automations (Public Preview): CoWork can now re-run a saved question on a schedule with fresh data and email a summary plus a link back into the full interactive report, turning a one-time report into a recurring one. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-08-06-cowork-automations)
+
+**2026-08-07** — Cortex Agents and MCP servers can now be packaged and distributed as Snowflake Native Apps (GA), including Snowflake-managed MCP servers exposing an app's Cortex Search services/semantic views/procedures as tools, and inter-app agent-to-agent calls — a governed conversational agent becomes an installable Marketplace app rather than a bespoke integration. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-08-07-native-apps-agents-mcp-ga)
+
 ## Related
 
 - [[Genie One]] — Databricks' equivalent unified chat surface across agents and external sources; similar ambition to unify "ask" and "act"
 - [[ThoughtSpot Spotter]] — a narrower conversational-analytics agent by comparison, without CoWork's action-taking scope
 - [[Looker Conversational Analytics]] — Google Cloud's competing conversational layer, narrower in scope (Q&A/visualization vs. CoWork's action-taking)
 - [[Fabric IQ]] — Microsoft's competing context layer, feeding Copilot Cowork rather than a Snowflake-native chat surface
+- [[Sigma]] — a warehouse-native BI layer that sits on top of Snowflake rather than competing as a platform-native chat surface; a Sigma Agent can call Cortex as a tool
 - [[Natural Language to SQL]] — the underlying technique CoCo's data-answering layer builds on
 - [[Semantic Layer]] — the governed-meaning layer CoCo depends on for grounded answers

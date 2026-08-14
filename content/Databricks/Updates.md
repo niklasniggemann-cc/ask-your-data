@@ -9,6 +9,10 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-14
+
+_No genuinely new items today. Checked the AI/BI and Genie One release notes page (still "Last updated Aug 6, 2026" — unchanged since the Aug 13 run, confirming nothing has posted since), the platform release notes, and the Databricks blog/general search for Genie, Mosaic AI, Unity Catalog, LakeFlow, Model Serving, Vector Search/AI Search, and MLflow. Everything surfaced (Kimi K3, DeepSeek V4 Flash, Pages, ABAC MCP/agent-service coverage, Lakeflow connectors, compliance-profile Lakebase) is already logged in prior entries. Also checked the "Databricks Grows >80% YoY, Surpasses $7B Revenue Run-Rate" press release (funding/valuation announcement, $5B round at $190B valuation) — financial/PR framing with no new GenAI product substance beyond already-logged Lakebase/Genie/Unity AI Gateway investment, left out per scope consistent with prior runs. Checked GitHub (databricks/databricks-agent-skills) and Reddit/community chatter — nothing new._
+
 ## 2026-08-13
 
 _Checked the platform release notes page (now shows entries through Aug 13, vs. "Last updated Jul 31" on prior runs — the page itself had gone stale until now), AI/BI release notes (still no items past Aug 6), Databricks blog, and general Genie/Mosaic AI/LakeFlow/Agent Bricks searches. Several genuine deltas found in the Aug 10–13 backlog the platform release notes page had been silently sitting on._

@@ -85,6 +85,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[ThoughtSpot Spotter]] — ThoughtSpot's conversational analytics agent, direct competitor to Genie Agents/Genie One
 - [[Looker Conversational Analytics]] — Google Cloud's NL query layer for Looker/BigQuery, exposed via the Conversational Analytics API
 - [[Fabric IQ]] — Microsoft's AI-agent context layer built on Power BI semantic models, feeding Copilot Cowork
+- [[Sigma]] — warehouse-native BI platform with governed conversational agents, sits atop Snowflake/Databricks rather than owning the warehouse
 
 ---
 
