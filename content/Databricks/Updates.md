@@ -9,6 +9,10 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-15 (second run)
+
+_Delta-only, checked against the same-day entry below. Re-fetched the full platform release notes page (docs.databricks.com/aws/en/release-notes/product/2026/august, "Last updated Jul 31, 2026" stamp still stale as usual, content confirmed current through Aug 14) end-to-end — every dated item on it is already logged in the entry below. Checked the AI/BI and Genie One release notes page, Databricks blog, and general Genie/Mosaic AI/Agent Bricks/MLflow/LakeFlow/Lakebase/Unity Catalog searches for anything posted since the first run — nothing dated Aug 15 surfaced, and no items were missed in the first pass. Checked GitHub (databricks/databricks-agent-skills) — repo shows routine activity (Copilot CLI/VS Code plugin install path documented for existing skills) but no new capability. Nothing new since the first run today._
+
 ## 2026-08-15
 
 _Checked the platform release notes page (docs.databricks.com/aws/en/release-notes/product/2026/august, now showing entries through Aug 14 — the "Last updated Jul 31" stamp is stale as usual, confirmed by content), the AI/BI and Genie One release notes page (still "Last updated Jul 8, 2026" per Microsoft Learn's mirror — unchanged), the Databricks blog, and general Genie/Mosaic AI/Unity Catalog/LakeFlow searches. Six genuine deltas found in the Aug 12–14 backlog, plus a two-item backfill for a Genie-family gap this vault had never covered._

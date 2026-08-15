@@ -9,6 +9,18 @@ tags:
 
 Running log of confirmed developments across the broader natural-language-to-data market (excluding Databricks, which has its own log — see [[Databricks/Updates|Databricks Updates]]). Newest entries first.
 
+## 2026-08-15 (second run)
+
+_Checked Snowflake, ThoughtSpot, Sigma's own changelog (help.sigmacomputing.com/changelog, fetched directly through its Aug 14 entry), Omni, Hex, Metabase, dbt Semantic Layer/Cube/AtScale, WrenAI/Vanna AI/DataChat, Fabric IQ, Amazon Quick Suite, and Looker's full release-notes page (docs.cloud.google.com/looker/docs/release-notes, fetched directly) against the baseline above — a quiet second half of the day. Two minor, verified deltas found; one candidate (an "Open Semantic Interchange" industry-standard finding) turned out to already be logged elsewhere in the vault (on the [[Semantic Layer]] note directly, predating this Updates log) and was dropped as a duplicate rather than re-logged — noted here so the dedup check's value is visible._
+
+**Sigma Computing** (minor, log-only)
+- **Gemini and BigQuery AI providers now use Gemini 3.6 Flash** (Aug 14) — a backing-model swap for orgs using Gemini as their Sigma AI provider via API key or BigQuery connection; no capability change. [Source](https://help.sigmacomputing.com/changelog/2026-08-14)
+
+**Google Cloud — Looker Conversational Analytics**
+- **Responses & Feedback admin tab** (Preview, Aug 4) — part of the same Aug 3–7 Looker 26.12 rollout already logged Aug 13, but a distinct capability not previously captured: admins can now review end-user Conversational Analytics query success rates, rating distributions, and written feedback on the System Activity dashboard, gated behind an opt-in setting and end-user consent to share query data. Updates [[Looker Conversational Analytics]]. [Source](https://docs.cloud.google.com/looker/docs/release-notes)
+
+_Note: also checked Snowflake CoWork, ThoughtSpot Spotter, Fabric IQ, and Amazon Quick Suite for anything dated in the Aug 8–15 window beyond what's already logged — nothing confirmed and new surfaced for any of them. Omni's Aug 7 "AI Summaries for Everything" demo entry looks like an incremental extension of AI summaries the platform has had since at least October 2025, not a new capability; the only source available was a search snippet (the omni.co page itself wasn't in the fetchable set this run), so it was left out rather than logged on thin verification. WrenAI, Vanna AI/DataChat, Cube, and AtScale had no confirmed dated news this window._
+
 ## 2026-08-15
 
 _Checked Snowflake, ThoughtSpot, Looker/BigQuery Conversational Analytics, Fabric IQ/Power BI Copilot, Sigma, Hex, Omni, Metabase, dbt Semantic Layer/Cube/AtScale, WrenAI/Vanna AI/DataChat, Reddit (r/BusinessIntelligence, r/dataengineering), and general vendor/analyst coverage for the Aug 14–15 window — a quiet day for same-day news. One significant backfill found: Amazon's QuickSight/"Ask Your Data" surface, explicitly in this skill's scope, had never been researched or logged in this vault despite a major rebrand over a year ago._

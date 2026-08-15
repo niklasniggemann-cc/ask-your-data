@@ -29,6 +29,7 @@ Conversational Analytics is Google Cloud's natural-language query layer for Look
 
 ## Recent Developments
 
+- **2026-08-04** (Preview, part of the Looker 26.12 rollout) — a **Responses & Feedback** tab on the Conversational Analytics System Activity dashboard lets admins review end-user query success rates, rating distributions, and written feedback, gated behind an opt-in admin setting and per-user consent to share query data. [Source](https://docs.cloud.google.com/looker/docs/release-notes)
 - **2026-08-03 to 08-07** (Looker 26.12 rollout) — Conversational Analytics data agents published to Gemini Enterprise now render charts and visualizations inline in agent responses (previously text/table only); query timeout increased from 2 to 5 minutes; data agent editors can toggle whether the agent shows its thinking/debugging steps in responses. [Source](https://cloud.google.com/blog/products/business-intelligence/looker-updates-for-agentic-bi-at-next26)
 - **2026-06-23** — Conversational Analytics API reached GA for BigQuery and Looker, alongside A2A protocol support (Preview) and enterprise security/compliance features (CMEK, VPC-SC, data residency). [Source](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/release-notes)
 
