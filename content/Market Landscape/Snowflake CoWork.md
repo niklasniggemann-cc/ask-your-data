@@ -40,5 +40,6 @@ Positions Snowflake's "ask your data" surface as a general-purpose agentic work 
 - [[Looker Conversational Analytics]] — Google Cloud's competing conversational layer, narrower in scope (Q&A/visualization vs. CoWork's action-taking)
 - [[Fabric IQ]] — Microsoft's competing context layer, feeding Copilot Cowork rather than a Snowflake-native chat surface
 - [[Sigma]] — a warehouse-native BI layer that sits on top of Snowflake rather than competing as a platform-native chat surface; a Sigma Agent can call Cortex as a tool
+- [[Amazon Quick Suite]] — AWS's comparable evolution of QuickSight into a broader natural-language work-agent platform
 - [[Natural Language to SQL]] — the underlying technique CoCo's data-answering layer builds on
 - [[Semantic Layer]] — the governed-meaning layer CoCo depends on for grounded answers

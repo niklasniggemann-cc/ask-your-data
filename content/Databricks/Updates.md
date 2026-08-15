@@ -9,6 +9,31 @@ tags:
 
 Running log of confirmed developments surfaced by the daily briefing skill. Newest entries first.
 
+## 2026-08-15
+
+_Checked the platform release notes page (docs.databricks.com/aws/en/release-notes/product/2026/august, now showing entries through Aug 14 — the "Last updated Jul 31" stamp is stale as usual, confirmed by content), the AI/BI and Genie One release notes page (still "Last updated Jul 8, 2026" per Microsoft Learn's mirror — unchanged), the Databricks blog, and general Genie/Mosaic AI/Unity Catalog/LakeFlow searches. Six genuine deltas found in the Aug 12–14 backlog, plus a two-item backfill for a Genie-family gap this vault had never covered._
+
+**Ask Your Data / Genie / AI-BI**
+- **Genie Code supports file uploads** (Aug 14) — you can now upload files to Genie Code to use as context for the current chat. Updates [[Genie Code]]. [Source](https://docs.databricks.com/aws/en/genie-code/use-genie-code#attach-files)
+
+**Mosaic AI / Agent Framework** (backfilled — announced at DAIS 2026 in June, never previously logged in this vault despite being significant new Genie-family products still in active private preview)
+- **Genie App Builder** — a governed low-code/"vibe-coding" tool: describe an app in plain language (or drop in a screenshot), and it generates a live build plan and working preview wired to real, governed Unity Catalog data via a new App Spaces governance boundary and a scale-to-zero Serverless Micro Apps runtime. Entered private preview shortly after DAIS 2026; still private preview as of today, no further status change since June. New note created: [[Genie App Builder]]. [Source](https://qubika.com/blog/databricks-app-spaces-genie-app-builder-summit-2026/)
+- **Genie ZeroOps** — an autonomous background agent that monitors pipelines, jobs, tables, and ML models, investigates issues, and proposes fixes; it validates a fix by shallow-cloning production data into an isolated, permission-guarded environment rather than touching production directly. Entered private preview shortly after DAIS 2026 (jobs/pipelines/tables/ML workloads first; apps and Lakebase databases on the roadmap); still private preview as of today. New note created: [[Genie ZeroOps]]. [Source](https://www.databricks.com/blog/introducing-genie-zeroops)
+
+**Model Serving / Foundation Model APIs**
+- **Google Gemini 3.7 Flash** now available as a Databricks-hosted model (Aug 13), accessible via Foundation Model APIs. [Source](https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models#gemini-3-7-flash)
+
+**[[MLflow]] / GenAI Observability**
+- **Custom trace views in the MLflow trace explorer** (Beta, Aug 12) — describe the layout you want in plain language, and Genie generates a reusable view surfacing the trace fields, metrics, and feedback controls most relevant to your review workflow. Updates [[MLflow]]. [Source](https://docs.databricks.com/aws/en/mlflow3/genai/tracing/observe-with-traces/custom-trace-view)
+
+**Unity Catalog / Governance**
+- **Tags page in Governance Hub** (Beta, Aug 13) — a centralized account-wide view of governed tag usage: recent assignments and their sources, plus recommendations to fix invalid tag values and tag important but untagged assets. Updates [[Unity Catalog]]. [Source](https://docs.databricks.com/aws/en/admin/governance-hub/tags)
+
+**[[LakeFlow]]**
+- **Workiva connector** (Beta, Aug 14), **SendGrid connector** (Beta, Aug 13), and **Amplitude connector** (Beta, Aug 12) all added to Lakeflow Connect — audit/role/subuser-management and product-analytics-event ingestion respectively, continuing the pattern of governed SaaS ingestion feeding Genie. Updates [[LakeFlow]]. [Sources: Workiva](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/workiva) · [SendGrid](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/sendgrid) · [Amplitude](https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/amplitude-overview)
+
+_Note: SQL alert task compliance-profile default (Aug 13), OpenSharing SecureConnect GA (Aug 13), and OpenSharing default-storage-backed sharing GA (Aug 13) were checked and left out — generic sharing/jobs platform features with no AI, governance-of-AI, or Ask Your Data angle. `READ METADATA` privilege GA (Aug 10) was already assessed and excluded in the Aug 12 entry below; no change to that call. Checked GitHub (databricks/databricks-agent-skills, databrickslabs) and Reddit/community chatter — nothing new._
+
 ## 2026-08-14
 
 _No genuinely new items today. Checked the AI/BI and Genie One release notes page (still "Last updated Aug 6, 2026" — unchanged since the Aug 13 run, confirming nothing has posted since), the platform release notes, and the Databricks blog/general search for Genie, Mosaic AI, Unity Catalog, LakeFlow, Model Serving, Vector Search/AI Search, and MLflow. Everything surfaced (Kimi K3, DeepSeek V4 Flash, Pages, ABAC MCP/agent-service coverage, Lakeflow connectors, compliance-profile Lakebase) is already logged in prior entries. Also checked the "Databricks Grows >80% YoY, Surpasses $7B Revenue Run-Rate" press release (funding/valuation announcement, $5B round at $190B valuation) — financial/PR framing with no new GenAI product substance beyond already-logged Lakebase/Genie/Unity AI Gateway investment, left out per scope consistent with prior runs. Checked GitHub (databricks/databricks-agent-skills) and Reddit/community chatter — nothing new._

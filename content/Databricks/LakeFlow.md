@@ -21,7 +21,7 @@ LakeFlow is Databricks' unified data engineering solution consolidating ingestio
 
 Managed data ingestion connectors — high-throughput, low-latency pipelines from external systems into [[Delta Lake]]. Connectors as of Aug 2026:
 - **GA**: SharePoint, Google Drive, NetSuite (ERP/financial data)
-- **Beta**: PagerDuty (incidents, on-call, services), Veeva Vault, MySQL CDC, OpenAI (org admin data: users, projects, API keys, usage, costs, audit logs), Anthropic (compliance audit logs, directory data, Claude chat/message data), Notion (pages, data sources, databases, blocks, comments, users), Google Search Console (search performance, site metadata, sitemaps), Gmail (messages, labels, drafts, filters via Gmail History API)
+- **Beta**: PagerDuty (incidents, on-call, services), Veeva Vault, MySQL CDC, OpenAI (org admin data: users, projects, API keys, usage, costs, audit logs), Anthropic (compliance audit logs, directory data, Claude chat/message data), Notion (pages, data sources, databases, blocks, comments, users), Google Search Console (search performance, site metadata, sitemaps), Gmail (messages, labels, drafts, filters via Gmail History API), Amplitude (product analytics events, cohorts, annotations), SendGrid (subuser directory, IP access-management activity), Workiva (audit activity, users, roles)
 - Row filtering GA for Google Analytics, Salesforce, ServiceNow, and query-based connectors
 - All Lakeflow Connect pipelines auto-record source lineage in [[Unity Catalog]]
 
@@ -52,4 +52,5 @@ External systems → Lakeflow Connect → Bronze (Delta)
 - [[Unity Catalog]] — governance layer; all pipelines governed here, lineage auto-recorded
 - [[Data Lineage]] — LakeFlow Connect auto-records source-to-sink lineage
 - [[Data Quality]] — LakeFlow Declarative enforces quality constraints at ingestion and transformation
+- [[Genie ZeroOps]] — autonomous agent that monitors and tunes LakeFlow pipelines
 - [[Databricks]] — parent platform

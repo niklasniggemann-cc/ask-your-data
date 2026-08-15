@@ -31,6 +31,10 @@ MLflow's experiment tracking is the natural store for [[Data Flywheel]] evaluati
 
 MLflow is built into [[Databricks]] — no separate installation required. Experiments are managed within the workspace and linked to Unity Catalog for governance. Storing MLflow 3 traces in Unity Catalog tables — already the recommendation for new/production workloads — is set to become the default for workspaces with the compliance security profile enabled, rolling out mid-August 2026.
 
+## Recent Developments
+
+- **2026-08-12** — **Custom trace views** in the MLflow trace explorer (Beta) — describe the layout you want in plain language, and [[Genie Agents|Genie]] generates a reusable view surfacing the trace fields, metrics, and feedback controls most relevant to your review workflow. [Source](https://docs.databricks.com/aws/en/mlflow3/genai/tracing/observe-with-traces/custom-trace-view)
+
 ## Related
 
 - [[Data Flywheel]] — the feedback loop MLflow tracking enables

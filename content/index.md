@@ -35,6 +35,8 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Genie Agents]] — curated NL chat over approved tables; setup, API, best practices, permissions
 - [[Genie One]] — unified chat across all agents and external sources
 - [[Genie Code]] — AI coding assistant for developers inside the workspace
+- [[Genie App Builder]] — governed low-code/"vibe-coding" tool for building enterprise data apps (private preview)
+- [[Genie ZeroOps]] — autonomous background agent for data/AI operations (private preview)
 - [[Genie Ontology]] — continuously-learned org-wide context layer (OntoRank)
 - [[Knowledge Store]] — the space-level semantic store that extends [[Unity Catalog]]
 
@@ -86,6 +88,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Looker Conversational Analytics]] — Google Cloud's NL query layer for Looker/BigQuery, exposed via the Conversational Analytics API
 - [[Fabric IQ]] — Microsoft's AI-agent context layer built on Power BI semantic models, feeding Copilot Cowork
 - [[Sigma]] — warehouse-native BI platform with governed conversational agents, sits atop Snowflake/Databricks rather than owning the warehouse
+- [[Amazon Quick Suite]] — AWS's rebrand/expansion of QuickSight into a broader natural-language work-agent platform (Quick Research, Quick Flows, Quick Automate, Quick Index)
 
 ---
 

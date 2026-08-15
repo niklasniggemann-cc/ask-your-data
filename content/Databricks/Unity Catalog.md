@@ -29,6 +29,7 @@ Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single overs
 
 ## Recent Developments
 
+- **2026-08-13** — **Tags page in Governance Hub** (Beta) — a centralized account-wide view of governed tag usage: recent assignments and their sources, plus recommendations to fix invalid tag values and tag important but untagged assets. [Source](https://docs.databricks.com/aws/en/admin/governance-hub/tags)
 - **2026-08-11** — **ABAC GRANT policies** extended beyond models to cover model services, model provider services, MCP services, agent services, and skills (Beta) — dynamic attribute-based access grants now reach the AI-agent surface itself, not just underlying data assets. [Source](https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/grant-policies)
 - **2026-08-07** — **Tag automations** (Beta) auto-assign or remove governed tags on matching tables/volumes; rules can be authored by describing them to [[Genie Agents|Genie]] in natural language instead of only via a form. [Source](https://docs.databricks.com/aws/en/admin/governed-tags/automate-tag-assignment)
 

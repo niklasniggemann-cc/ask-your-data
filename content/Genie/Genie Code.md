@@ -36,10 +36,16 @@ Genie Code is [[Databricks]]' AI coding assistant for developers and data practi
 
 Genie Code reads table and column metadata, descriptions, and lineage from [[Unity Catalog]], so suggestions are grounded in the actual data structure rather than generic patterns.
 
+## Recent Developments
+
+- **2026-08-14** — **File uploads**: you can now upload files to Genie Code to use as context for the current chat. [Source](https://docs.databricks.com/aws/en/genie-code/use-genie-code#attach-files)
+
 ## Related
 
 - [[Genie One]] — unified chat that Genie Code operates alongside
 - [[Genie Agents]] — agents that Genie Code can create and review
 - [[Unity Catalog]] — source of schema and lineage context
 - [[Agent Skills]] — the mechanism Genie Code uses for personalization
+- [[Genie App Builder]] — sibling Genie-family product for building governed data apps via a low-code surface
+- [[Genie ZeroOps]] — sibling Genie-family product for autonomous data/AI operations
 - [[Databricks]] — platform

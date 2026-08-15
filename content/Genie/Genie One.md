@@ -56,5 +56,8 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 - [[Genie Agents]] — the curated domain-specific agents Genie One searches across
 - [[Genie Ontology]] — the org-wide context layer that feeds all Genie One responses with shared business meaning
 - [[Genie Code]] — developer-focused counterpart
+- [[Genie App Builder]] — sibling Genie-family product for building governed data apps rather than chatting over data
+- [[Genie ZeroOps]] — sibling Genie-family product for autonomous data/AI operations
 - [[Databricks]] — platform
 - [[ThoughtSpot Spotter]] — comparable unified conversational-analytics surface on ThoughtSpot
+- [[Amazon Quick Suite]] — AWS's comparable evolution of QuickSight into a broader natural-language work-agent platform
