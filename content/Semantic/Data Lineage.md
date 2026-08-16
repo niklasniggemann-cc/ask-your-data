@@ -33,3 +33,4 @@ In the context of the [[Semantic Layer]], lineage tracks which source tables fee
 - [[Data Governance]] — lineage as a structural governance component
 - [[Semantic Layer]] — where lineage connects source data to metric definitions
 - [[Medallion Architecture]] — the layers lineage flows through (Bronze → Silver → Gold)
+- [[LakeFlow]] — LakeFlow Connect pipelines auto-record source-to-sink lineage

@@ -61,3 +61,4 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 - [[Databricks]] — platform
 - [[ThoughtSpot Spotter]] — comparable unified conversational-analytics surface on ThoughtSpot
 - [[Amazon Quick Suite]] — AWS's comparable evolution of QuickSight into a broader natural-language work-agent platform
+- [[MCP]] — supports custom MCP connections and is itself exposed as an MCP server

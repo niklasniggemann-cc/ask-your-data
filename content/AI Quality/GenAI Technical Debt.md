@@ -72,3 +72,4 @@ Additional pressures unique to GenAI:
 - [[Data Flywheel]] — structured solution to the missing feedback loop category
 - [[Observability]] — addresses opaque pipelines
 - [[LLM-as-a-Judge]] — evaluation technique used to measure quality
+- [[Evaluation]] — poor evaluation practices are a primary source of hidden debt

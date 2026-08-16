@@ -85,3 +85,4 @@ See [[Genie Agents]] for full benchmark configuration details.
 - [[Unity Catalog]] — metadata and governance layer
 - [[Semantic Layer]] — the broader architecture that governs business meaning
 - [[Lakehouse Monitoring]] — tracks the six data quality dimensions over time via metric tables and dashboards
+- [[LakeFlow]] — Lakeflow Declarative enforces quality constraints at ingestion and transformation

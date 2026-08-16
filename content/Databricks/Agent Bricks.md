@@ -63,3 +63,4 @@ Every Agent Bricks component is governed through [[Unity Catalog]]:
 - [[MLflow]] — observability and tracing for Agent Bricks deployments
 - [[RAG]] — Document Intelligence feeds RAG pipelines via `ai_prep_search`
 - [[Omnigent]] — meta-harness that can sit above Agent Bricks for cross-framework governance
+- [[Databricks]] — parent platform

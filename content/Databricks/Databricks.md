@@ -40,6 +40,8 @@ Databricks bundles its natural language data access capabilities under the AI/BI
 - [[Lakebase]] — serverless Postgres for agent memory and operational workloads
 - [[Agent Bricks]] — governed agent platform
 - [[Genie Agents]] — AI data interface
+- [[Genie One]] — unified full-screen AI chat across all agents and content
+- [[Genie Code]] — AI coding assistant for developers inside the workspace
 - [[Medallion Architecture]] — data quality layering pattern
 - [[Semantic Layer]] — business meaning layer that Databricks exposes via Unity Catalog
 - [[Agent Skills]] — Databricks-maintained skill packages for AI coding assistants

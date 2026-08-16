@@ -45,3 +45,4 @@ Databricks also runs the reverse direction: a **Genie One MCP server** (Beta, `/
 - [[Unity Catalog]] — Unity AI Gateway manages MCP connections and costs
 - [[OntoBricks]] — exposes a Unity Catalog-derived knowledge graph to agents via an MCP server
 - [[Agent Skills]] — complementary open standard for packaging instructions rather than live tool access
+- [[MotherDuck]] — exposes an MCP server making its databases accessible to AI agents

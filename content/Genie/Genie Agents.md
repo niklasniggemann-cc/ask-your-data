@@ -162,3 +162,9 @@ Previously called **Genie Spaces**. Surfaced inside [[Genie One]] and embeddable
 - [[ThoughtSpot Spotter]] — closest cross-vendor equivalent: ThoughtSpot's conversational analytics agent
 - [[Data Quality]] — Gold-layer connection, prompt matching, and benchmarking practices specific to Genie Agents
 - [[Evaluation]] — built-in benchmarks and LLM-as-a-Judge scoring used in Genie Agents evaluation
+- [[Databricks]] — parent platform
+- [[Metric Views]] — governed semantic objects Genie queries instead of raw tables
+- [[LangGraph]] — supported multi-agent orchestration framework
+- [[DSPy]] — supported multi-agent orchestration framework
+- [[Agent Bricks]] — Agent Bricks Supervisor orchestrates Genie Agents as specialized sub-agents
+- [[LLM-as-a-Judge]] — used for Agent mode benchmark scoring instead of SQL comparison

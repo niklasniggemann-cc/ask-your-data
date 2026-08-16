@@ -4,6 +4,7 @@ aliases:
   - Text-to-SQL
   - NL-to-SQL
 type: "[[Concept]]"
+context: GenAI, Data Analytics
 tags:
   - semantic
 ---
@@ -51,3 +52,4 @@ When multiple columns are plausible matches for a query term, pure NL-to-SQL has
 - [[Agent Metadata]] — provides synonyms that make term resolution deterministic
 - [[Disambiguation]] — the core challenge NL-to-SQL faces at scale
 - [[Hallucinations]] — the failure mode when NL-to-SQL gets it wrong confidently
+- [[Metric Views]] — the governed alternative to querying raw tables directly

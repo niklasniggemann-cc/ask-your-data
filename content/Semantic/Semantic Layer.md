@@ -3,6 +3,7 @@ title: Semantic Layer
 type:
   - "[[Concept]]"
   - "[[Architecture]]"
+context: Data Architecture, AI Analytics
 tags:
   - semantic
 ---
@@ -103,3 +104,4 @@ Beyond metric definitions, GenAI applications need:
 - [[Looker Conversational Analytics]] — Google Cloud's conversational layer built on LookML, one of the original semantics-as-code implementations
 - [[Fabric IQ]] — Microsoft's AI-agent context layer, built directly on Power BI semantic models
 - [[Sigma]] — warehouse-native BI vendor whose agents ground themselves in governed Data Models, the same pattern as every other vendor here
+- [[Snowflake CoWork]] — CoCo's data-answering layer depends on Snowflake's own semantic-layer stack for grounded answers

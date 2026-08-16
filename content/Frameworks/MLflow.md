@@ -41,3 +41,4 @@ MLflow is built into [[Databricks]] — no separate installation required. Exper
 - [[LLM-as-a-Judge]] — evaluation technique whose scores MLflow stores
 - [[Evaluation]] — broader concept
 - [[Databricks]] — platform where MLflow is natively integrated
+- [[Observability]] — MLflow tracing is one tool for tracking and visualizing observed data

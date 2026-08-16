@@ -36,3 +36,4 @@ Positions itself as a warehouse-native alternative to platform-bundled conversat
 - [[ThoughtSpot Spotter]] — a comparable independent, non-hyperscaler-owned conversational-BI vendor
 - [[Semantic Layer]] — Sigma Agents ground themselves in governed Data Models, the same architectural pattern as every other vendor in this vault
 - [[MCP]] — Sigma's MCP client/server implementation is part of the broader pattern of BI vendors exposing themselves as MCP endpoints
+- [[Amazon Quick Suite]] — also ships governed dashboard-migration tooling as part of its own BI-migration play

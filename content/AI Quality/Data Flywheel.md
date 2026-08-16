@@ -54,3 +54,5 @@ Evaluation in GenAI systems is the highest-leverage activity, analogous to autom
 - [[LLM-as-a-Judge]] — key technique in step one
 - [[Evaluation]] — broader concept
 - [[Genie Agents]] — one concrete application domain
+- [[Observability]] — prerequisite for step two, automated measurement
+- [[MLflow]] — the natural store for tracking flywheel evaluation results

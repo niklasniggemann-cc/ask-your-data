@@ -89,6 +89,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Fabric IQ]] — Microsoft's AI-agent context layer built on Power BI semantic models, feeding Copilot Cowork
 - [[Sigma]] — warehouse-native BI platform with governed conversational agents, sits atop Snowflake/Databricks rather than owning the warehouse
 - [[Amazon Quick Suite]] — AWS's rebrand/expansion of QuickSight into a broader natural-language work-agent platform (Quick Research, Quick Flows, Quick Automate, Quick Index)
+- [[Market Landscape/Updates|Updates]] — running log of confirmed market-landscape developments from the daily briefing
 
 ---
 
