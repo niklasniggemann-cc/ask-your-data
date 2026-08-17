@@ -62,6 +62,7 @@ Both are described in [[Disambiguation]]. They are complementary: Ontology reduc
 
 ## Recent Developments
 
+- **2026-08-13** — **Ontology snippets now available to all customers** (Public Preview): previously required requesting access; now on by default for everyone in Public Preview. [Source](https://docs.databricks.com/aws/en/genie-one/chat#ontology)
 - **2026-08-12** — **Pages** (Beta) added as a third Unity Catalog semantics foundation alongside Domains and Glossary — lets teams give business terms, acronyms, and KPIs a single governed definition that feeds directly into the ontology's human-modeled layer. [Source](https://docs.databricks.com/aws/en/uc-semantics/pages)
 - **2026-08-06** — Genie Ontology is now **enabled by default** in Public Preview, removing the need for admins to turn it on manually before Genie One conversations get ontology-grounded context. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
 

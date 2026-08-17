@@ -43,3 +43,4 @@ Positions Snowflake's "ask your data" surface as a general-purpose agentic work 
 - [[Amazon Quick Suite]] — AWS's comparable evolution of QuickSight into a broader natural-language work-agent platform
 - [[Natural Language to SQL]] — the underlying technique CoCo's data-answering layer builds on
 - [[Semantic Layer]] — the governed-meaning layer CoCo depends on for grounded answers
+- [[Tableau Next]] — Salesforce's comparable rebuild of its analytics product into an agentic platform, built on Data Cloud/Agentforce

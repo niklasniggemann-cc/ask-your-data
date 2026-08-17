@@ -105,3 +105,4 @@ Beyond metric definitions, GenAI applications need:
 - [[Fabric IQ]] — Microsoft's AI-agent context layer, built directly on Power BI semantic models
 - [[Sigma]] — warehouse-native BI vendor whose agents ground themselves in governed Data Models, the same pattern as every other vendor here
 - [[Snowflake CoWork]] — CoCo's data-answering layer depends on Snowflake's own semantic-layer stack for grounded answers
+- [[Tableau Next]] — Salesforce's Tableau Semantics layer implements the same pattern, with plain-language model authoring and Salesforce as an OSI backer

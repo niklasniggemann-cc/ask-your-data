@@ -149,6 +149,8 @@ Previously called **Genie Spaces**. Surfaced inside [[Genie One]] and embeddable
 
 ## Recent Developments
 
+- **2026-08-13** — **Content search for attached volumes** (Beta): an opt-in indexing/preparation step for files in attached Unity Catalog volumes, improving latency and accuracy when answering questions across larger volumes compared to parsing on the fly. [Source](https://docs.databricks.com/aws/en/genie-agents/volumes#content-search)
+- **2026-08-13** — **Analyze files in volumes without Unity AI Gateway** (Beta): volume-file analysis no longer requires Unity AI Gateway to be enabled, removing an adoption blocker for workspaces that haven't turned on the gateway. [Source](https://docs.databricks.com/aws/en/genie-agents/volumes)
 - **2026-08-06** — **Markdown tables in Agent mode APIs** (Beta): table visualizations in the Agent mode API response now return as markdown instead of table-visualization attachments, improving readability for API consumers. Also shipped the same day: longer agent descriptions shown by default, comments on Genie Agent answers from Genie One, and a conversation-mode field (Agent vs. Chat) in the list conversations API. [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
 
 ## Related
