@@ -26,12 +26,17 @@ Spotter is ThoughtSpot's conversational analytics agent — a natural-language i
 ThoughtSpot has expanded Spotter from a single chat agent into a suite of purpose-built agents covering the analytics workflow end to end:
 - **Spotter 3** — the core conversational agent; extended to bridge structured databases with unstructured sources (Slack, SharePoint), aiming at data that traditional BI tools can't reach
 - **SpotterViz** — builds dashboards from natural language
-- **SpotterModel** — builds semantic models without writing code
+- **SpotterModel** — builds semantic models without writing code (reached GA Aug 2026)
 - **SpotterCode** — AI-assisted code generation for embedded analytics applications
+- **Spotter Analysts** (Early Access, Aug 2026) — focused, governed sub-agents scoped to a specific team/domain: configure once which data models the agent can see, custom instructions, connectors, and workspace sharing, then open a pre-configured Spotter experience instead of the general one
 
 ## Market Position
 
 ThoughtSpot was named a **Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms** (July 2026) — one of the only independent (non-hyperscaler-owned) vendors in the Leaders quadrant. Gartner specifically cited conversational analytics through Spotter, external semantic-layer connectivity, and agent workflow orchestration as differentiating strengths.
+
+## Recent Developments
+
+**2026-08-18** — ThoughtSpot Cloud 26.8.0.cl release: **SpotterModel reached GA** (auto-generates optimized semantic Models — table selection, joins, column selection — with review/customize at each step); **Spotter Analysts** entered Early Access (see Core Capabilities above); **Spotter starter prompts** let admins configure suggested first questions to guide new users; **Share chats** (Early Access) lets a user hand off a full Spotter conversation thread — questions, iterations, and analysis — rather than a screenshot; **SpotterViz insight tiles** (Early Access) add AI-generated text analysis tiles to a Liveboard that re-run against live data on every load. [Source](https://docs.thoughtspot.com/cloud/26.8.0.cl/notes)
 
 ## Related
 

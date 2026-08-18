@@ -104,5 +104,5 @@ Beyond metric definitions, GenAI applications need:
 - [[Looker Conversational Analytics]] — Google Cloud's conversational layer built on LookML, one of the original semantics-as-code implementations
 - [[Fabric IQ]] — Microsoft's AI-agent context layer, built directly on Power BI semantic models
 - [[Sigma]] — warehouse-native BI vendor whose agents ground themselves in governed Data Models, the same pattern as every other vendor here
-- [[Snowflake CoWork]] — CoCo's data-answering layer depends on Snowflake's own semantic-layer stack for grounded answers
+- [[Snowflake CoWork]] — CoWork's data-answering layer (Cortex Agents → Cortex Analyst) depends on Snowflake's own semantic-layer stack for grounded answers; not to be confused with CoCo, Snowflake's separate coding-agent product
 - [[Tableau Next]] — Salesforce's Tableau Semantics layer implements the same pattern, with plain-language model authoring and Salesforce as an OSI backer

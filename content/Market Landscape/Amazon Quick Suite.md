@@ -29,6 +29,12 @@ Amazon Quick Suite (informally shortened to "Amazon Quick" in 2026) is AWS's reb
 
 Announced October 9, 2025 as an evolution of QuickSight, rolled out globally starting that day; new agentic capabilities launched first in US East (N. Virginia), US West (Oregon), Europe (Dublin), and Asia Pacific (Sydney), with other regions retaining QuickSight functionality under the new branding. Existing compliance certifications (SOC, HIPAA, ISO, GDPR, FedRAMP) carried over unchanged. Since informally referred to as "Amazon Quick" in 2026 branding.
 
+## Recent Developments
+
+**2026-08-06** — **Multi-dataset topics** reached GA: a "topic" (Quick's semantic-model construct) can now span multiple datasets with relationships defined once, and Quick performs the joins at runtime — for both dashboard-building (a single visual can pull fields from multiple datasets without manual pre-joining) and natural-language Q&A (the chat agent reads the topic's relationships and joins across datasets to answer). Previously, cross-dataset questions required pre-joining data into a single dataset first, burning extra SPICE capacity and duplicating models per use case. Existing dataset-level RLS/CLS permissions carry through. [Source](https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick/)
+
+**2026-08-11** — Amazon Quick's agentic AI capabilities (including natural-language chat) became available in AWS GovCloud (US-West) (FedRAMP Class D), letting government/regulated customers build mission-specific chat agents (procurement, compliance, grants) with data processed entirely within GovCloud. Minor, regional-availability item. [Source](https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-aws-govcloud-us-west/)
+
 ## Related
 
 - [[Genie One]] — Databricks' closest equivalent: a unified natural-language surface across an organization's governed data and tools
