@@ -32,6 +32,12 @@ SQL functions for intelligent document processing at scale:
 
 Covers ~80% of enterprise unstructured data volume. More cost-efficient than third-party document APIs.
 
+**Precision Mode** (`ai_extract`, added Aug 2026) — an optional extraction mode pairing custom fine-tuned extraction models with an agentic harness that decomposes large documents, runs sub-agent extraction in parallel, and reconciles results into a single structured output. Purpose-built for three cases where single-call or chunk-and-merge extraction breaks down: long documents (up to 2,000 pages) needing cross-page reconciliation, large nested outputs (thousands of line items), and reasoning-heavy schemas (300+ nested fields). Benchmarked at 94.7% accuracy across ~9,000 complex documents, 7 points ahead of the strongest frontier-model baseline. Enabled via `mode: precision` in `ai_extract` or a toggle in the Information Extraction UI.
+
+## Recent Developments
+
+- **2026-08-18** — Precision Mode launched for `ai_extract`, see above. [Source](https://www.databricks.com/blog/databricks-document-intelligence-pushing-frontier-complex-document-extraction)
+
 ### Managed Memory
 
 Agents persist context and session history across sessions via [[Lakebase]] — a governed Postgres backend — without custom infrastructure. Replaces in-context or ephemeral state management with queryable, auditable storage.
