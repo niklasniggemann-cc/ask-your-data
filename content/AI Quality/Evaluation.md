@@ -45,6 +45,8 @@ Evaluation is not a one-time activity. The [[Data Flywheel]] structures it as a 
 
 ## Recent Developments
 
+**2026-08-18** — Databricks hosted the inaugural **Grounded Reasoning Cup**, a live competition where 11 academic teams (paired with OpenAI, Anthropic, and Google DeepMind mentors) applied agents tuned on the original OfficeQA benchmark to the newly released OfficeQA Pro V2 corpus in real time, testing whether benchmark gains generalize rather than reflect overfitting. Results: out-of-the-box frontier agents averaged under 30% accuracy; the average competing team reached ~41%; Stanford won at 63.3% via a ~100+ skill playbook plus adaptive verification. 18.8% of questions went unsolved by every team. Key takeaway for evaluation practice: agent performance depended more on the full system (parsing, retrieval, tool use, verification) than on model choice alone — the gap between the best and worst team using the *same* model averaged 30.4 points. [Source](https://www.databricks.com/blog/evaluating-ai-agents-live-grounded-reasoning-cup)
+
 **2026-08-10** — Databricks introduced **OfficeQA Pro V2** (Aug 6), a follow-up benchmark to OfficeQA built from ~1,400 U.S. Treasury PDFs (~120K pages) via a synthetic data pipeline, testing whether grounded-reasoning gains generalize beyond the original corpus rather than reflecting overfitting to it. Out-of-the-box agents averaged only 26.0% accuracy; [[Genie One|Genie]] delivered a 92% relative improvement over matched baseline models, reaching up to 60% accuracy — evidence for Genie's grounded-reasoning approach, though Databricks itself notes significant headroom remains. [Source](https://www.databricks.com/blog/introducing-officeqa-pro-v2-new-benchmark-enterprise-grounded-reasoning)
 
 ## Related

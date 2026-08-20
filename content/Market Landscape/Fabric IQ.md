@@ -32,6 +32,10 @@ Fabric IQ is Microsoft's shared context/semantic layer for AI agents built on Mi
 
 Extends Microsoft's "ask your data" story beyond the existing Copilot Chat → Power BI semantic model path (already tracked in [[Market Landscape/Updates|Market Landscape Updates]]) into a named, general-purpose context layer that other Microsoft 365 Copilot surfaces — not just Power BI itself — can ground answers in. Functionally the closest analogue in this vault is [[Genie Ontology]]: both aim to let an AI agent answer from governed business meaning rather than per-agent curation, though Fabric IQ starts from existing semantic models rather than a continuously-learned org-wide graph.
 
+## Recent Developments
+
+- **2026-08-20** (effective Aug 26, 2026) — **Copilot in Power BI drops direct Fabric data agent integration.** Microsoft is retiring the ~1-year-old integration that let Copilot in Power BI query a Fabric data agent directly; after Aug 26, 2026, Copilot in Power BI can no longer connect to Fabric data agents this way (the Fabric data agent experience itself is unaffected). Microsoft's stated alternative paths: Microsoft 365 Copilot (the same consolidated "ask your data from anywhere" surface behind the Aug 11 Copilot Chat → Power BI semantic model integration already logged in [[Market Landscape/Updates|Market Landscape Updates]]), or Copilot Studio/Microsoft Foundry/MCP-based integrations for custom experiences. Reads as a consolidation move — collapsing a narrower, older Copilot-to-data-agent path in favor of the newer semantic-model-grounded, Fabric-IQ-adjacent Copilot experience. [Source](https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/retirement-of-fabric-data-agent-integration-in-copilot-in-power-bi/5328344)
+
 ## Related
 
 - [[Genie Ontology]] — Databricks' equivalent context/ontology layer that grounds Genie's answers
