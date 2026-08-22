@@ -24,6 +24,7 @@ Sigma is a warehouse-native BI and spreadsheet-interface platform that has expan
 - **Workbooks as Code** (preview, July 2026) — every workbook exposed as a versionable spec via the Sigma REST API, aimed at coding agents migrating dashboards off legacy BI tools
 - **Sigma MCP Server** (Aug 2026) — Sigma as both MCP client (Ask Sigma/AI Builder pulling context from tools like Google Drive, Confluence, GitHub) and MCP server (exposing Sigma's own data and admin operations to external agents in Claude, ChatGPT, or internal chat tools), with Sigma's existing account/connection/column/row-level security enforced across every AI surface
 - **AI usage dashboard** — token consumption, tool calls, model used, and user feedback, broken out by agent and by Assistant, shipped to every customer; paired with cost-monitoring templates tracking spend across Claude, ChatGPT, and Snowflake Cortex AI Functions
+- **Sigma CLI** (GA, Aug 2026) — a `sigma` command-line tool for accessing the full Sigma REST API from the terminal (authentication management, typed commands, profile-based configuration), extending Sigma's API surface to AI coding tools and scripts alongside the chat/workbook UI
 
 ## Market Position
 
