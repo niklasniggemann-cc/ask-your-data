@@ -40,3 +40,4 @@ Announced October 9, 2025 as an evolution of QuickSight, rolled out globally sta
 - [[Genie One]] — Databricks' closest equivalent: a unified natural-language surface across an organization's governed data and tools
 - [[Snowflake CoWork]] — Snowflake's comparable evolution from a narrower conversational-analytics layer (Snowflake Intelligence) into a broader personal work agent
 - [[Sigma]] — also ships governed dashboard-migration tooling (Workbooks as Code) as part of its own BI-migration play
+- [[Tableau Next]] — another platform vendor's expansion of a BI product into a broader NL work-agent suite

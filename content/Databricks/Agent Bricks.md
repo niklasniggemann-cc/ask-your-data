@@ -71,3 +71,4 @@ Every Agent Bricks component is governed through [[Unity Catalog]]:
 - [[RAG]] — Document Intelligence feeds RAG pipelines via `ai_prep_search`
 - [[Omnigent]] — meta-harness that can sit above Agent Bricks for cross-framework governance
 - [[Databricks]] — parent platform
+- [[MCP]] — integrated for tool connectivity across Agent Bricks agents

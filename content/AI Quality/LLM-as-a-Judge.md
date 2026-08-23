@@ -1,7 +1,7 @@
 ---
 title: LLM-as-a-Judge
 type: "[[Concept]]"
-category: Evaluation Technique
+context: GenAI, Evaluation
 tags:
   - ai-quality
 ---
@@ -35,3 +35,6 @@ For [[Genie Agents]] benchmark runs in Agent Mode, LLM-as-a-Judge is used instea
 - [[Evaluation]] — broader concept
 - [[MLflow]] — used to track LLM-as-a-Judge scores across runs
 - [[Genie Agents]] — applied in Agent Mode benchmarks
+- [[GenAI Technical Debt]] — evaluation technique used to measure quality and manage debt
+- [[Observability]] — makes the calls LLM-as-a-Judge scores visible and diagnosable
+- [[Hallucinations]] — the primary failure mode LLM-as-a-Judge is used to detect

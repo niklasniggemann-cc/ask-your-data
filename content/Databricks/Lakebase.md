@@ -60,3 +60,4 @@ Both are governed in Unity Catalog and can be queried together.
 - [[Delta Lake]] — analytical complement; Lakebase handles OLTP, Delta handles OLAP
 - [[Unity Catalog]] — governs Lakebase instances and data like any other Databricks asset
 - [[Databricks]] — parent platform
+- [[OntoBricks]] — the Postgres graph engine powering OntoBricks' materialized triple store

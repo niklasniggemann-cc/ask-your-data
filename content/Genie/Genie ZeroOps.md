@@ -31,3 +31,5 @@ Announced at Data + AI Summit 2026 (June 16–17) alongside [[Genie App Builder]
 - [[Lakebase]] — on ZeroOps's roadmap for future database support
 - [[LakeFlow]] — the pipelines ZeroOps monitors and tunes
 - [[Databricks]] — platform
+- [[Genie Code]] — sibling Genie-family product, developer-focused AI coding assistant
+- [[Genie One]] — sibling Genie-family product, unified chat surface across all agents

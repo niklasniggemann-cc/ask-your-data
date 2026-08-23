@@ -67,3 +67,5 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 - [[ThoughtSpot Spotter]] — comparable unified conversational-analytics surface on ThoughtSpot
 - [[Amazon Quick Suite]] — AWS's comparable evolution of QuickSight into a broader natural-language work-agent platform
 - [[MCP]] — supports custom MCP connections and is itself exposed as an MCP server
+- [[Looker Conversational Analytics]] — Google Cloud's comparable conversational layer, published as a data agent surface
+- [[Snowflake CoWork]] — Snowflake's equivalent unified chat surface across agents and external sources

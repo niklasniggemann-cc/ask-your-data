@@ -32,3 +32,5 @@ Delta Lake's ACID guarantees mean that [[Data Quality]] practices like deduplica
 - [[Unity Catalog]] — governs Delta tables with access control, lineage, and metadata
 - [[Data Quality]] — quality practices that Delta Lake's guarantees enable
 - [[Lakebase]] — analytical complement; Delta Lake handles OLAP, Lakebase handles OLTP
+- [[Lakehouse Monitoring]] — the table format being monitored
+- [[OntoBricks]] — the storage layer for OntoBricks' Delta-backed triple store

@@ -51,3 +51,5 @@ AI tools like [[Genie Agents]] query what they're given. Connecting to Bronze or
 - [[Genie Agents]] — should always connect to Gold layer tables
 - [[Unity Catalog]] — governance and metadata layer that spans all three layers
 - [[Databricks]] — platform where the architecture is implemented with Delta Lake
+- [[Data Lineage]] — tracks provenance through the layers as data flows Bronze → Silver → Gold
+- [[Lakehouse Monitoring]] — the layer structure within which monitoring is applied

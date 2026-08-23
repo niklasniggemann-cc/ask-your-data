@@ -59,3 +59,4 @@ The [[Semantic Layer]] is the primary structural defense: when the LLM queries g
 - [[RAG]] — retrieval-based grounding that reduces hallucinations on document questions
 - [[Genie Ontology]] — reduces disambiguation failures, a major hallucination trigger, via organizational context
 - [[Evaluation]] — systematic measurement catches hallucinations before users see them
+- [[GenAI Technical Debt]] — the defining failure mode behind one of the four debt categories

@@ -33,3 +33,4 @@ The supervisor decides which worker to invoke and how to combine their outputs i
 - [[Agent Bricks]] — Databricks' governed agent platform; uses LangGraph as one of its supported frameworks
 - [[Omnigent]] — meta-harness that sits above LangGraph to govern cross-framework agent compositions
 - [[DSPy]] — alternative framework for LLM program composition
+- [[RAG]] — orchestration framework for routing between RAG and SQL agents

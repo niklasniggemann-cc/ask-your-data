@@ -56,3 +56,4 @@ Evaluation in GenAI systems is the highest-leverage activity, analogous to autom
 - [[Genie Agents]] — one concrete application domain
 - [[Observability]] — prerequisite for step two, automated measurement
 - [[MLflow]] — the natural store for tracking flywheel evaluation results
+- [[Hallucinations]] — the failure mode the flywheel surfaces and corrects over time

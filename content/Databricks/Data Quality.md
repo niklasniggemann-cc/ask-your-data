@@ -86,3 +86,5 @@ See [[Genie Agents]] for full benchmark configuration details.
 - [[Semantic Layer]] — the broader architecture that governs business meaning
 - [[Lakehouse Monitoring]] — tracks the six data quality dimensions over time via metric tables and dashboards
 - [[LakeFlow]] — Lakeflow Declarative enforces quality constraints at ingestion and transformation
+- [[Delta Lake]] — ACID guarantees that make quality practices like deduplication and schema enforcement reliable by construction
+- [[Data Governance]] — the data quality dimension of the broader governance discipline
