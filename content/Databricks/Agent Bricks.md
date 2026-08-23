@@ -36,6 +36,7 @@ Covers ~80% of enterprise unstructured data volume. More cost-efficient than thi
 
 ## Recent Developments
 
+- **2026-08-19** — Precision Mode for `ai_extract` (launched Aug 18, see above) reached **General Availability** the following day. [Source](https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/ai_extract)
 - **2026-08-18** — Precision Mode launched for `ai_extract`, see above. [Source](https://www.databricks.com/blog/databricks-document-intelligence-pushing-frontier-complex-document-extraction)
 
 ### Managed Memory

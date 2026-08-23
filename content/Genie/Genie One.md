@@ -27,7 +27,7 @@ Genie One is the unified full-screen chat experience for [[Databricks]] business
 - **Slack and Microsoft Teams** — invoked via @mention in conversations, public channels, and threads; responses scoped to each user's individual authorisation
 - **iOS and Android** mobile client
 - **Genie MCP App** — allows organisations running their own AI agents to call Genie without a separate workflow
-- **Google Sheets and Microsoft Excel** (Aug 2026) — via the Databricks Connector for Google Sheets and the Databricks Excel Add-in; query governed data in natural language and import results as native rows and columns
+- **Google Sheets and Microsoft Excel** (Aug 2026) — via the Databricks Connector for Google Sheets and the Databricks Excel Add-in; query governed data in natural language and import results as native rows and columns. As of Aug 20, 2026 the Google Sheets connector also supports writing data back to a Unity Catalog table (create new or overwrite existing) without leaving the sheet
 
 ## External Sources
 
@@ -48,6 +48,7 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 
 ## Recent Developments
 
+- **2026-08-20** — **Write data back to Databricks from Google Sheets**: the Databricks Connector for Google Sheets now supports writing data from Google Sheets back to a Unity Catalog table (create new or overwrite existing), closing the loop from "ask a question in Sheets via Genie One" to "push the edited result back to the lakehouse." [Source](https://learn.microsoft.com/en-us/azure/databricks/integrations/google-sheets/write-back)
 - **2026-08-20** — **Inbound Private Link now supports account-level Genie One** (Beta): enterprises can now put account-level Genie One (plus the account console, Governance Hub, and account-level APIs) behind Inbound Private Link, keeping that traffic off the public internet with the same guarantees already available for workspace resources — including custom-URL support and a single shared endpoint per any region. [Source](https://www.databricks.com/blog/inbound-private-link-now-supports-account-level-genie-one-account-console-and-custom-urls)
 - **2026-08-13** — **MCP writes** (Beta): connected MCP tools (Google Drive, Gmail, Microsoft 365, Atlassian, Glean, Slack, GitHub, custom connections) can now perform write actions in the source app, not just search/read — scoped per-user by OAuth consent and the user's own permissions in the source application. [Source](https://docs.databricks.com/aws/en/genie-one/external-sources)
 - **2026-08-13** — **Workspace instructions** (GA): admins can define standing instructions (data conventions, terminology, response guidelines) that apply to every chat conversation workspace-wide, via an auto-read Markdown file. Chat only, not Genie Agents or Genie Code. [Source](https://docs.databricks.com/aws/en/genie-one/chat#workspace-instructions)
