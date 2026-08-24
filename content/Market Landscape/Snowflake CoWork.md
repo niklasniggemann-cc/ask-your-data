@@ -27,6 +27,8 @@ Positions Snowflake's "ask your data" surface as a general-purpose agentic work 
 
 ## Recent Developments
 
+**2026-08-20 (Preview)** — **Cortex Agent code execution tool**: a built-in tool letting a Cortex Agent run Python in a sandboxed, session-scoped environment (process data, calculations, visualizations), alongside its existing Cortex Analyst/Cortex Search tools rather than replacing them — the agent still uses SQL tools for data retrieval, then hands results to the sandbox. Distinct from and mutually exclusive with `code_toolset_all`, the full CoCo (Cortex Code) developer-agent toolset. Extends what a Cortex Agent — and by extension CoWork's Q&A layer — can do with a data answer beyond returning a table. [Source](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-code-execution-tool)
+
 **2026-07-07** — Deep Research in Snowflake CoWork reached GA, moving CoWork's multi-step research reports out of preview. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-07-07-snowflake-cowork-deep-research-ga)
 
 **2026-08-06** — Automations (Public Preview): CoWork can now re-run a saved question on a schedule with fresh data and email a summary plus a link back into the full interactive report, turning a one-time report into a recurring one. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-08-06-cowork-automations)

@@ -24,11 +24,12 @@ Conversational Analytics is Google Cloud's natural-language query layer for Look
 
 ## Availability
 
-- **Conversational Analytics API** — GA for BigQuery and Looker as of June 23, 2026; still Preview for AlloyDB, Cloud SQL for MySQL/PostgreSQL, and Spanner sources
+- **Conversational Analytics API** — GA for BigQuery and Looker as of June 23, 2026; Preview for AlloyDB, Cloud SQL for MySQL/PostgreSQL, and Spanner sources (as of Aug 2026), plus Preview support for querying Lakehouse Managed Service tables, Apache Iceberg REST catalogs, and federated AWS S3 Unity Catalogs
 - Not previously tracked in this vault; this entry is a first-coverage backfill, not a same-day announcement
 
 ## Recent Developments
 
+- **2026-08-24** (backfilled, published Jul 29) — **Expansion to databases and cross-cloud sources** (Preview): Conversational Analytics now works directly against AlloyDB, Cloud SQL, and Spanner (beyond the already-GA BigQuery/Looker), and can query Lakehouse Managed Service tables, Apache Iceberg REST catalogs, and federated AWS S3 Unity Catalogs. Also new: **Agentic Workflows** (Preview) — scheduled anomaly detection with daily/weekly chat summaries, threshold-triggered automatic agent launches, and a "multidimensional deep dive" mode analyzing 10–20 contributing factors behind a metric change in one run. Moves the product from reactive Q&A toward proactive, scheduled monitoring. [Source](https://cloud.google.com/blog/products/data-analytics/conversational-analytics-in-google-data-cloud-in-q326)
 - **2026-08-04** (Preview, part of the Looker 26.12 rollout) — a **Responses & Feedback** tab on the Conversational Analytics System Activity dashboard lets admins review end-user query success rates, rating distributions, and written feedback, gated behind an opt-in admin setting and per-user consent to share query data. [Source](https://docs.cloud.google.com/looker/docs/release-notes)
 - **2026-08-03 to 08-07** (Looker 26.12 rollout) — Conversational Analytics data agents published to Gemini Enterprise now render charts and visualizations inline in agent responses (previously text/table only); query timeout increased from 2 to 5 minutes; data agent editors can toggle whether the agent shows its thinking/debugging steps in responses. [Source](https://cloud.google.com/blog/products/business-intelligence/looker-updates-for-agentic-bi-at-next26)
 - **2026-06-23** — Conversational Analytics API reached GA for BigQuery and Looker, alongside A2A protocol support (Preview) and enterprise security/compliance features (CMEK, VPC-SC, data residency). [Source](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/release-notes)

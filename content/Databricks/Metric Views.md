@@ -34,6 +34,10 @@ Metric Views (rebranded "Metrics" in some surfaces) gained several capabilities:
 - **Query materialization** (Public Preview) — materializes metric query results for performance, rather than recomputing against source tables on every request.
 - **Import from Power BI/Tableau** (Beta) — existing BI-tool metric definitions can be imported directly into Metric Views instead of being redefined by hand.
 
+## Local Metric Views (GA, Aug 20 2026)
+
+A distinct, dashboard-scoped variant: fields, measures, joins, filters, and parameters defined directly in an AI/BI dashboard's visual interface, without first publishing to Unity Catalog. Retains the same query-time-transformation accuracy benefits as governed Metric Views, but keeps the semantic logic contained to a single dashboard — aimed at prototyping, small-team analysis, and users without Unity Catalog write access. A local metric view can be exported to Unity Catalog later to become a global, governed Metric View once it's ready for broader use (other dashboards, [[Genie Agents]]). [Source](https://docs.databricks.com/aws/en/dashboards/manage/data-modeling/local-metric-views)
+
 ## Role in the AI Stack
 
 When [[Agent Metadata]] is attached to a Metric View, the combination gives AI tools:
