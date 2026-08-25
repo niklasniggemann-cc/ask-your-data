@@ -39,3 +39,4 @@ Positions itself as a warehouse-native alternative to platform-bundled conversat
 - [[MCP]] — Sigma's MCP client/server implementation is part of the broader pattern of BI vendors exposing themselves as MCP endpoints
 - [[Amazon Quick Suite]] — also ships governed dashboard-migration tooling as part of its own BI-migration play
 - [[Tableau Next]] — Salesforce's competing agentic-analytics rebuild of Tableau, built on Data Cloud/Agentforce rather than a live warehouse connection
+- [[Market Landscape/TextQL|TextQL]] — another vendor grounding its agent in a governed semantic model, though TextQL's Ontology is stored as a customer-owned Git repo rather than living inside the vendor's own platform

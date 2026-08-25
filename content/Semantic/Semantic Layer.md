@@ -108,3 +108,4 @@ Beyond metric definitions, GenAI applications need:
 - [[Sigma]] — warehouse-native BI vendor whose agents ground themselves in governed Data Models, the same pattern as every other vendor here
 - [[Snowflake CoWork]] — CoWork's data-answering layer (Cortex Agents → Cortex Analyst) depends on Snowflake's own semantic-layer stack for grounded answers; not to be confused with CoCo, Snowflake's separate coding-agent product
 - [[Tableau Next]] — Salesforce's Tableau Semantics layer implements the same pattern, with plain-language model authoring and Salesforce as an OSI backer
+- [[Market Landscape/TextQL|TextQL]] — an AI-analyst startup whose Ontology is a self-maintaining semantic layer stored as a customer-owned, Git-native file tree rather than a proprietary in-platform model
