@@ -29,6 +29,7 @@ Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single overs
 
 ## Recent Developments
 
+- **2026-08-26** — **[[Governance Hub]] reaches Beta as a full account-level product** — the previously-tracked Tags page is now one of four pages (Data, AI, Cost, Tags) plus Access Insights in a unified, Genie-powered governance experience across AWS/Azure/GCP. [Source](https://www.databricks.com/blog/introducing-governance-hub-intelligent-account-level-governance-over-your-databricks-estate)
 - **2026-08-21** — **Context attributes in ABAC policies** (Beta) — a new condition type for row filter and column mask policies that targets the context of a request (which OAuth application is calling, whether it runs on behalf of a user) rather than who's making it, via `has_context_attribute`/`has_context_attribute_value`. Lets admins restrict what an agent reads on a user's behalf through a registered OAuth app while the user keeps full direct access. [Source](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/core-concepts#context-attribute-functions)
 - **2026-08-13** — **Tags page in Governance Hub** (Beta) — a centralized account-wide view of governed tag usage: recent assignments and their sources, plus recommendations to fix invalid tag values and tag important but untagged assets. [Source](https://docs.databricks.com/aws/en/admin/governance-hub/tags)
 - **2026-08-11** — **ABAC GRANT policies** extended beyond models to cover model services, model provider services, MCP services, agent services, and skills (Beta) — dynamic attribute-based access grants now reach the AI-agent surface itself, not just underlying data assets. [Source](https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/grant-policies)
@@ -36,6 +37,7 @@ Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single overs
 
 ## Related
 
+- [[Governance Hub]] — account-level UI providing a unified view over Unity Catalog governance, AI usage, and cost
 - [[Databricks]] — platform that owns Unity Catalog
 - [[Agent Metadata]] — YAML-defined business context governed within Unity Catalog
 - [[Metric Views]] — semantic objects defined in Unity Catalog

@@ -27,6 +27,12 @@ Positions Snowflake's "ask your data" surface as a general-purpose agentic work 
 
 ## Recent Developments
 
+**2026-08-18 (Preview)** — **User skills**: business users can build reusable conversational workflows directly from the CoWork UI (`+` menu → Skills → Create new) or by uploading a skill folder, then run them explicitly with `/` or implicitly when a conversation matches. Creating a skill via chat, and running skills that execute scripts or assemble files, requires the Cortex Agent code execution tool. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-user-skills-preview)
+
+**2026-08-18 (GA)** — **Power BI ingestion for Semantic View Autopilot**: upload a `.pbit`/`.pbix` file to auto-generate a Snowflake semantic view from an existing Power BI data model, preserving DAX measures, table relationships, and column descriptions, then making it available to Cortex Analyst. Report-level measures and time-intelligence functions aren't yet fully supported. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-08-18-semantic-views-power-bi-ingestion-ga)
+
+**2026-08-21 (GA, minor)** — **Version targeting for Cortex Agent/Cortex Analyst evaluations**: evaluation YAML can pin a specific agent version/alias for reproducible scheduled/CI evaluations; system metrics accept a `version` key pinning the judge model/prompt/rubric behind a score. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-08-21-cortex-agent-eval-version-targeting-ga)
+
 **2026-08-20 (Preview)** — **Cortex Agent code execution tool**: a built-in tool letting a Cortex Agent run Python in a sandboxed, session-scoped environment (process data, calculations, visualizations), alongside its existing Cortex Analyst/Cortex Search tools rather than replacing them — the agent still uses SQL tools for data retrieval, then hands results to the sandbox. Distinct from and mutually exclusive with `code_toolset_all`, the full CoCo (Cortex Code) developer-agent toolset. Extends what a Cortex Agent — and by extension CoWork's Q&A layer — can do with a data answer beyond returning a table. [Source](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-code-execution-tool)
 
 **2026-07-07** — Deep Research in Snowflake CoWork reached GA, moving CoWork's multi-step research reports out of preview. [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-07-07-snowflake-cowork-deep-research-ga)
