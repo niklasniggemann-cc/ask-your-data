@@ -30,6 +30,7 @@ Databricks now offers two distinct retrieval products:
 
 ## Recent Developments
 
+- **2026-08-25** — **`ai_prep_search` accepts plain text and markdown input** (Beta): previously required the structured `VARIANT` output of `ai_parse_document`; now also takes plain-text/markdown `STRING` content directly, so text you already have as a string can be chunked for indexing and RAG without a document-parsing step first. [Source](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_prep_search)
 - **2026-08-09** — Databricks published the `ai_search()` SQL function (Beta, released Aug 7). Given a natural-language query and up to 10 AI Search indexes as knowledge sources, it generates optimized search queries, retrieves/dedupes/reranks results, and by default synthesizes a grounded natural-language answer from the retrieved documents — usable directly in SQL for batch RAG pipelines or as a retrieval tool inside a compound AI system. Complements `ai_prep_search` (chunking): `ai_parse_document` → `ai_prep_search` → index → `ai_search` now covers the full pipeline. [Source](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_search)
 
 ## Related

@@ -38,6 +38,7 @@ Genie Code reads table and column metadata, descriptions, and lineage from [[Uni
 
 ## Recent Developments
 
+- **2026-08-27** — **Genie Code as a Lakeflow Jobs task** (Beta): Genie Code can now run as a task inside a [[LakeFlow]] Job, executing a prompt autonomously, reading upstream task outputs, and calling tools as needed; the task returns a link to the resulting conversation. Turns Genie Code from an interactive assistant into an orchestrable pipeline step. [Source](https://docs.databricks.com/aws/en/jobs/tasks/genie-code)
 - **2026-08-19** — **Select a level of effort**: a new selector in the prompt box lets you choose how Genie Code balances response quality and cost per conversation — **Auto** (default, highest quality) or **Low** (cheaper, for simpler tasks). Workspace chat only. [Source](https://docs.databricks.com/aws/en/genie-code/use-genie-code#select-a-level-of-effort)
 - **2026-08-14** — **File uploads**: you can now upload files to Genie Code to use as context for the current chat. [Source](https://docs.databricks.com/aws/en/genie-code/use-genie-code#attach-files)
 
