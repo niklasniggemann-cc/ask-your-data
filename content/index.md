@@ -91,6 +91,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Amazon Quick Suite]] — AWS's rebrand/expansion of QuickSight into a broader natural-language work-agent platform (Quick Research, Quick Flows, Quick Automate, Quick Index)
 - [[Tableau Next]] — Salesforce's agentic analytics rebuild of Tableau on Data Cloud/Agentforce, bundling Tableau Agent, Tableau Semantics, and Tableau Pulse
 - [[Market Landscape/TextQL|TextQL]] — AI-analyst startup (Ana) built around a self-maintaining, customer-owned Git-native semantic layer (the Ontology)
+- [[Market Landscape/Strategy|Strategy]] — formerly MicroStrategy; Strategy Mosaic is a standalone, warehouse-agnostic universal semantic layer feeding governed AI Agents and BI tools
 - [[Market Landscape/Updates|Updates]] — running log of confirmed market-landscape developments from the daily briefing
 
 ---

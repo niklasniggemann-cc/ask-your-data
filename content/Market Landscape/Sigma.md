@@ -40,3 +40,4 @@ Positions itself as a warehouse-native alternative to platform-bundled conversat
 - [[Amazon Quick Suite]] — also ships governed dashboard-migration tooling as part of its own BI-migration play
 - [[Tableau Next]] — Salesforce's competing agentic-analytics rebuild of Tableau, built on Data Cloud/Agentforce rather than a live warehouse connection
 - [[Market Landscape/TextQL|TextQL]] — another vendor grounding its agent in a governed semantic model, though TextQL's Ontology is stored as a customer-owned Git repo rather than living inside the vendor's own platform
+- [[Market Landscape/Strategy|Strategy]] — another warehouse-agnostic governed layer other AI agents can call into, though Strategy positions Mosaic as a pure semantic-layer product rather than a live BI/spreadsheet surface

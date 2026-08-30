@@ -33,3 +33,4 @@ Sits in the "AI analyst" segment of NL-BI alongside Seek AI, DataChat, and Vanna
 - [[Natural Language to SQL]] — Ana's core answer-generation mechanism, grounded by the Ontology rather than operating on raw tables
 - [[MCP]] — Ana is reachable headlessly through any MCP client, part of the broader pattern of NL-BI vendors exposing themselves over MCP
 - [[Sigma]] — another vendor whose agents ground themselves in a governed semantic model rather than raw tables, though Sigma's model lives inside its own platform rather than a customer-owned Git repo
+- [[Market Landscape/Strategy|Strategy]] — another semantic-layer vendor emphasizing customer ownership of definitions, though Strategy Mosaic's governed store lives inside Strategy's own platform rather than a Git-backed customer repo
