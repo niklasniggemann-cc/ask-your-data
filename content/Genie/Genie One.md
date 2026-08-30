@@ -68,6 +68,7 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 - [[Genie App Builder]] — sibling Genie-family product for building governed data apps rather than chatting over data
 - [[Genie ZeroOps]] — sibling Genie-family product for autonomous data/AI operations
 - [[Databricks]] — platform
+- [[Governance Hub]] — account-level governance product Genie One's agentic insights extend into
 - [[ThoughtSpot Spotter]] — comparable unified conversational-analytics surface on ThoughtSpot
 - [[Amazon Quick Suite]] — AWS's comparable evolution of QuickSight into a broader natural-language work-agent platform
 - [[MCP]] — supports custom MCP connections and is itself exposed as an MCP server

@@ -33,6 +33,7 @@ AI tools amplify governance failures — an LLM wraps poorly governed data in co
 ## Related
 
 - [[Unity Catalog]] — structural governance implementation in Databricks
+- [[Governance Hub]] — account-level UI giving visibility into governance across a Databricks estate
 - [[Semantic Layer]] — the broader architecture where governance becomes infrastructure
 - [[Agent Metadata]] — metadata governance for AI consumption
 - [[Data Quality]] — the data quality dimension of governance

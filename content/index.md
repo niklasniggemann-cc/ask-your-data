@@ -43,6 +43,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 ### The Data Platform
 - [[Databricks]] — the platform everything runs on
 - [[Unity Catalog]] — unified governance: metadata, access control, lineage
+- [[Governance Hub]] — account-level UI for governance, AI usage, and cost across a Databricks estate
 - [[Agent Metadata]] — YAML-defined business context (display names, synonyms, formats)
 - [[Metric Views]] — governed semantic objects in Unity Catalog that Agent Metadata attaches to
 - [[Agent Bricks]] — governed agent platform (Supervisor, Document Intelligence, managed memory)
