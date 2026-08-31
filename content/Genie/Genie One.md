@@ -18,7 +18,7 @@ Genie One is the unified full-screen chat experience for [[Databricks]] business
 
 - Searches across Genie Agents, dashboards, queries, and metric views in a single interface
 - Schedules recurring chat tasks that post results back as threads
-- Generates documents from chat conversations
+- Generates documents from chat conversations — now editable, commentable, version-tracked, shareable via link, and exportable to PDF or (via MCP writes) into another connected tool (Aug 2026)
 - Two-way integrations: Gmail, Slack, Microsoft Teams
 - Custom skills and custom [[MCP]] connections
 
@@ -49,6 +49,7 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 
 ## Recent Developments
 
+- **2026-08-28** — **Document collaboration and agent/chat sharing**: documents generated from a conversation are now editable in place (draft, revise, comment, version history, accept/reject changes), shareable via read-only link, downloadable as PDF, and exportable into another connected tool via MCP writes. Two new ways to make a conversation reusable: create a Genie Agent directly from a conversation (saves it as a reusable, shareable agent), and share a full conversation via read-only link. [Source](https://www.databricks.com/blog/beyond-answers-new-genie-one-features-turn-insights-action)
 - **2026-08-27** — **Open Unity Catalog tables directly in Genie**: view a table's overview, columns, and sample data inline next to an ongoing chat, browse a catalog-style table view in Discover, jump straight into "Ask Genie" from a table, or request access if you only have browse rights — no more detour through Catalog Explorer. Also shipped: pin/rename chats in the sidebar, visualizations in scheduled task email outputs, and creating scheduled tasks directly from the Genie mobile app (Public Preview). [Source](https://docs.databricks.com/aws/en/genie-one/#open-tables)
 - **2026-08-25/27** — **macOS desktop app reaches Beta**: a native app for chat, threads, documents, and Genie Agents outside the browser — same pattern as the Jul 14 mobile app (no separate backend, inherits the same IdP/OAuth and network/governance controls). Platform release notes date this Aug 25; the AI/BI release notes page groups it under Aug 27 — noted discrepancy between the two official sources. [Source](https://docs.databricks.com/aws/en/genie-one/desktop)
 - **2026-08-24** (backfilled, launched Jul 14) — **Genie One mobile app** (Public Preview): native iOS and Android apps bringing the full Genie One experience — chat with skills/MCP support, mobile-optimized dashboards, Databricks Apps — to phones. No separate mobile backend: authenticates through the same IdP/OAuth flow, same URLs, same governance (Unity Catalog, source-native ACLs) as the browser. Follow-up refinements (Aug 20): switch workspaces without signing out; sign in behind account-level IP access lists. Also added: export Genie One documents to PDF (Aug 20). [Source](https://www.databricks.com/blog/take-insights-anywhere-genie-one-mobile)
