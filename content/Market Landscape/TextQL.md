@@ -20,7 +20,12 @@ TextQL is an AI-analyst platform built around **Ana**, an agent that answers bus
 - **Ontology** — a self-maintaining semantic layer assembled automatically from connected systems (schemas, field definitions, query logs, business logic), stored as version-controlled files synced bidirectionally with a Git remote on the customer's own account rather than living only inside TextQL's platform
 - **TQL** — TextQL's query file format: a SQL query annotated with an English description, parameters, and the governance/permissions that guard it, so both a human and any AI agent can read the same file and get the same meaning
 - **Self-extending definitions** — every question Ana answers can surface a proposed patch to the Ontology (e.g. refining a metric definition after repeated analyses hit the same gap); patches are reviewable and require approval before merging
-- **Data Apps, Agents, Actions** — beyond read-only Q&A, the Ontology also stores data apps, saved agents (e.g. scheduled anomaly-watch agents), and permissioned write actions (writing to a warehouse, calling an API), all governed by the same model that defines what a metric means
+- **Data Apps, Agents, Actions** — beyond read-only Q&A, the Ontology also stores data apps, saved agents (e.g. scheduled anomaly-watch agents), and permissioned write actions (writing to a warehouse, calling an API), all governed by the same model that defines what a metric means. **Data Apps** specifically (launched Jul 30, 2026) evolve TextQL's Dashboards from a static view into fully interactive React/JavaScript applications, each with its own persistent per-app DuckDB database for structured input, warehouse write-back, or registering the app's own data as a new governed connector — built via natural language in Ana rather than hand-coded
+
+## Recent Developments
+
+- **2026-08-25** — First coverage of TextQL in this vault (Ana, Ontology, TQL query format); see [[Market Landscape/Updates|Updates]] for the backfill entry.
+- **2026-09-01** — Data Apps (launched Jul 30) backfilled with full detail — see [[Market Landscape/Updates|Updates]].
 - **Connectors** — reads across cloud data platforms (Snowflake, Databricks, Postgres), BI tools (Tableau), and operational apps (Salesforce) without requiring the data to move first
 
 ## Market Position
