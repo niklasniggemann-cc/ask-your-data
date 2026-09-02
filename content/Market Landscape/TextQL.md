@@ -39,3 +39,4 @@ Sits in the "AI analyst" segment of NL-BI alongside Seek AI, DataChat, and Vanna
 - [[MCP]] — Ana is reachable headlessly through any MCP client, part of the broader pattern of NL-BI vendors exposing themselves over MCP
 - [[Sigma]] — another vendor whose agents ground themselves in a governed semantic model rather than raw tables, though Sigma's model lives inside its own platform rather than a customer-owned Git repo
 - [[Market Landscape/Strategy|Strategy]] — another semantic-layer vendor emphasizing customer ownership of definitions, though Strategy Mosaic's governed store lives inside Strategy's own platform rather than a Git-backed customer repo
+- [[Amazon Quick Suite]] — Amazon's comparable move into NL-authored, governed internal apps (Apps in Quick, GA Sep 2026), though built on Quick's own connectors/identity model rather than a customer-owned Ontology
