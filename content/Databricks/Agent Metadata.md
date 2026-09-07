@@ -132,3 +132,6 @@ Agent Metadata elevates the [[Semantic Layer]] from a BI presentation concern to
 - [[Semantic Layer]] — the broader architecture Agent Metadata contributes to
 - [[Genie Agents]] — primary AI consumer
 - [[Disambiguation]] — the core problem Agent Metadata solves
+- [[Genie Ontology]] — structural complement: explicit synonym mappings vs. the ontology's dynamic, usage-based resolution
+- [[Knowledge Store]] — the space-level complement: Agent Metadata is governed globally in Unity Catalog, the Knowledge Store is scoped per space
+- [[Data Governance]] — Agent Metadata is the metadata-governance layer that makes AI consumption of data trustworthy

@@ -4,7 +4,9 @@ aliases:
   - Lakeflow
   - Delta Live Tables
   - Databricks Workflows
-type: "[[Technology]]"
+type:
+  - "[[Technology]]"
+  - "[[Product]]"
 vendor: "[[Databricks]]"
 category: Data Pipeline Orchestration
 tags:

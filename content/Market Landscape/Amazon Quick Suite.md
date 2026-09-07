@@ -48,3 +48,4 @@ Announced October 9, 2025 as an evolution of QuickSight, rolled out globally sta
 - [[Snowflake CoWork]] — Snowflake's comparable evolution from a narrower conversational-analytics layer (Snowflake Intelligence) into a broader personal work agent
 - [[Sigma]] — also ships governed dashboard-migration tooling (Workbooks as Code) as part of its own BI-migration play
 - [[Tableau Next]] — another platform vendor's expansion of a BI product into a broader NL work-agent suite
+- [[Market Landscape/TextQL|TextQL]] — comparable move into NL-authored, governed internal apps (TextQL Data Apps), though built on a customer-owned Ontology rather than Quick's own connectors/identity model

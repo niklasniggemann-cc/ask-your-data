@@ -1,6 +1,8 @@
 ---
 title: Delta Lake
-type: "[[Technology]]"
+type:
+  - "[[Technology]]"
+  - "[[Product]]"
 vendor: "[[Databricks]]"
 category: Open Table Format
 license: Open Source (Apache 2.0)

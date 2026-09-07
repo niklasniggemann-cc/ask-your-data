@@ -1,6 +1,8 @@
 ---
 title: Lakehouse Monitoring
-type: "[[Technology]]"
+type:
+  - "[[Technology]]"
+  - "[[Product]]"
 vendor: "[[Databricks]]"
 category: Data Quality Monitoring
 tags:

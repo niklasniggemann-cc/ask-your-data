@@ -1,6 +1,8 @@
 ---
 title: Metric Views
-type: "[[Technology]]"
+type:
+  - "[[Technology]]"
+  - "[[Product]]"
 vendor: "[[Databricks]]"
 governed-in: "[[Unity Catalog]]"
 category: Semantic Object
@@ -36,7 +38,7 @@ Metric Views (rebranded "Metrics" in some surfaces) gained several capabilities:
 
 ## Sharing Across Accounts (Beta, Sep 3 2026)
 
-Metric views can now be shared with Databricks users in other metastores or accounts via [[OpenSharing]] — the same cross-account sharing mechanism already used for tables and Genie Spaces. Previously excluded from OpenSharing. Extends governed semantic definitions (and by extension, what [[Genie Agents]]/[[Genie One]] reason over) across organizational boundaries. [Source](https://docs.databricks.com/aws/en/opensharing/create-share#metric-views)
+Metric views can now be shared with Databricks users in other metastores or accounts via OpenSharing — the same cross-account sharing mechanism already used for tables and Genie Spaces. Previously excluded from OpenSharing. Extends governed semantic definitions (and by extension, what [[Genie Agents]]/[[Genie One]] reason over) across organizational boundaries. [Source](https://docs.databricks.com/aws/en/opensharing/create-share#metric-views)
 
 ## Local Metric Views (GA, Aug 20 2026)
 

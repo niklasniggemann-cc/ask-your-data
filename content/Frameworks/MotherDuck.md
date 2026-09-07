@@ -3,6 +3,7 @@ title: MotherDuck
 type:
   - "[[Technology]]"
   - "[[Product]]"
+vendor: "[[MotherDuck]]"
 category: Serverless Analytical Database
 tags:
   - framework

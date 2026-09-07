@@ -42,3 +42,7 @@ MLflow is built into [[Databricks]] — no separate installation required. Exper
 - [[Evaluation]] — broader concept
 - [[Databricks]] — platform where MLflow is natively integrated
 - [[Observability]] — MLflow tracing is one tool for tracking and visualizing observed data
+- [[Agent Bricks]] — uses MLflow for observability and tracing of Agent Bricks deployments
+- [[Lakebase Search]] — MLflow traces and agent observability often sit alongside Lakebase-backed agent memory
+- [[Agent Skills]] — publishes its own skill set for agent evaluation and observability workflows with MLflow
+- [[Omnigent]] — MLflow is a common observability layer alongside Omnigent-managed agents
