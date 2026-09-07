@@ -49,6 +49,7 @@ Genie One connects to external data sources alongside [[Unity Catalog]] data:
 
 ## Recent Developments
 
+- **2026-09-03** — **Push notifications for scheduled tasks** (Public Preview): the Genie mobile app can now send push notifications to iOS devices when a scheduled task completes. [Source](https://docs.databricks.com/aws/en/genie-one/mobile#push-notifications)
 - **2026-09-01** — **Web search** (Beta): Genie One can now search the public web for current information (release notes, third-party docs, news) and cites external sources as links. Requires partner-powered AI features and an eligible geo. [Source](https://docs.databricks.com/aws/en/genie-one/chat#web-search)
 - **2026-09-01** — Genie One (and [[Genie Agents]]) can now use models served through **OpenAI on Databricks** when partner-powered AI features are enabled. [Source](https://docs.databricks.com/aws/en/release-notes/product/2026/september)
 - **2026-07-16** (backfilled) — **Memory** (Beta): Genie One retains specific facts a user explicitly asks it to remember (preferences, workflows, conventions) and applies them automatically in later conversations — private to the user, cited when used, correctable in conversation. [Source](https://docs.databricks.com/aws/en/genie-one/chat#add-to-genie-ones-memory)
