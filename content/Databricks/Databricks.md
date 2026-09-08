@@ -32,6 +32,8 @@ Databricks bundles its natural language data access capabilities under the AI/BI
 
 [[Unity Catalog]] is the single governance layer across all workloads. [[Agent Metadata]] attaches structured business context to [[Metric Views]] inside Unity Catalog. The [[Medallion Architecture]] organizes data into Bronze → Silver → Gold layers within the platform.
 
+Databricks isn't limited to data that physically lives in the platform: **Lakehouse Federation** lets Unity Catalog register external systems — Snowflake, BigQuery, Redshift, PostgreSQL, MySQL, and others — as foreign catalogs, so [[Genie Agents]] and other UC-aware tools can query outside data without an ETL copy. This extends Unity Catalog's *reach*, not its governance boundary: a federated table is still governed by Unity Catalog's policies once queried through it. See [[Semantic Layer]] for how this compares to Snowflake's own Iceberg-interop approach.
+
 ## Related
 
 - [[Unity Catalog]] — governance foundation

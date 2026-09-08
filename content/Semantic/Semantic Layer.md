@@ -49,6 +49,28 @@ When weak or fragmented: different teams get different numbers for the same metr
 
 **Platform approach**: semantics managed inside the data platform, exposed to all surfaces via open APIs. Governance becomes enforced by construction. The semantic model is infrastructure every team and tool depends on.
 
+## Three Architectural Patterns: Where the Semantic Layer Actually Lives
+
+Every "ask your data" vendor answers natural-language questions, but they part ways on a more consequential question: where does the semantic layer — and by extension, governance — actually live? Three patterns recur across the market:
+
+**Warehouse-native** — [[Genie Agents]] / [[Genie One]] on Databricks, Cortex Analyst inside [[Snowflake CoWork]], Microsoft Copilot for Power BI (grounded in [[Fabric IQ]]), Amazon QuickSight Q inside [[Amazon Quick Suite]]. The semantic layer is built into the platform itself and reuses whatever metadata is already curated in that platform's own catalog — [[Unity Catalog]] for Databricks, Snowflake's catalog for Cortex Analyst, Power BI datasets for Copilot, QuickSight datasets for Quick. If an organization's data and governance already live there, this is the lowest-modeling-effort path: nothing to rebuild, no second source of truth to keep in sync. The cost is that governance is tied to one platform's catalog by construction.
+
+**BI-layer** — [[ThoughtSpot Spotter]], [[Sigma]], Querio, [[Looker Conversational Analytics|Looker]]. These tools are multi-warehouse by design — the same Spotter or Sigma deployment can query Snowflake, Databricks, BigQuery, and Postgres side by side. But that platform-independence has a real cost: the semantic model has to be rebuilt from scratch inside the BI tool, regardless of whatever metric definitions, joins, and row-level policies are already curated upstream in each warehouse's own catalog. Governance now lives in a second place the warehouse team doesn't control directly.
+
+**Headless** — Cube, the dbt Semantic Layer, AtScale. The most upfront modeling effort of the three: nothing is inherited from any single platform's catalog, and there's no bundled BI frontend to make the investment feel immediately worthwhile on its own. The payoff is a single, portable metric definition — "active user," "net revenue" — that Looker, Tableau, a Genie Agent, and a Python notebook can all query identically, rather than three subtly different redefinitions living in three tools. See the Open Semantic Interchange and Agents Schema entries under Recent Developments below for the current cross-vendor push to standardize this pattern.
+
+*A terminology note*: [[Sigma]]'s own marketing also calls itself "warehouse-native" — but on a different axis. Sigma means it live-queries the warehouse rather than extracting and caching data, unlike legacy BI tools. "Warehouse-native" as used above means something closer to *platform-bundled*: the semantic layer ships as part of one specific warehouse/platform rather than as an independent product. A tool can be warehouse-native in Sigma's live-query sense while still being BI-layer in the governance-location sense used here — the two claims answer different questions, not contradictory ones.
+
+### The Real Decision
+
+The practical question for an organization evaluating these tools usually isn't "which AYD product has the best chat interface" — most of them are converging on similar conversational UX. It's **where the semantic layer and governance should live, and whether one system of record is enough or several are needed.** Warehouse-native trades flexibility for reuse. BI-layer trades reuse for platform independence. Headless goes further, trading a bundled frontend for portability across every frontend.
+
+### Platform Silos Aren't as Absolute as They Look
+
+Neither Databricks nor Snowflake is actually locked to its own data by construction. Databricks' **Lakehouse Federation** lets [[Unity Catalog]] register Snowflake, BigQuery, Redshift, and other systems as foreign catalogs, so [[Genie Agents]] can in principle reason over tables that physically live outside Databricks. Snowflake does the mirror image via its native Apache Iceberg support and open-catalog interop (Polaris/Horizon-style REST catalogs), reading tables that Databricks or another engine wrote.
+
+This doesn't undercut the warehouse-native/BI-layer distinction above — it sharpens it. Federation extends *reach*, not *governance*: a federated Snowflake table queried through Unity Catalog is still governed by Unity Catalog's policies once it crosses that boundary, and the reverse holds for a Databricks table read through Snowflake. Each platform's own catalog remains the system of record for anything routed through it; federation just means that catalog's writ can extend further outward than the data it physically stores. BI-layer and headless tools don't have this asymmetry at all — they're neutral by construction, with no home catalog positioned to privilege one warehouse's governance over another's.
+
 ## The Semantic Layer and AI
 
 LLMs have no inherent understanding of a company's business vocabulary. Without a semantic layer they generate plausible queries that may be subtly or significantly wrong, presented with full confidence.
@@ -110,3 +132,5 @@ Beyond metric definitions, GenAI applications need:
 - [[Tableau Next]] — Salesforce's Tableau Semantics layer implements the same pattern, with plain-language model authoring and Salesforce as an OSI backer
 - [[Market Landscape/TextQL|TextQL]] — an AI-analyst startup whose Ontology is a self-maintaining semantic layer stored as a customer-owned, Git-native file tree rather than a proprietary in-platform model
 - [[Market Landscape/Strategy|Strategy]] — formerly MicroStrategy, whose Mosaic universal semantic layer traces back to the "1990s — first commercial semantic layers" entry above, now repositioned as a standalone, warehouse-agnostic layer serving BI tools and AI agents via SQL/DAX/MDX/REST/MCP
+- [[Amazon Quick Suite]] — warehouse-native pattern via QuickSight Q's topics, reusing metadata already curated in QuickSight's own dataset layer
+- [[Databricks]] — Lakehouse Federation shows how a warehouse-native platform can extend its governance reach outward without relocating the system of record

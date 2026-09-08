@@ -20,6 +20,7 @@ Unity Catalog is Databricks' unified governance layer that provides centralized 
 - **Data lineage** — tracks which source tables feed each asset and which downstream consumers depend on it
 - **Data discovery** — searchable, auditable catalog across the entire data estate
 - **[[Metric Views]]** — governed semantic objects that define measures and dimensions over source tables
+- **Lakehouse Federation** — registers external systems (Snowflake, BigQuery, Redshift, PostgreSQL, MySQL, and others) as foreign catalogs, extending Unity Catalog's governance and lineage to data that physically lives outside Databricks without copying it in
 
 ## Role in the AI Stack
 
@@ -39,6 +40,7 @@ Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single overs
 
 ## Related
 
+- [[Semantic Layer]] — Lakehouse Federation's reach-vs-governance distinction, and how it compares to Snowflake's Iceberg-interop approach
 - [[Governance Hub]] — account-level UI providing a unified view over Unity Catalog governance, AI usage, and cost
 - [[Databricks]] — platform that owns Unity Catalog
 - [[Agent Metadata]] — YAML-defined business context governed within Unity Catalog
