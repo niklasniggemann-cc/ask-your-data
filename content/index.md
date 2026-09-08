@@ -82,6 +82,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Omnigent]] — meta-harness for composing and governing agents across frameworks
 - [[Agent Skills]] — packaged instructions for AI coding assistants, official Databricks skill repo
 - [[Updates]] — running log of confirmed Databricks developments from the daily briefing
+- [[Big Picture]] — running log of cross-cutting synthesis (convergence, divergence, whitespace) spanning both the Databricks and Market Landscape updates
 
 ### Market Landscape
 - [[Snowflake CoWork]] — Snowflake's personal AI work agent, rebrand/expansion of Snowflake Intelligence
