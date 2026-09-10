@@ -82,6 +82,34 @@ Three independent vendors have now shipped near-identical persistent-memory UX w
 
 ---
 
+### Adaptive execution tiering: quality-latency tradeoffs move into the engine
+**First logged:** 2026-09-10 · **Last updated:** 2026-09-10 · **Status:** active — converging moves
+
+Two vendors shipped the same underlying idea on the same day: instead of running every query through a fixed-cost pipeline, let the engine decide per-query how much work is worth doing. Databricks' new Adaptive Instructed-Retriever (Sep 9) — the retrieval model now sitting under Genie Code, Genie One, and Genie Agents — decides per-query how many search steps to take, stopping early on simple lookups and going deeper on hard multi-hop questions, cutting latency roughly 2x at matched quality against Claude Sonnet 5, GPT-5.6 Luna, and DeepSeek-V4-Flash. The same day, ThoughtSpot's 26.9.0.cl release took aggregate-aware query execution to GA — Spotter now auto-switches between detailed and aggregate semantic models based on query granularity for the same cost/latency payoff. Different subsystems (retrieval vs. semantic-model routing), same strategic move: once basic NL-to-answer works, the next differentiation axis is making the "how hard should I try" decision invisible and automatic rather than a knob someone has to tune. Worth watching whether this becomes a checkbox feature the way memory did, or stays a genuine performance differentiator.
+
+**Built on:**
+- Adaptive Instructed-Retriever (Sep 9) — [Source](https://www.databricks.com/blog/adaptive-instructed-retriever-frontier-quality-search-2x-lower-latency)
+- ThoughtSpot 26.9.0.cl, aggregate-aware query execution reaches GA (Sep 9) — [Source](https://docs.thoughtspot.com/cloud/26.9.0.cl/notes.html)
+
+**Update log:**
+- 2026-09-10: initial observation.
+
+---
+
+### Lakebase branching becomes the substrate for agent-dev tooling
+**First logged:** 2026-09-10 · **Last updated:** 2026-09-10 · **Status:** active — whitespace/consolidation (caveat: single-vendor signal)
+
+Two independent Databricks field-engineering reference projects, two days apart, both reached for the same underlying primitive — Lakebase's copy-on-write Postgres branching — to solve completely different agent-tooling problems. Temporal + Lakebase (Sep 8) uses a branch as the durable, queryable, application-facing state store for long-running agent workflows that Temporal's own Event History doesn't expose well. Consort (Sep 9) uses a branch as a live, disposable test target for an agentic TDD loop, so a coding agent tests against real data shape instead of mocks. Neither is a core, SLA-backed product — both are open-source reference implementations from Field Engineering — so this is a signal about where Databricks' own engineers see the platform's edge, not a shipped capability. But it suggests Lakebase branching is quietly becoming a general-purpose "give an agent a safe, disposable copy of reality" primitive, distinct from Lakebase's original serverless-Postgres-for-agent-memory framing. Worth watching whether this surfaces as an official product feature, and whether any competitor's database offers something comparable for agent tooling specifically.
+
+**Built on:**
+- Temporal + Lakebase durable agents reference implementation (Sep 8) — [Source](https://www.databricks.com/blog/build-durable-agents-temporal-and-lakebase)
+- Consort: open-source agentic TDD framework on Lakebase branching (Sep 9) — [Source](https://www.databricks.com/blog/introducing-consort-test-driven-development-branching-database)
+
+**Update log:**
+- 2026-09-10: initial observation.
+
+---
+
 ## Retired / Superseded Observations
 
 _None yet._
