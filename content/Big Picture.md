@@ -110,6 +110,37 @@ Two independent Databricks field-engineering reference projects, two days apart,
 
 ---
 
+### Citations become the default trust layer — but they don't prove anything
+**First logged:** 2026-09-11 · **Last updated:** 2026-09-11 · **Status:** active — converging moves
+
+Three vendors shipped answer-attribution features within a two-day window. Databricks' `ai_search` function got a `generate_citations` option (Beta, Sep 8) that returns which retrieved chunks the model used to support an answer. Amazon Quick's Sep 9 release added inline citations letting users "verify every answer against its source." ThoughtSpot's 26.9.0.cl (also Sep 9) shipped a quick action to "verify reasoning" on any Spotter answer. Add Genie One's existing citation behavior (web search results, Sep 1; memory, cited when used) and this isn't three isolated features — it's the market converging on "show your sources" as the standard answer to the trust problem, the same way memory converged a few weeks ago. The catch, and it's a real one: this vault's own [[Hallucinations]] note already classifies fabricated citations as a distinct failure mode ("invents plausible-sounding... citations that don't exist"), and Databricks' own release notes for `generate_citations` admit the citations are "the model's best-effort picks of supporting evidence, not proof of any specific claim." So the entire industry is racing to ship a trust UI built on exactly the mechanism most likely to be silently wrong. Worth a skeptical angle for a future piece — citations reduce blind trust in prose answers, but they're a UX signal of confidence, not a correctness guarantee, and nothing here changes that.
+
+**Built on:**
+- Databricks `ai_search` `generate_citations` option, Beta (Sep 8) — [Source](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_search)
+- Amazon Quick inline citations, part of the Sep 9 always-on/enterprise-controls release — [Source](https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-always-on-agents-sharper-feed-enterprise-controls/)
+- ThoughtSpot 26.9.0.cl, "verify-reasoning" quick action on Spotter answers (Sep 9) — [Source](https://docs.thoughtspot.com/cloud/26.9.0.cl/notes.html)
+- Existing vault framing: [[Hallucinations]] (fabrication failure mode includes invented citations); Genie One web search citations (Sep 1) and memory citations (existing)
+
+**Update log:**
+- 2026-09-11: initial observation.
+
+---
+
+### NL-BI agents go always-on: background execution becomes the default
+**First logged:** 2026-09-11 · **Last updated:** 2026-09-11 · **Status:** active — escalation
+
+Three shipments across two vendors show agents shifting from "runs while you watch" to "runs whether or not you're there." Databricks took Genie Code scheduled tasks to GA (Sep 1) and added mobile push notifications so a Genie One scheduled task can complete and notify without an open session (Public Preview, Sep 3). Amazon went further on Sep 9: Quick's scheduled and monitoring agents now run in the cloud and keep delivering results "even when a user's laptop is closed," paired with a redesigned activity feed (daily briefings refreshing three times a day, a week of searchable history) built specifically to catch up on what agents did while unattended. Amazon also added a publishable agents/skills catalog — teams can share what they built rather than everyone reinventing it, echoing Genie One's own user-skills and shareable-Genie-Agent mechanisms. Read together, the center of gravity is moving from "chat interface you drive" to "fleet of agents you check in on" — the UI questions that matter next are less about query accuracy and more about surfacing what unattended agents did, flagging what needs a human, and making it easy to trust a summary you didn't watch get generated.
+
+**Built on:**
+- Genie Code scheduled tasks reach GA (Sep 1) — [Source](https://docs.databricks.com/aws/en/genie-code/scheduled-tasks)
+- Genie One scheduled-task push notifications, Public Preview (Sep 3) — [Source](https://docs.databricks.com/aws/en/genie-one/mobile#push-notifications)
+- Amazon Quick always-on cloud-persistent agents + redesigned activity feed (Sep 9) — [Source](https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-always-on-agents-sharper-feed-enterprise-controls/)
+
+**Update log:**
+- 2026-09-11: initial observation.
+
+---
+
 ## Retired / Superseded Observations
 
 _None yet._
