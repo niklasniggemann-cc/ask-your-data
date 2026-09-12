@@ -30,6 +30,10 @@ Sigma is a warehouse-native BI and spreadsheet-interface platform that has expan
 
 Positions itself as a warehouse-native alternative to platform-bundled conversational layers ([[Genie Agents]], Cortex Analyst, [[ThoughtSpot Spotter]]): rather than owning the warehouse, Sigma sits on top of Snowflake, Databricks, and others, live-querying rather than syncing data, and lets its agents orchestrate other vendors' native agents (e.g. a Sigma Agent calling a Snowflake Cortex agent or a Databricks Genie space as a tool). Named Databricks' 2026 ISV Business Intelligence Partner of the Year (second year running) and Snowflake's BI Partner of the Year (fourth year running), and recognized in the 2026 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms. Sigma is targeting agents that run outside the workbook on a schedule (not just interactively) by end of Q3 2026.
 
+## Recent Developments
+
+- **2026-09-11** — **Sigma plugin for ChatGPT**: an officially listed plugin lets users search, explore, and analyze their data in natural language directly inside ChatGPT, then build a Sigma workbook from the result. Formalizes the existing Aug 2026 Sigma MCP Server capability (which already reached Claude/ChatGPT/internal chat tools) as a dedicated, discoverable ChatGPT integration rather than a new underlying mechanism. [Source](https://help.sigmacomputing.com/docs/use-the-sigma-plugin-for-ai-assistants)
+
 ## Related
 
 - [[Genie Agents]] — Databricks' native equivalent; a Sigma Agent can call a Genie space as a tool rather than replace it
