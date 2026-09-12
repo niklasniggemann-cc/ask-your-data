@@ -141,6 +141,22 @@ Three shipments across two vendors show agents shifting from "runs while you wat
 
 ---
 
+### "Deep research" becomes NL-BI's second tier, above single-turn Q&A
+**First logged:** 2026-09-12 · **Last updated:** 2026-09-12 · **Status:** active — converging moves
+
+Snowflake quietly established this months ago — CoWork's Deep Research reached GA back on Jul 7, turning "multi-step research report" into a shipped, governed output distinct from a chat answer. Google Cloud is now visibly converging on the same shape: its Jul 29 "multidimensional deep dive" (10–20 contributing factors analyzed in one run) has now hardened into a named **Deep Dive thinking mode** (Preview, dated Sep 3 but only caught by this vault's own tracking today — a week-plus miss worth noting on its own) that breaks a complex question into sub-questions, investigates each, and synthesizes a report — at the explicit cost of 3–5 minute queries and no multi-turn conversation during the solve phase. That's a real trade Google is choosing to make, not a free upgrade: it's carving out a second, slower, deliberately-more-thorough mode sitting above the fast single-turn chat answer, the same two-speed shape Snowflake already shipped. Databricks' Adaptive Instructed-Retriever (Sep 9) is a related but distinct move — it's about making the *existing* fast path adaptively cheaper, not adding a second, deliberately-slower investigative mode — so Databricks doesn't yet have an equivalent to Deep Research/Deep Dive. Worth watching whether Genie One or Genie Ontology ships one, and whether ThoughtSpot/Sigma/Fabric IQ follow the way they converged on memory a few weeks back.
+
+**Built on:**
+- Google Cloud Conversational Analytics API, Deep Dive thinking mode, Preview (dated Sep 3, surfaced in this vault Sep 11) — [Source](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/release-notes)
+- Google Cloud Conversational Analytics API, "multidimensional deep dive" mode (Jul 29, existing vault backfill) — [Source](https://cloud.google.com/blog/products/data-analytics/conversational-analytics-in-google-data-cloud-in-q326)
+- Snowflake CoWork Deep Research reaches GA (Jul 7, existing vault coverage) — [Source](https://docs.snowflake.com/en/release-notes/2026/other/2026-07-07-snowflake-cowork-deep-research-ga)
+- Databricks Adaptive Instructed-Retriever, contrasted as a distinct efficiency-not-depth move (Sep 9, existing vault coverage) — [Source](https://www.databricks.com/blog/adaptive-instructed-retriever-frontier-quality-search-2x-lower-latency)
+
+**Update log:**
+- 2026-09-12: initial observation.
+
+---
+
 ## Retired / Superseded Observations
 
 _None yet._
