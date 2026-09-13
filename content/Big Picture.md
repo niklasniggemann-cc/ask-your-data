@@ -22,32 +22,38 @@ Running log of cross-cutting patterns and strategic reads across the ask-your-da
 ## Active Observations
 
 ### Chat is becoming an app-builder
-**First logged:** 2026-09-08 · **Last updated:** 2026-09-08 · **Status:** active — escalation
+**First logged:** 2026-09-08 · **Last updated:** 2026-09-13 · **Status:** active — escalation
 
-Every major platform in this space now offers some path from "ask a question" to "here's a live internal tool," not just a chat answer. Amazon's Quick Apps reached GA Sep 1 — full natural-language-built internal tools, live-connected to source systems — landing alongside [[Market Landscape/TextQL|TextQL]]'s Data Apps (Git-native, warehouse-write-back), [[Sigma]]'s Workbooks-as-Code, and Databricks' own [[Genie App Builder]]. This is the category maturing past Q&A; the next competitive fight is over app-authoring UX and governance, not answer accuracy.
+Every major platform in this space now offers some path from "ask a question" to "here's a live internal tool," not just a chat answer. Amazon's Quick Apps reached GA Sep 1 — full natural-language-built internal tools, live-connected to source systems — landing alongside [[Market Landscape/TextQL|TextQL]]'s Data Apps (Git-native, warehouse-write-back), [[Sigma]]'s Workbooks-as-Code, and Databricks' own [[Genie App Builder]]. Omni is now a fifth data point: its generative "Apps" feature (build an interactive app from a prompt) reached GA the week of Aug 31 and is on by default in embedded instances — a smaller vendor than the other four, but the same bet. This is the category maturing past Q&A; the next competitive fight is over app-authoring UX and governance, not answer accuracy.
 
 **Built on:**
 - Amazon Quick Apps reaches GA (Sep 1) — [Source](https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/)
 - TextQL Data Apps, launched Jul 30 (backfilled into the vault Sep 1) — [Source](https://textql.com/blog/data-apps-launch)
 - Sigma Workbooks-as-Code and Databricks Genie App Builder (existing vault coverage, referenced for comparison)
+- Omni Apps reaches GA, on by default in embedded instances (week of Aug 31, logged Sep 12) — [Source](https://docs.omni.co/changelog)
 
 **Update log:**
 - 2026-09-08: initial observation.
+- 2026-09-13: added Omni Apps GA as a fifth confirming vendor — the pattern is now a checklist item across the category, not a handful of vendors' individual bets.
 
 ---
 
 ### MCP as the universal semantic-layer exit door
-**First logged:** 2026-09-08 · **Last updated:** 2026-09-08 · **Status:** active — standards/consolidation
+**First logged:** 2026-09-08 · **Last updated:** 2026-09-13 · **Status:** active — standards/consolidation
 
-[[MCP]] isn't just a connectivity protocol anymore — it's becoming the default way vendors expose (and govern) their semantic/context layer to any agent. Microsoft's Fabric IQ Ontology got an MCP server (Preview, Aug 29), explicitly following "the same pattern already seen from Databricks and Snowflake" per the market-landscape log itself — Databricks' Genie One MCP server, Snowflake's Cortex Agents/MCP Native Apps, and (new this window) [[Market Landscape/Strategy|Strategy]] Mosaic's own MCP server all do the same thing. On the Databricks side, Unity Gateway's unified trace table (Beta, Sep 1) went a step further and turned every MCP tool call itself into a governed, queryable artifact — Databricks used it internally to catch $499K/year in wasted agent spend. Worth watching whether this tips into an actual cross-vendor MCP interop spec for semantic layers, not just parallel implementations.
+[[MCP]] isn't just a connectivity protocol anymore — it's becoming the default way vendors expose (and govern) their semantic/context layer to any agent. Microsoft's Fabric IQ Ontology got an MCP server (Preview, Aug 29), explicitly following "the same pattern already seen from Databricks and Snowflake" per the market-landscape log itself — Databricks' Genie One MCP server, Snowflake's Cortex Agents/MCP Native Apps, and [[Market Landscape/Strategy|Strategy]] Mosaic's own MCP server all do the same thing. On the Databricks side, Unity Gateway's unified trace table (Beta, Sep 1) went a step further and turned every MCP tool call itself into a governed, queryable artifact — Databricks used it internally to catch $499K/year in wasted agent spend. This window sharpens the pattern in two directions at once. Vendors are formalizing their own MCP exposure into discoverable, productized channels rather than leaving it as a generic capability: Sigma shipped a dedicated, officially-listed ChatGPT plugin (Sep 11) that's explicitly a productized front-end on the same MCP server it already had, and Omni added MCP tools for downloading dashboards programmatically (logged Sep 12). And the traffic is now running the other way too: Databricks' first-party managed MCP connector catalog (Google Drive, Gmail, Calendar, Microsoft 365, Atlassian, Slack, GitHub) reached GA for Genie One and Genie Code (Sep 10), governed end-to-end through Unity Catalog/Gateway — so MCP isn't just how a vendor's semantic layer gets consumed by outside agents anymore, it's also becoming the default way a vendor's own agent reaches into everyone else's tools. It's turning into two-way integration fabric for the whole category, not a one-directional "exit door." Worth watching whether this tips into an actual cross-vendor MCP interop spec, not just parallel implementations in both directions.
 
 **Built on:**
 - Fabric IQ Ontology MCP reaches Preview (Aug 29) — [Source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-fabric-iq-ontology)
 - Unity Gateway unified trace table reaches Beta (Sep 1) — [Source](https://www.databricks.com/blog/how-we-eliminated-1-million-year-wasted-ai-agent-spend-one-hour)
 - Strategy Mosaic's own MCP server (existing vault coverage, backfilled Aug 30) — [Source](https://software.strategy.com/strategyai/agents)
+- Sigma plugin for ChatGPT, productizing its existing MCP server (Sep 11) — [Source](https://help.sigmacomputing.com/docs/use-the-sigma-plugin-for-ai-assistants)
+- Databricks-provided MCP connectors for Genie One/Genie Code reach GA (Sep 10) — [Source](https://docs.databricks.com/aws/en/genie-one/external-sources)
+- Omni MCP dashboard-download tools (week of Aug 31, logged Sep 12) — [Source](https://docs.omni.co/changelog)
 
 **Update log:**
 - 2026-09-08: initial observation.
+- 2026-09-13: added evidence MCP is now bidirectional infrastructure — vendors productizing their own exposure (Sigma's ChatGPT plugin, Omni's dashboard tools) while also consuming third-party tools through it (Databricks' managed connector catalog GA); take sharpened from "exit door" to "two-way fabric."
 
 ---
 
@@ -67,18 +73,20 @@ Databricks extending [[Metric Views]] sharing cross-account/cross-metastore via 
 ---
 
 ### Agent memory becoming table stakes
-**First logged:** 2026-09-08 · **Last updated:** 2026-09-09 · **Status:** active — converging moves, now confirmed
+**First logged:** 2026-09-08 · **Last updated:** 2026-09-13 · **Status:** active — converging moves, now confirmed
 
-Three independent vendors have now shipped near-identical persistent-memory UX within about eight weeks of each other: [[Genie One]] Memory (Beta, shipped Jul 16), Strategy AI Agents' Long-Term Memory (shipped Aug 14), and — the confirming signal this observation flagged on Sep 8 as worth watching for — ThoughtSpot's Spotter Memory reaching **GA, on by default** (Sep 9). All three land on the same design: user-reviewable, correctable, cited when used. ThoughtSpot went further than a same-shape catch-up: Spotter Memory can now be generated directly from Liveboards (not just conversation turns), and a new "Remember this" button shows a preview of the exact definition being stored before the user commits — arguably a cleaner trust/consent pattern than either Genie One's or Strategy's current implementation. With three unrelated vendors converging on the same feature within two months, this has moved past "signal to watch" — persistent memory is now a baseline expectation for any serious NL-BI agent, not a differentiator. Sigma and Fabric IQ are the two notable vendors in this vault's coverage with no shipped memory feature yet — worth checking whether they follow, and whether being last matters competitively once a capability is this normalized.
+Three independent vendors have now shipped near-identical persistent-memory UX within about eight weeks of each other: [[Genie One]] Memory (Beta, shipped Jul 16), Strategy AI Agents' Long-Term Memory (shipped Aug 14), and — the confirming signal this observation flagged on Sep 8 as worth watching for — ThoughtSpot's Spotter Memory reaching **GA, on by default** (Sep 9). All three land on the same design: user-reviewable, correctable, cited when used. ThoughtSpot went further than a same-shape catch-up: Spotter Memory can now be generated directly from Liveboards (not just conversation turns), and a new "Remember this" button shows a preview of the exact definition being stored before the user commits — arguably a cleaner trust/consent pattern than either Genie One's or Strategy's current implementation. With three unrelated vendors converging on the same feature within two months, this has moved past "signal to watch" — persistent memory is now a baseline expectation for any serious NL-BI agent, not a differentiator. Genie One has since closed the specific consent gap this observation flagged: **Memory confirmation prompts (Beta, Sep 10)** now have Genie One proactively suggest a memory and require the user to approve, modify, or reject it before saving, rather than only saving on explicit request — converging on the same preview-before-commit shape ThoughtSpot introduced. That's a second-order signal worth noting on its own: not just "has memory" converging, but the *consent UX around* memory converging too. Sigma and Fabric IQ are the two notable vendors in this vault's coverage with no shipped memory feature yet — worth checking whether they follow, and whether being last matters competitively once a capability is this normalized.
 
 **Built on:**
 - Genie One Memory, Beta, shipped Jul 16 (backfilled Sep 2) — [Source](https://docs.databricks.com/aws/en/genie-one/chat#add-to-genie-ones-memory)
 - Strategy AI Agents Long-Term Memory, Aug 14 release — [Source](https://software.strategy.com/blog/august-2026-agents-that-remember-mosaic-schema-in-studio-and-personalized-bi)
 - ThoughtSpot Spotter Memory reaches GA, on by default (Sep 9) — [Source](https://docs.thoughtspot.com/cloud/26.9.0.cl/notes.html)
+- Genie One Memory confirmation prompts, Beta (Sep 10, logged Sep 12) — [Source](https://docs.databricks.com/aws/en/ai-bi/release-notes/2026)
 
 **Update log:**
 - 2026-09-08: initial observation (two vendors, flagged as pattern to watch).
 - 2026-09-09: reworked — ThoughtSpot Spotter Memory GA is the third independent vendor, confirming the pattern as settled table stakes rather than an emerging trend; take changed from "watch for a confirming signal" to "confirmed, Sigma/Fabric IQ now the outliers."
+- 2026-09-13: added Genie One's Memory confirmation prompts (Beta, Sep 10) — directly closes the consent-UX gap this observation noted on Sep 9, and reframes the pattern one level up: the approve-before-save interaction is now also converging, not just the underlying memory capability.
 
 ---
 
