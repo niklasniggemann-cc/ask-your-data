@@ -35,6 +35,7 @@ Every major platform in this space now offers some path from "ask a question" to
 **Update log:**
 - 2026-09-08: initial observation.
 - 2026-09-13: added Omni Apps GA as a fifth confirming vendor — the pattern is now a checklist item across the category, not a handful of vendors' individual bets.
+- 2026-09-18: Hex's new MCP-based project creation (`create_project`, Sep 15) extends this in a new direction — an external chat client (Claude/ChatGPT/Cursor), not just a vendor's own first-party chat, can now build a persisted app/project inside a BI platform. Full detail logged under the MCP observation below, since the mechanism is MCP tool-calling rather than a native chat surface.
 
 ---
 
@@ -43,6 +44,8 @@ Every major platform in this space now offers some path from "ask a question" to
 
 [[MCP]] isn't just a connectivity protocol anymore — it's becoming the default way vendors expose (and govern) their semantic/context layer to any agent. Microsoft's Fabric IQ Ontology got an MCP server (Preview, Aug 29), explicitly following "the same pattern already seen from Databricks and Snowflake" per the market-landscape log itself — Databricks' Genie One MCP server, Snowflake's Cortex Agents/MCP Native Apps, and [[Market Landscape/Strategy|Strategy]] Mosaic's own MCP server all do the same thing. On the Databricks side, Unity Gateway's unified trace table (Beta, Sep 1) went a step further and turned every MCP tool call itself into a governed, queryable artifact — Databricks used it internally to catch $499K/year in wasted agent spend. This window sharpens the pattern in two directions at once. Vendors are formalizing their own MCP exposure into discoverable, productized channels rather than leaving it as a generic capability: Sigma shipped a dedicated, officially-listed ChatGPT plugin (Sep 11) that's explicitly a productized front-end on the same MCP server it already had, and Omni added MCP tools for downloading dashboards programmatically (logged Sep 12). And the traffic is now running the other way too: Databricks' first-party managed MCP connector catalog (Google Drive, Gmail, Calendar, Microsoft 365, Atlassian, Slack, GitHub) reached GA for Genie One and Genie Code (Sep 10), governed end-to-end through Unity Catalog/Gateway — so MCP isn't just how a vendor's semantic layer gets consumed by outside agents anymore, it's also becoming the default way a vendor's own agent reaches into everyone else's tools. It's turning into two-way integration fabric for the whole category, not a one-directional "exit door." Worth watching whether this tips into an actual cross-vendor MCP interop spec, not just parallel implementations in both directions.
 
+This window adds a third direction on top of "consume" and "expose": MCP as the channel through which an *external* chat client builds a persisted artifact inside a vendor's own platform, not just a one-shot answer. Hex shipped `create_project`/`get_project`/`update_project` MCP tools (Sep 15), so a chat agent running in Claude, ChatGPT, or Cursor can turn an ad hoc conversation into a saved, continuable Hex project without the user ever opening Hex directly — effectively making the "chat is becoming an app-builder" pattern (above) something any MCP-connected client can trigger remotely, not only a vendor's own first-party chat surface. Governance is catching up to the same surface from the other side: Databricks' Unity Gateway API and developer tools for managing MCP services (create/read/update/list/delete) reached GA (Sep 16), landing across Terraform, the CLI, and every major SDK — MCP services are now provisionable and version-controllable as code, the same maturity level already applied to model services. Put together, MCP in this window looks less like a connectivity spec and more like a full application layer: writable, governable, and now capable of standing up new artifacts on demand from whatever client speaks it.
+
 **Built on:**
 - Fabric IQ Ontology MCP reaches Preview (Aug 29) — [Source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-fabric-iq-ontology)
 - Unity Gateway unified trace table reaches Beta (Sep 1) — [Source](https://www.databricks.com/blog/how-we-eliminated-1-million-year-wasted-ai-agent-spend-one-hour)
@@ -50,10 +53,13 @@ Every major platform in this space now offers some path from "ask a question" to
 - Sigma plugin for ChatGPT, productizing its existing MCP server (Sep 11) — [Source](https://help.sigmacomputing.com/docs/use-the-sigma-plugin-for-ai-assistants)
 - Databricks-provided MCP connectors for Genie One/Genie Code reach GA (Sep 10) — [Source](https://docs.databricks.com/aws/en/genie-one/external-sources)
 - Omni MCP dashboard-download tools (week of Aug 31, logged Sep 12) — [Source](https://docs.omni.co/changelog)
+- Hex MCP tools let external chat agents create/update Hex projects directly (Sep 15) — [Source](https://learn.hex.tech/changelog/2026-09-15)
+- Unity Gateway API and developer tools for MCP/model services reach GA (Sep 16) — [Source](https://docs.databricks.com/aws/en/ai-gateway/)
 
 **Update log:**
 - 2026-09-08: initial observation.
 - 2026-09-13: added evidence MCP is now bidirectional infrastructure — vendors productizing their own exposure (Sigma's ChatGPT plugin, Omni's dashboard tools) while also consuming third-party tools through it (Databricks' managed connector catalog GA); take sharpened from "exit door" to "two-way fabric."
+- 2026-09-18: added a third direction — MCP as the channel for external chat clients to build persisted artifacts inside a vendor's platform (Hex's `create_project` tools), plus governance-as-code catching up to MCP services specifically (Unity Gateway API GA); take extended from "two-way fabric" to "full application layer."
 
 ---
 
@@ -162,6 +168,20 @@ Snowflake quietly established this months ago — CoWork's Deep Research reached
 
 **Update log:**
 - 2026-09-12: initial observation.
+
+---
+
+### From answers to actions: energy becomes an early proving ground
+**First logged:** 2026-09-18 · **Last updated:** 2026-09-18 · **Status:** active — escalation (caveat: two vendors, one vertical so far)
+
+Two unrelated vendors picked the same vertical, in the same week, to make the same pitch: an NL-BI agent that doesn't just answer a question but goes on to take the resulting action in an operational system. Databricks' Sep 15 blog post on energy-theft detection ties Genie One's reasoning to a governed AI business process (a Databricks App) that prioritizes investigations, generates dispatch-ready reports, and drives recovery workflows — Genie doesn't just flag the anomaly, the same pipeline acts on it. Two days later, Amazon shipped a dedicated bundle of energy-industry workflows for Quick (Sep 17) that goes further on paper: grid planning, maintenance scheduling, outage routing, and compliance-record updates, explicitly framed as letting Quick "make recommendations and implement solutions" rather than just surface them. Neither is a new horizontal platform capability — both are vertical showcases built on general write/action infrastructure each vendor already had (Databricks' AI Business Processes/Agent Bricks/Lakebase; Amazon's MCP-connected partner integrations) — but choosing the same vertical, in the same week, to make the "agent that acts, not just answers" case is a real tell about where both vendors think the next sales conversation is headed. Worth watching whether a third vendor picks energy next, whether this generalizes into a headline platform feature rather than a case study, and whether it's a genuine trend or just two case studies that happened to land close together.
+
+**Built on:**
+- Databricks — "How energy teams turn theft detection into governed action with Genie and AI business processes" (Sep 15) — [Source](https://www.databricks.com/blog/how-energy-teams-turn-theft-detection-governed-action-genie-and-ai-business-processes)
+- Amazon — new energy-industry workflows for Amazon Quick (Sep 17) — [Source](https://press.aboutamazon.com/aws/2026/9/aws-announces-new-energy-industry-workflows-for-amazon-quick)
+
+**Update log:**
+- 2026-09-18: initial observation.
 
 ---
 
