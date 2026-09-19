@@ -50,3 +50,4 @@ ThoughtSpot was named a **Leader in the 2026 Gartner® Magic Quadrant™ for Ana
 - [[Natural Language to SQL]] — the underlying technique both Spotter and Genie build on, and where it fails without governance
 - [[Semantic Layer]] — the shared-meaning layer SpotQL and Unity Catalog-backed Genie both depend on
 - [[Tableau Next]] — another independent-ish (Salesforce-owned) conversational-analytics platform, built on Salesforce Data Cloud/Agentforce rather than ThoughtSpot's own engine
+- [[Market Landscape/Qlik Answers|Qlik Answers]] — another independent BI vendor with a comparable multi-agent family (Discovery/Predict/Automate/Analytics vs. Spotter 3/SpotterViz/SpotterModel/SpotterCode)
