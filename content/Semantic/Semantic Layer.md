@@ -134,3 +134,6 @@ Beyond metric definitions, GenAI applications need:
 - [[Market Landscape/Strategy|Strategy]] — formerly MicroStrategy, whose Mosaic universal semantic layer traces back to the "1990s — first commercial semantic layers" entry above, now repositioned as a standalone, warehouse-agnostic layer serving BI tools and AI agents via SQL/DAX/MDX/REST/MCP
 - [[Amazon Quick Suite]] — warehouse-native pattern via QuickSight Q's topics, reusing metadata already curated in QuickSight's own dataset layer
 - [[Databricks]] — Lakehouse Federation shows how a warehouse-native platform can extend its governance reach outward without relocating the system of record
+- [[Disambiguation]] — the semantic layer is the architectural layer that makes disambiguation deterministic
+- [[Hallucinations]] — a structural defense against hallucinated metric definitions
+- [[Agent Metadata]] — Databricks' structural implementation contributing to the broader semantic-layer architecture

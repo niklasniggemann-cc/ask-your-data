@@ -177,3 +177,9 @@ Previously called **Genie Spaces**. Surfaced inside [[Genie One]] and embeddable
 - [[DSPy]] — supported multi-agent orchestration framework
 - [[Agent Bricks]] — Agent Bricks Supervisor orchestrates Genie Agents as specialized sub-agents
 - [[LLM-as-a-Judge]] — used for Agent mode benchmark scoring instead of SQL comparison
+- [[Natural Language to SQL]] — the core mechanism Genie Agents implements in governed form
+- [[RAG]] — combined with Genie in multi-agent systems to cover unstructured docs alongside structured data
+- [[Data Flywheel]] — Genie Agents is a concrete application domain for the feedback-loop pattern
+- [[MotherDuck]] — comparable lightweight NL-to-SQL surface, contrasted on governance model
+- [[Governance Hub]] — Genie powers Governance Hub's natural-language Q&A over governance data
+- [[Medallion Architecture]] — Genie Agents should always connect to Gold-layer tables

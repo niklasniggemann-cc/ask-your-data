@@ -53,3 +53,4 @@ When multiple columns are plausible matches for a query term, pure NL-to-SQL has
 - [[Disambiguation]] — the core challenge NL-to-SQL faces at scale
 - [[Hallucinations]] — the failure mode when NL-to-SQL gets it wrong confidently
 - [[Metric Views]] — the governed alternative to querying raw tables directly
+- [[MotherDuck]] — comparable lightweight NL-to-SQL surface over DuckDB

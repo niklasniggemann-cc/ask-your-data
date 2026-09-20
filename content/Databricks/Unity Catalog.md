@@ -50,3 +50,4 @@ Unity AI Gateway (part of Unity Catalog, GA August 2026) provides a single overs
 - [[Data Lineage]] — lineage tracking as a Unity Catalog capability
 - [[Data Governance]] — the broader practice Unity Catalog implements structurally
 - [[OntoBricks]] — open-source project that materializes Unity Catalog tables into a reasoned knowledge graph
+- [[MCP]] — Unity AI Gateway manages MCP connections and costs

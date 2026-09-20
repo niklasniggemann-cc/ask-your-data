@@ -8,6 +8,7 @@ category: Enterprise Context Layer
 tags:
   - market-landscape
   - semantic
+  - conversational-bi
 ---
 
 ## Definition

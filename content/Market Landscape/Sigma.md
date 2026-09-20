@@ -3,7 +3,7 @@ title: Sigma
 type:
   - "[[Technology]]"
   - "[[Product]]"
-vendor: "[[Sigma Computing]]"
+vendor: "[[Sigma]]"
 category: Natural Language Data Interface
 tags:
   - market-landscape
