@@ -22,29 +22,35 @@ Running log of cross-cutting patterns and strategic reads across the ask-your-da
 ## Active Observations
 
 ### Chat is becoming an app-builder
-**First logged:** 2026-09-08 · **Last updated:** 2026-09-13 · **Status:** active — escalation
+**First logged:** 2026-09-08 · **Last updated:** 2026-09-20 · **Status:** active — escalation
 
 Every major platform in this space now offers some path from "ask a question" to "here's a live internal tool," not just a chat answer. Amazon's Quick Apps reached GA Sep 1 — full natural-language-built internal tools, live-connected to source systems — landing alongside [[Market Landscape/TextQL|TextQL]]'s Data Apps (Git-native, warehouse-write-back), [[Sigma]]'s Workbooks-as-Code, and Databricks' own [[Genie App Builder]]. Omni is now a fifth data point: its generative "Apps" feature (build an interactive app from a prompt) reached GA the week of Aug 31 and is on by default in embedded instances — a smaller vendor than the other four, but the same bet. This is the category maturing past Q&A; the next competitive fight is over app-authoring UX and governance, not answer accuracy.
+
+Sigma's Sep 18 batch adds a sixth data point and a new wrinkle on the mechanism: alongside Hex's Sep 15 move (an *external MCP-connected chat client* building a persisted project inside Hex), Sigma shipped **migration skills that let Claude Code, Cursor, Cortex Code, or Codex rebuild another vendor's dashboards, reports, and data models as native Sigma documents** — plus a code-first Assistant architecture and dedicated `sigma-workbooks`/`sigma-reports` skills for authoring that code representation, and new API endpoints to list and run Sigma agents programmatically. This isn't just "chat builds an app" anymore — it's "an AI coding assistant migrates a competitor's content onto my platform," a distinct and sharper move: the app-builder capability is now explicitly being aimed at poaching workbooks and reports away from rival BI tools, not just building net-new ones from a blank prompt. Worth watching whether Hex, Omni, or Amazon Quick follow with their own migration-specific tooling, which would turn this from a Sigma land-grab into a category-wide expectation the way native app-building already has.
 
 **Built on:**
 - Amazon Quick Apps reaches GA (Sep 1) — [Source](https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/)
 - TextQL Data Apps, launched Jul 30 (backfilled into the vault Sep 1) — [Source](https://textql.com/blog/data-apps-launch)
 - Sigma Workbooks-as-Code and Databricks Genie App Builder (existing vault coverage, referenced for comparison)
 - Omni Apps reaches GA, on by default in embedded instances (week of Aug 31, logged Sep 12) — [Source](https://docs.omni.co/changelog)
+- Sigma migration skills for AI coding assistants (Claude Code, Cursor, Cortex Code, Codex), code-first Assistant architecture, agent API endpoints (Sep 18) — [Source](https://community.sigmacomputing.com/t/whats-new-in-sigma-september-18-2026/7246)
 
 **Update log:**
 - 2026-09-08: initial observation.
 - 2026-09-13: added Omni Apps GA as a fifth confirming vendor — the pattern is now a checklist item across the category, not a handful of vendors' individual bets.
 - 2026-09-18: Hex's new MCP-based project creation (`create_project`, Sep 15) extends this in a new direction — an external chat client (Claude/ChatGPT/Cursor), not just a vendor's own first-party chat, can now build a persisted app/project inside a BI platform. Full detail logged under the MCP observation below, since the mechanism is MCP tool-calling rather than a native chat surface.
+- 2026-09-20: added Sigma's Sep 18 migration skills for AI coding assistants — a sixth vendor, and a sharper competitive edge on the same pattern: AI assistants now explicitly used to migrate content away from rival BI tools, not just build new apps from scratch.
 
 ---
 
 ### MCP as the universal semantic-layer exit door
-**First logged:** 2026-09-08 · **Last updated:** 2026-09-13 · **Status:** active — standards/consolidation
+**First logged:** 2026-09-08 · **Last updated:** 2026-09-20 · **Status:** active — standards/consolidation
 
 [[MCP]] isn't just a connectivity protocol anymore — it's becoming the default way vendors expose (and govern) their semantic/context layer to any agent. Microsoft's Fabric IQ Ontology got an MCP server (Preview, Aug 29), explicitly following "the same pattern already seen from Databricks and Snowflake" per the market-landscape log itself — Databricks' Genie One MCP server, Snowflake's Cortex Agents/MCP Native Apps, and [[Market Landscape/Strategy|Strategy]] Mosaic's own MCP server all do the same thing. On the Databricks side, Unity Gateway's unified trace table (Beta, Sep 1) went a step further and turned every MCP tool call itself into a governed, queryable artifact — Databricks used it internally to catch $499K/year in wasted agent spend. This window sharpens the pattern in two directions at once. Vendors are formalizing their own MCP exposure into discoverable, productized channels rather than leaving it as a generic capability: Sigma shipped a dedicated, officially-listed ChatGPT plugin (Sep 11) that's explicitly a productized front-end on the same MCP server it already had, and Omni added MCP tools for downloading dashboards programmatically (logged Sep 12). And the traffic is now running the other way too: Databricks' first-party managed MCP connector catalog (Google Drive, Gmail, Calendar, Microsoft 365, Atlassian, Slack, GitHub) reached GA for Genie One and Genie Code (Sep 10), governed end-to-end through Unity Catalog/Gateway — so MCP isn't just how a vendor's semantic layer gets consumed by outside agents anymore, it's also becoming the default way a vendor's own agent reaches into everyone else's tools. It's turning into two-way integration fabric for the whole category, not a one-directional "exit door." Worth watching whether this tips into an actual cross-vendor MCP interop spec, not just parallel implementations in both directions.
 
 This window adds a third direction on top of "consume" and "expose": MCP as the channel through which an *external* chat client builds a persisted artifact inside a vendor's own platform, not just a one-shot answer. Hex shipped `create_project`/`get_project`/`update_project` MCP tools (Sep 15), so a chat agent running in Claude, ChatGPT, or Cursor can turn an ad hoc conversation into a saved, continuable Hex project without the user ever opening Hex directly — effectively making the "chat is becoming an app-builder" pattern (above) something any MCP-connected client can trigger remotely, not only a vendor's own first-party chat surface. Governance is catching up to the same surface from the other side: Databricks' Unity Gateway API and developer tools for managing MCP services (create/read/update/list/delete) reached GA (Sep 16), landing across Terraform, the CLI, and every major SDK — MCP services are now provisionable and version-controllable as code, the same maturity level already applied to model services. Put together, MCP in this window looks less like a connectivity spec and more like a full application layer: writable, governable, and now capable of standing up new artifacts on demand from whatever client speaks it.
+
+This window adds a sixth vendor to the roster, and it's a telling one: **Qlik**, a long-established, pre-cloud-era BI incumbent, already had a GA **Qlik MCP Server** (shipped around Qlik Connect, mid-April 2026) exposing its analytical capabilities and governed data products to third-party assistants including Claude — surfaced only now because this vault backfilled Qlik's coverage on Sep 19, not because Qlik shipped anything new this week. That's the real signal: an MCP server wasn't a Sep 2026 land-grab move for Qlik, it was already table-stakes infrastructure five months ago, alongside Databricks, Snowflake, Strategy Mosaic, and Fabric IQ. The pattern this observation has been tracking isn't an emerging trend anymore — it's baseline plumbing every serious enterprise BI vendor is now assumed to have, old guard and cloud-native alike.
 
 **Built on:**
 - Fabric IQ Ontology MCP reaches Preview (Aug 29) — [Source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-fabric-iq-ontology)
@@ -55,11 +61,13 @@ This window adds a third direction on top of "consume" and "expose": MCP as the 
 - Omni MCP dashboard-download tools (week of Aug 31, logged Sep 12) — [Source](https://docs.omni.co/changelog)
 - Hex MCP tools let external chat agents create/update Hex projects directly (Sep 15) — [Source](https://learn.hex.tech/changelog/2026-09-15)
 - Unity Gateway API and developer tools for MCP/model services reach GA (Sep 16) — [Source](https://docs.databricks.com/aws/en/ai-gateway/)
+- Qlik MCP Server, GA since Qlik Connect (mid-April 2026), backfilled into the vault Sep 19 — [Source](https://www.businesswire.com/news/home/20260210837577/en/Qlik-Brings-Agentic-Analytics-to-General-Availability-and-Launches-MCP-Server-for-Third-Party-Assistants)
 
 **Update log:**
 - 2026-09-08: initial observation.
 - 2026-09-13: added evidence MCP is now bidirectional infrastructure — vendors productizing their own exposure (Sigma's ChatGPT plugin, Omni's dashboard tools) while also consuming third-party tools through it (Databricks' managed connector catalog GA); take sharpened from "exit door" to "two-way fabric."
 - 2026-09-18: added a third direction — MCP as the channel for external chat clients to build persisted artifacts inside a vendor's platform (Hex's `create_project` tools), plus governance-as-code catching up to MCP services specifically (Unity Gateway API GA); take extended from "two-way fabric" to "full application layer."
+- 2026-09-20: added Qlik's GA MCP Server (backfilled vendor coverage) as a sixth confirming data point — notable because it predates this vault's tracking window by five months, reinforcing that MCP exposure is already-settled baseline infrastructure across old-guard and cloud-native BI vendors alike, not a live 2026 arms race.
 
 ---
 
