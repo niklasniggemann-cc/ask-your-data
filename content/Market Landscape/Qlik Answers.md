@@ -33,6 +33,7 @@ Qlik is a long-established BI vendor (Qlik Sense) that has repositioned around a
 
 - **2026-02-10** (backfilled) — **Qlik Answers reaches General Availability**, the unified conversational interface for Qlik's agentic experience in Qlik Cloud. [Source](https://www.businesswire.com/news/home/20260210837577/en/Qlik-Brings-Agentic-Analytics-to-General-Availability-and-Launches-MCP-Server-for-Third-Party-Assistants)
 - **2026-04 (Qlik Connect 2026)** (backfilled) — Qlik's full agentic architecture (Discovery, Predict, Automate, Analytics agents) reaches General Availability at enterprise scale, alongside GA of the **Qlik MCP Server** for third-party assistants including Claude. Discovery Agent and "Data Products for Analytics" were noted as rolling out shortly after. [Source](https://www.qlik.com/us/news/company/press-room/press-releases/qlik-debuts-agentic-experience)
+- **2026-09-02** (backfilled — 19 days old at time of logging, past this vault's 14-day freshness window) — **Qlik MCP expands to AWS Marketplace and Databricks Marketplace**, letting customers reach Qlik's governed data, analytics context, and transformation capabilities (including Amazon Bedrock environments and Databricks' agent experience) directly from those marketplaces using existing Databricks Universal Commits, rather than only through a standalone Qlik MCP connection. [Source](https://www.globenewswire.com/news-release/2026/09/02/3355133/0/en/qlik-expands-mcp-availability-across-aws-and-databricks-marketplace-bringing-trusted-business-context-to-agents.html)
 
 ## Related
 
