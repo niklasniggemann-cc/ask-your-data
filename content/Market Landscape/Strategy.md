@@ -24,6 +24,10 @@ Strategy (formerly **MicroStrategy**, rebranded 2025) is a 35+ year old enterpri
 - **Strategy BI / Library** — the reporting/dashboard layer, including **email bursting** (Aug 2026): one dashboard subscription resolves per-recipient addresses and per-recipient filters from the data itself, generating a full set of personalized deliveries without manual export/slice work
 - **HyperIntelligence** — Strategy's older embedded-insight-card feature (contextual data overlays inside other apps), now positioned as part of the broader AI Agents/BI surface
 
+## Recent Developments
+
+**2026-09-18** — **Explorer: AI-Powered Answers From Your Data** — a new AI-driven conversational experience in Library Web that answers open-ended natural-language questions grounded in Mosaic data, generating rich answers that can combine HTML reports, emails, and multiple tool outputs in a single response; includes long-term memory and Universal Agent integration so Explorer retains context across sessions, plus Platform Analytics capturing usage for governance. Configurable from application settings. Extends Strategy AI Agents with a dedicated exploratory Q&A surface. [Source](https://software.strategy.com/whats-new)
+
 ## Market Position
 
 Competes directly with the semantic-layer plays of dbt Semantic Layer, Cube, and AtScale, and markets itself explicitly against being embedded inside a single hyperscaler platform the way [[Genie Agents]] (Databricks) or Cortex Analyst (Snowflake) are — Strategy's pitch is that Mosaic's definitions survive a warehouse or BI-tool migration unchanged. Also positions against AtScale (its closest historical peer, also MDX/DAX-native, OLAP-heritage) by emphasizing Mosaic Sentinel's governance/audit layer as a native rather than bolted-on capability. Ships monthly product-update posts (this vault found no prior coverage despite Strategy/MicroStrategy being a long-established, still-active player explicitly adjacent to this skill's "dbt Semantic Layer and other semantic-layer players" scope) — a coverage gap similar to prior backfills of TextQL and Amazon Quick Suite.
@@ -34,3 +38,4 @@ Competes directly with the semantic-layer plays of dbt Semantic Layer, Cube, and
 - [[MCP]] — Mosaic exposes governed metrics to external AI agents (ChatGPT, Claude, Copilot, Gemini) via its own MCP server, the same pattern as Sigma's and Genie One's MCP servers
 - [[Sigma]] — another vendor selling a warehouse-agnostic governed layer that other AI agents can call into, though Sigma stays closer to a live BI/spreadsheet surface where Mosaic positions itself as a pure semantic-layer product
 - [[Market Landscape/TextQL|TextQL]] — another semantic-layer vendor emphasizing customer ownership of the underlying definitions (Git-backed Ontology vs. Mosaic's own governed store)
+- [[Market Landscape/Alteryx|Alteryx]] — another vendor positioning itself as a governed logic layer external AI agents call into, though Alteryx's governed layer is workflow/ETL logic rather than a semantic/metrics layer

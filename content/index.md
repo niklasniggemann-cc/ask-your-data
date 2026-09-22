@@ -95,6 +95,7 @@ Skipping any layer creates debt that surfaces as confident-sounding wrong answer
 - [[Market Landscape/TextQL|TextQL]] — AI-analyst startup (Ana) built around a self-maintaining, customer-owned Git-native semantic layer (the Ontology)
 - [[Market Landscape/Strategy|Strategy]] — formerly MicroStrategy; Strategy Mosaic is a standalone, warehouse-agnostic universal semantic layer feeding governed AI Agents and BI tools
 - [[Market Landscape/Qlik Answers|Qlik Answers]] — Qlik's unified conversational interface and agentic architecture (Discovery/Predict/Automate/Analytics agents), with a GA MCP server for third-party assistants
+- [[Market Landscape/Alteryx|Alteryx]] — data-prep/workflow-automation vendor's new governed business-logic layer for external AI agents (Ask Alteryx, Agent Studio, MCP server, ChatGPT plugin)
 - [[Market Landscape/Updates|Updates]] — running log of confirmed market-landscape developments from the daily briefing
 
 ---

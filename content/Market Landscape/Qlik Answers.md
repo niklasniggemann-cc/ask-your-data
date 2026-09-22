@@ -42,3 +42,4 @@ Qlik is a long-established BI vendor (Qlik Sense) that has repositioned around a
 - [[ThoughtSpot Spotter]] — another independent (non-hyperscaler-owned) conversational-BI vendor with a comparable agent-family structure (Spotter 3/SpotterViz/SpotterModel/SpotterCode vs. Qlik's Discovery/Predict/Automate/Analytics agents)
 - [[Sigma]] — another vendor exposing its governed data to third-party AI assistants via an MCP server
 - [[MCP]] — the Qlik MCP Server is part of the same broader pattern of BI vendors exposing themselves as MCP endpoints
+- [[Market Landscape/Alteryx|Alteryx]] — another vendor whose MCP server and marketplace/plugin listings reach third-party assistants rather than only a standalone chat surface
